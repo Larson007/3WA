@@ -1,0 +1,53 @@
+/* Le code CSS de l'exercice dirigé */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+@font-face {
+    font-family: "Muli";
+    src: url("../Fonts/Muli/Muli-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../Fonts/Muli/Muli-Italic.ttf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../Fonts/Muli/Muli-Bold.ttf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("../Fonts/Muli/Muli-BoldItalic.ttf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: "Muli";
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: 'Barriecito', cursive;
+}
+
+.fontawesome {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.fa-facebook-square {
+    color: blue;
+}
+
+.fa-twitter-square {
+    color: cornflowerblue;
+}
+
+.fa-youtube {
+    color: crimson;
+}

@@ -1,0 +1,154 @@
+/*
+
+Ajout des la section "Tools"
+Ajout des marges et des paddings dans le body
+Ajout du lien survolé dans la section "Generalities"
+Ajout de main at de article dans la section "Generalities"
+Ajout du container dans la section "Container"
+Ajout de la section "Cards"
+Ajout de la classe .code dans la section "Various"
+
+*/
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+/* Le corps du document */
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-family: sans-serif;
+	color: #555;
+	background-color: #eee;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 4rem;
+	color: #DD5735;
+}
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 3.2rem;
+	color: #333;
+}
+
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 2.4rem;
+}
+
+/* Les liens */
+a {
+	text-decoration: none;
+	color: #DD5735;
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Contenu principal */
+main {
+	padding: 2em;
+}
+
+/* Les articles */
+article {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 1em;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+.container {
+	max-width: 1100px; /* On donne une largeur au container */
+	margin-left: auto; /* On centre son contenu */
+	margin-right: auto;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+.header {
+	padding: 1em;
+	text-align: center;
+	color: #999;
+	background-color: #444;
+}
+
+/* Pas de marge pour le titre pricipal */
+.header h1 {
+	margin: 0;
+}
+
+/* Le pied de page */
+.footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+
+/* *****************************************************************
+CARDS
+***************************************************************** */
+
+.card,
+.cards > * {
+	padding: 2em;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.gutter > * {
+	margin: 1em;
+}
+
+/* *****************************************************************
+VARIOUS
+***************************************************************** */
+
+/* Utile pour mettre en évidence un parent */
+.parent {
+	border: 1px dashed #DD5735;
+}
+
+/* Utile pour mettre en forme du code informatique */
+.code {
+	padding: 0.5em;
+	font-family: Monaco, monospace;
+	font-size: 14px;
+	color: #000;
+	background-color: #ddd;
+	border: 1px solid #bbb;
+}
+

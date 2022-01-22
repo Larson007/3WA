@@ -1,0 +1,150 @@
+/* Le code CSS de l'exercice dirigé */
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/*****************************************************/
+/**--------------------Flex-------------------------**/
+/*****************************************************/
+
+.flex {
+    display: flex;
+}
+
+/*****************************************************/
+/**-----------------Flex direction------------------**/
+/*****************************************************/
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+/*****************************************************/
+/**-----------------flex-wrap-----------------------**/
+/*****************************************************/
+
+.flex-wrap-no-wrap {
+    flex-wrap: nowrap;
+    width: 300px;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+/*****************************************************/
+/**-----------------align-items---------------------**/
+/*****************************************************/
+
+[class*="align-items"] li:nth-child(odd) {
+    line-height: 4em;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
+/*****************************************************/
+/**-----------------justify-content-----------------**/
+/*****************************************************/
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-envenly {
+    justify-content: space-evenly;
+}
+
+/*****************************************************/
+/**-----------------------order---------------------**/
+/*****************************************************/
+
+.order li:nth-child(1){
+    order: 4;
+}
+
+.order li:nth-child(2){
+    order: 2;
+}
+
+.order li:nth-child(3){
+    order: 6;
+}
+
+.order li:nth-child(4){
+    order: 1;
+}
+
+.order li:nth-child(5){
+    order: 3;
+}
+
+.order li:nth-child(6){
+    order: 5;
+}
+
+/*****************************************************/
+/**--------------order & shrink---------------------**/
+/*****************************************************/
+
+/*grow*/
+.grow {
+    flex-grow: 1;
+}
+.grow li:nth-child(3){
+    flex-grow: 2;
+}
+
+/*shrink*/
+.shrink *{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex-grow article{
+    flex-grow: 1;
+    flex-basis: 1em;
+    margin: 1em;
+
+}
+
+.flex-grow article:nth-child(2) {
+    flex-grow: 2;
+    
+}

@@ -1,0 +1,18 @@
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
+}
+blockquote p::before {
+	content: "« ";
+}
+blockquote p::after {
+	content: " »";
+}
+blockquote cite {
+	font-style: normal;
+  color: deepskyblue;
+}
+q {
+	font-style: italic;
+	quotes: "« " " »";
+}

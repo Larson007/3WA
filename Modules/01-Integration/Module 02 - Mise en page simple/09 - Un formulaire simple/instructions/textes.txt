@@ -1,0 +1,15 @@
+Un formulaire simple
+Faire un premier formulaire simple
+
+Mes coordonnées
+Prénom
+Nom
+Email
+Ma demande
+
+Choisir l'objet de ma demande...
+Valider le formulaire
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

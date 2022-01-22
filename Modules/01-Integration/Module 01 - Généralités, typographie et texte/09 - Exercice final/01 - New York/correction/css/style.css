@@ -1,0 +1,127 @@
+/* *****************************************************
+  GENERAL
+****************************************************** */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #444;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+    font-family: 'courgetteregular';
+    src: url('courgette-regular-webfont.woff2') format('woff2'),
+         url('courgette-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, .menu, blockquote {
+	font-family: 'courgetteregular';
+}
+
+.clear {
+	clear: both;
+}
+
+/* *****************************************************
+  ENTETE
+****************************************************** */
+
+.intro {
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: #003884;
+}
+
+.menu {
+	color:#003884;
+	font-weight: bold;
+}
+
+.menu a {
+	color:#003884;
+	font-size: 2rem;
+}
+
+/* *****************************************************
+  CONTENU PRINCIPAL
+****************************************************** */
+
+blockquote {
+	text-align: center;
+	color: #003884;
+	background-color: #d7e1ef;
+}
+
+q {
+	font-size: 2.5rem;
+	line-height: 1.5;
+}
+
+cite {
+	font-style: normal;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: #4f89b9;
+	text-align: center;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 2.5rem;
+	color: #003884;
+	text-align: center;
+}
+
+.droite {
+	float: right;
+}
+
+.gauche {
+	float: left;
+}
+
+strong, em {
+	color: #003884;
+}
+
+.italique {
+	font-style: italic;
+}
+
+/* *****************************************************
+  PIED DE PAGE
+****************************************************** */
+
+.footer {
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.footer a {
+	color: black;
+	text-decoration: underline;
+}
+
+.footer img {
+	width: 50px;
+}

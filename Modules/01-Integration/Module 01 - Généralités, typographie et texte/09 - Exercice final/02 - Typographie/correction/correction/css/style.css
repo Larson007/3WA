@@ -1,0 +1,169 @@
+/* ********************************************************
+FONTS
+******************************************************** */
+
+/* Police personnalisée pour les titres
+ * Ici on utilise une version basique avec un seul format
+ * pour aller en douceur */
+@font-face {
+	font-family: "SpecialElite";
+	/* caniuse.com/woff */
+	src: url(../fonts/SpecialElite.woff) format("woff");
+	/* Il est primordial de bien préciser la bonne graisse
+	 * pour un rendu professionnel, attention aux faux gras */
+	font-weight: 400;
+	/* Et également le bon style, attention au faux italiques */
+	font-style: normal;
+}
+
+/* Autre famille de polices, "Cardo", disposant de plusieurs fontes :
+ *
+ * "Cardo" est une police de caractère
+ * "Cardo italic" est une fonte, "Cardo Bold" également
+ */
+@font-face {
+	font-family: "Cardo";
+	src: url(../fonts/cardo/cardo-regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+/* Si on ne précisait pas le chemin de la font "italic"
+ * l’utilisation de ce style ferait un faux italique : berk !
+ * Notez l’apparence du z en version italic et comparez
+ * en commentant la déclaration ci-dessous
+ */
+@font-face {
+	font-family: "Cardo";
+	src: url(../fonts/cardo/cardo-italic.woff) format("woff");
+	font-weight: 400;
+	/* Indispensable */
+	font-style: italic;
+}
+@font-face {
+	font-family: "Cardo";
+	src: url(../fonts/cardo/cardo-bold.woff) format("woff");
+	/* Indispensable */
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* ********************************************************
+GENERALITES
+******************************************************** */
+
+body {
+	/* On centre le site sur une petite largeur
+	 * de manière à avoir des lignes pas trop longues */
+	max-width: 420px;
+	margin: 0 auto;
+	/* Par défaut les lignes auront une hauteur de 1 fois
+	 * et demi la taille de police.
+	 * Notez bien l’absence d’unité */
+	line-height: 1.5;
+	font-family: "Cardo", serif;
+	color: #333;
+}
+h1,
+h2,
+h3 {
+	font-family: "SpecialElite", sans-serif;
+}
+h1{
+	font-weight: 400;
+	font-size: 4em;
+	line-height: 2;
+	/* On ne met pas de texte en majuscule dans le HTML :
+	 * il s’agit de présentation = de CSS */
+	text-transform: uppercase;
+}
+h2 {
+	font-weight: normal;
+	font-size: 2.5em;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+h3 {
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1;
+}
+/* Petite fleuron pour habiller les titres secondaires */
+h3::before {
+	content: "❧ ";
+}
+/* Styles des liens par défaut */
+a {
+	color: #333;
+	text-decoration: none;
+	/* On remplace le soulignement par une bordure */
+	border-bottom: 1px dashed;
+}
+p {
+	/* Attention au texte justifié sur le web !
+	 * Bien utiliser le plugin Hyphenator ou 
+	 * contrôler chaque texte sur-mesure */
+	text-align: justify;
+}
+
+/* ********************************************************
+CITATIONS
+******************************************************** */
+
+
+/* BlockQuotes */
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
+}
+blockquote p::before {
+	content: "« ";
+}
+blockquote p::after {
+	content: " »";
+}
+blockquote cite {
+	font-size: .8em;
+	font-style: normal;
+}
+
+/* Quotes */
+q {
+	font-style: italic;
+	quotes: "« " " »";
+}
+
+/* ********************************************************
+HEADER
+******************************************************** */
+
+.header {
+	text-align: center;
+	border-bottom: 1px solid;
+}
+
+/* ********************************************************
+MAIN
+******************************************************** */
+
+article p:first-letter {
+	margin-right: 0.5em;
+	font-size: 2em;
+	font-weight: 400;
+	font-family: "SpecialElite", sans-serif;
+	float: left;
+	color: #333;
+}
+
+/* ********************************************************
+FOOTER
+******************************************************** */
+
+.footer {
+	text-align: center;
+	border-top: 1px solid;
+}
+.end {
+	text-align: center;
+	font-size: 3em;
+	line-height: 3em;
+}

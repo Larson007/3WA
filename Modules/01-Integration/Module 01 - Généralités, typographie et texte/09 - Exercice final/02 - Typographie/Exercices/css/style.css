@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "SpecialElite";
+    src: url("../fonts/SpecialElite-Regular.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Inconsolata";
+    src: url("../fonts/Inconsolata.ttf") format("opentype");
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+    max-width: 420px;
+    margin: 0 auto !important;
+    font-family: "Inconsolata";
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "SpecialElite";
+}
+blockquote {
+    font-style: italic;
+    font-weight: bold;
+}
+
+blockquote:before {
+    content: "«";
+}
+
+blockquote:after {
+    content: "»";
+}
+
+cite {
+    display: block;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em !important;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+h3:before {
+    content: "❧";
+    margin-right: 0.3em;
+}
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin: 0.5em 0.5em 0 0;
+    font-family: "SpecialElite";
+}
+
+.source::first-letter {
+
+    font-size: 1em;
+    font-weight: normal;
+    float: none;
+    margin: 0;
+    font-family: "Inconsolata";
+}
+
+.txt-underline {
+    text-decoration: underline dotted;
+}
+
+.bottom-deco {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2em auto;
+}

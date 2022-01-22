@@ -1,0 +1,97 @@
+Les principales balises (titre pricipal placé dans l'élément <h1>)
+Les balises de type bloc (sous-titre placé dans l'élément <h2>)
+Un sous-titre de niveau 3
+Un paragraphe (élément <p>).
+
+Un second paragraphe séparé du premier par une marge (par défaut).
+
+Le contenu d'un élément (par exemple un paragraphe) est placé entre les balises ouvrante <p> et la balise fermante </p> de cet élément.
+
+Pour écrire les caractères < (inférieur à), > (supérieur à) et & (esperluette) il faut utiliser des entitées HTML.
+
+	Ce texte est pré-formaté.
+	L'élément <pre> respecte les caratères spéciaux de la source comme les sauts de ligne,
+	les tabulations et
+	les espaces [    ].
+	Par défaut, l'élément <pre> affiche son contenu avec une police à chasse fixe (monospace).
+	L'élément <pre> est généralement utilisé pour écrire du code.
+	
+<!-- Un commentaire en HTML -->
+L'élément <div> est générique sans aucun sens particulier, il est utilisé pour structurer le document.
+Un second élément <div> n'est pas séparé du précedant par une marge (par défaut).
+Les listes (un autre sous-titre de niveau 3)
+Une
+liste
+ordonnée
+Une
+liste
+non
+ordonnée
+Terme 1
+Définition 1
+Terme 2
+Définition 2
+1. Une
+2. liste
+2.1. avec
+2.2. une
+2.3. liste
+2.4. imbriquée
+3. (attention, l'élément <ul> ne peut contenir que ses éléments <li>)
+Les balises de type inline (un autre sous-titre de niveau 2)
+Une portion de texte importante placée dans l'élément <strong>.
+
+Une portion de texte emphasée placée dans l'élément <em>.
+
+Un hyperlien vers 3W Academy (élément <a>).
+
+Il existe différents types d'hyperliens :
+
+Un site internet : 3W Academy
+Une autre page du site internet : Nous contacter
+Une adresse email : contact@3wa.fr
+Un numéro de téléphone : 01 75 43 42 42
+Une ancre sur la page : haut de la page. Ce type de lien est souvent utilisé dans la navigation sur les sites internet one-page ou pour revenir en haut de la page.
+Un lien avec l'attribut target="_blank" s'ouvre dans un nouvel onglet: 3W Academy.
+
+Une image Logo 3W Academy dans un paragraphe (observer l'alignement vertical). L'attribut alt est obligatoire.
+
+Une image dans un lien Logo 3W Academy
+
+Un paragraphe contenant un saut
+de ligne <br>.
+
+Une abbréviation avec l'élément <abbr>: le code d'une page web est écrit en HTML avec l'attribut title.
+
+Une définition avec l'élément <dfn>
+
+Utilisation de l'élément <sub> pour écrire des indices, par exemple dans une formule chimique: 4 NH3 + 5 O2 → 4 NO + 6 H2O
+
+Utilisation de l'élément <sup> pour écrire des exposants, par exemple dans une formule mathématique: 32 = 9 ou un indicateur ordinal: le 3ème arrondissement de Paris.
+
+Utilisation de l'élément <ins> pour indiquer une portion texte insérée et de l'élément <del> pour indiquer une portion de texte supprimée.
+
+L'élément <mark> représente un texte mis en surbrillance à cause de sa pertinence dans le contexte, par exemple lors d'une recherche d'un mot clé dans le contenu d'un site web. Il ne doit pas être utilisé à des fins de coloration syntaxique.
+
+Un exemple de code informatique (ici du JavaScript) dans un élément <code> et un élément <pre>:
+
+
+	for (let i = 0; i < 5; i++) {
+		console.log(i);
+	}
+	
+Ce texte est contenu dans un élément <span>. Cet élément n'a pas de sens particulier, il est systématiquement utilisé avec du style CSS.
+
+Bonnes pratiques (un autre sous-titre de niveau 2)
+Les titres nous permettent de structurer notre texte et de faciliter la lecture. Ils sont également importants pour optimiser le référencement naturel de la page web.
+
+Il ne faut pas sauter des niveaux de titre : on commence toujours par un titre de niveau 1, puis un titre de niveau 2, puis un titre de niveau 3 et ainsi de suite.
+
+Sauter un niveau de titre intermédiaire constitue une mauvaise pratique : par exemple un titre de niveau 1, suivi d'un titre de niveau 3.
+
+Toujours placer les éléments de type inline dans un élément de type bloc (et jamais l'inverse)
+
+License (un autre sous-titre de niveau 2)
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Christiane Dumont et Stephane Pereck.

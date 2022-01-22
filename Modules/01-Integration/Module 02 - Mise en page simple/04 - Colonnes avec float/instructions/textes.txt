@@ -1,0 +1,15 @@
+Colonnes avec float
+Faire des colonnes avec la propriété float
+
+Parent sans clear ni overflow
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!
+Parent avec overflow
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!
+Parent avec clear
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!
+Parent avec clearfix
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

@@ -1,0 +1,33 @@
+/* Le code CSS de l'exercice dirigé */
+
+.box {
+    background-color: #ccc;
+}
+
+.box2 {
+    margin: 2%;
+}
+
+.box3 {
+    padding: 1% 2%;
+}
+
+.box4 {
+    border: 2px solid #dd5735;
+    padding: 1% 2%;
+}
+
+.box5 {
+    border: 2px solid #dd5735;
+    margin: 2%;
+    padding: 2em;
+    width: 60%;
+}
+
+.box6 {
+    border: 2px solid #dd5735;
+    box-sizing: border-box;
+    margin: 2%;
+    padding: 2em;
+    width: 60%;
+}

@@ -1,0 +1,82 @@
+/* Le code CSS de l'exercice dirigé */
+
+/**  Classe commune **/
+
+h2 {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.bg {
+    background-color: teal;
+    max-width: 40em;
+    min-height: 20em;
+    padding: 1em;
+    color: white;
+}
+
+.bg-large {
+    background-image: url("../images/large.jpg");
+    background-repeat: no-repeat;
+}
+
+.bg-small {
+    background-image: url("../images/small.jpg");
+}
+
+/** background-repeat **/
+
+.bg-repeat {
+    background-repeat: repeat;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-repeat-y {
+    background-repeat: repeat-y;
+}
+
+/** background-size **/
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-x {
+    background-size: 50%;
+}
+
+.bg-x-y {
+    background-size: 80% 40%;
+}
+
+/** background-position **/
+
+.bg-position-center {
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.bg-position-r-t {
+background-repeat: no-repeat;
+background-position: right top;
+
+}
+
+.bg-position-r-b {
+background-repeat: no-repeat;
+background-position: right bottom;
+
+}
+
+.bg-position-x-y {
+background-repeat: no-repeat;
+background-position: 80% 40%;
+}
+

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@font-face {
+    font-family: "Courgette";
+    src: url(../fonts/Courgette-Regular.ttf) format("opentype");
+}
+
+:root {
+    --blue-dark: #003884;
+    --blue-medium: #4f89b9;
+    --citation: #d7e1ef;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+blockquote,
+.citation {
+    font-family: "Courgette";
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    color: var(--blue-medium);
+}
+
+h3 {
+    color: var(--blue-dark);
+    font-weight: bolder;
+    margin: 1.8rem auto;
+}
+
+strong {
+    color: var(--blue-dark);
+}
+
+em {
+    color: var(--blue-medium);
+}
+
+
+/** Header **/
+header {
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--blue-dark);
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+
+header ol li a {
+    text-align: left;
+    font-weight: bold;
+    color: var(--blue-dark);
+}
+
+header ol li a:hover {
+    color: var(--blue-medium);
+    }
+
+header a {
+text-decoration: none;
+}
+
+.citation {
+    background-color: var(--citation);
+    color: var(--blue-dark);
+    padding: 0.5rem;
+    margin: 2em;
+}
+
+.citation q {
+    font-size: 25px;
+}
+
+/** Main **/
+
+/** Symbole **/
+
+#symboles img:nth-child(1) {
+float: right;
+margin:0 0 1rem 1rem ;
+
+}
+
+#symboles img:nth-child(2) {
+float:left;
+margin:0 1rem 1rem 0;
+}
+
+/** Géographie **/
+
+#geographie img {
+    float: right;
+    margin:0 0 0 1rem;
+    
+    }
+
+#geographie {
+margin-top: 3rem;
+}
+
+/** Démographie **/
+
+#demographie img {
+    float: left;
+    margin:0 1rem 1rem 0;
+    
+    }
+
+#demographie {
+margin-top: 3rem;
+}
+
+/** footer **/
+
+
+.footer {
+margin: 2rem 0;
+}
+
+.footer *{
+	text-align: center;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    
+}
+
+.footer p:nth-child(2){
+
+text-decoration: underline;
+}

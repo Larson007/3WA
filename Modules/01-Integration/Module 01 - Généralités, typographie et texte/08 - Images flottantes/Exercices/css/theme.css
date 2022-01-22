@@ -1,0 +1,25 @@
+/* Le code CSS de l'exercice dirigé */
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+}
+
+h3 {
+    margin: 2rem 0;padding-top: 3rem;
+}
+
+.cat-main-coon img{
+    float: left;
+    width: 350px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.cat-birman img{
+    float: right;
+    width: 350px;
+    height: auto;
+    margin-left: 2rem;
+}
+

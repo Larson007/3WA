@@ -1,0 +1,99 @@
+Module 1 - Mise en forme
+
+Découverte de la mise en forme du texte
+
+Mise en forme des caratères
+
+Utilisation des proriétés font-xxx
+
+La taille
+La propriété CSS font-size permet de définir la taille utilisée pour le texte.
+
+On peut utiliser une des valeurs prédéfinies comme font-size: medium mais ce n'est pas très utilisé.
+On peut utiliser une des valeurs prédéfinies comme font-size: large mais ce n'est pas très utilisé.
+On peut utiliser une valeur absolue avec l'unité px, par exemple font-size: 14px mais ce n'est pas recommandé.
+On peut utiliser une valeur absolue avec l'unité pt (point comme dans Word), par exemple font-size: 14pt mais ce n'est pas recommandé.
+On peut utiliser une valeur proportionnelle en pourcentage, par exemple font-size: 150% mais ce n'est pas très utilisé.
+Il est recommandé d'utiliser une valeur proportionnelle en em, par exemple font-size: 1.5em.
+Comme alternative, on peut utiliser une valeur proportionnelle en rem (toujours proportionnelle à la taille définie à la racine du document, le ROOT, soit l'élément HTML), par exemple font-size: 1.5rem.
+
+La graisse
+La propriété CSS font-weight permet de définir la graisse utilisée pour le texte.
+
+On peut mettre du texte en gras avec font-weight: bold.
+On peut supprimer le gras existant avec font-weight: normal (ici le texte est dans un élément <strong>).
+Il est possible de donner un niveau de graisse (compris entre 100 et 900), par exemple font-weight: 700 (équivalent du gras) si prévu par la police de caractères.
+font-weight: bolder permet d'augmenter la graisse si possible.
+font-weight: lighter permet de diminuer la graisse si possible.
+
+Le style
+La propriété CSS font-style permet de définir le style utilisé pour le texte.
+
+On peut mettre du texte en gras avec font-style: italic.
+On peut supprimer le style existant avec font-style: normal (ici le texte est dans un élément <em>).
+
+Mise en forme des espacements
+Utilisation des proriétés line-height, letter-spacing, word-spacing et white-space
+
+La hauteur de ligne
+La propriété CSS line-height permet de définir la hauteur de ligne du texte (donc indirectement l'espacement entre les lignes).
+
+Une ligne de texte avec la valeur line-height: 1 la valeur n'a pas d'unité.
+Une ligne de texte avec la valeur line-height: 1.5 la valeur n'a pas d'unité.
+Une ligne de texte avec la valeur line-height: 4 la valeur n'a pas d'unité.
+
+L'espacement entre les lettres
+La propriété CSS letter-spacing permet de définir l'espacement entre les lettres.
+
+Une ligne de texte avec la valeur letter-spacing: 0.5em avec l'unité em (de préférence).
+
+L'espacement entre les mots
+La propriété CSS word-spacing permet de définir l'espacement entre les mots.
+
+Une ligne de texte avec la valeur word-spacing: 2em avec l'unité em (de préférence).
+
+Gestion des espaces (blancs)
+La propriété CSS white-space permet de gérer le comportement des espaces.
+
+Une ligne de texte avec la valeur white-space: normal, le texte retourne à la ligne normalement.
+Une ligne de texte avec la valeur white-space: nowrap le texte ne retourne pas à la ligne..
+Une ligne de texte avec la valeur white-space: pre
+			le texte se comporte comme dans l'élément <pre>.
+
+Mise en forme du texte
+Utilisation des proriétés text-xxx
+
+L'alignement et la justification du texte
+La propriété CSS text-align permet de définir l'alignement du texte.
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, velit nulla! Vitae dolorem dignissimos temporibus sequi possimus ad nostrum quod rem quo ea cupiditate enim repudiandae perferendis quaerat eos culpa, at totam omnis architecto ipsam maiores inventore consequuntur. Modi fuga inventore dolorem iusto dolore eius maxime vero ut quisquam numquam.
+Aliquid labore qui ducimus eum, fuga, soluta beatae distinctio, rem harum totam laboriosam nostrum aspernatur. Veritatis officia placeat et, tenetur laboriosam aut deserunt voluptate dicta. Eaque delectus vitae nesciunt corporis illo nemo, debitis, tempore molestiae laudantium nam quidem totam unde quis tempora atque illum voluptas earum velit nostrum nihil corrupti?
+Temporibus provident ut harum ex facere, vitae error iure quis reprehenderit quam blanditiis asperiores est nesciunt pariatur saepe repellendus facilis rerum consequuntur fuga natus dolorem eos ipsam assumenda aliquid. Dignissimos tempore harum suscipit, repellat sint sunt ut labore eius ex, earum repellendus ad error consectetur fugit. Voluptatum voluptatem aperiam nulla!
+Voluptate tempore, illo explicabo voluptatem a quae, eligendi porro dolore molestiae, blanditiis dolorum magnam pariatur? Nihil rem nulla minima doloremque quis quia dolore? Eos amet, deserunt pariatur reprehenderit cumque veniam ea, repellat explicabo magni facilis rerum voluptatibus illo ipsum velit esse sint laboriosam similique enim quia dolores animi harum iusto!
+
+L'indentation du texte
+La propriété CSS text-indent permet de définir l'indentation du texte.
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, velit nulla! Vitae dolorem dignissimos temporibus sequi possimus ad nostrum quod rem quo ea cupiditate enim repudiandae perferendis quaerat eos culpa, at totam omnis architecto ipsam maiores inventore consequuntur. Modi fuga inventore dolorem iusto dolore eius maxime vero ut quisquam numquam.
+
+La transformation du texte
+La propriété CSS text-transform permet de d'effectuer une transformation de la casse du texte (cette méthode est recommandée).
+
+Avec la valeur text-transform: capitalize, la première lettre de chaque mot sera affichée en capitale.
+Avec la valeur text-transform: uppercase, tous les caractères seront écrits en majuscule.
+Avec la valeur text-transform: none, tous les caractères seront écrits en minuscule.
+
+La décoration du texte
+La propriété CSS text-decoration permet de définir une décoration au texte. On peut définir le type, le style et la couleur de la décoration.
+
+La valeur text-decoration: underline permet de souligner le texte (avec la même couleur).
+La valeur text-decoration: underline permet de supprimer le soulignement le texte (ici dans un lien).
+La valeur text-decoration: overline permet de surligner le texte (avec la même couleur).
+La valeur text-decoration: underline red permet de souligner le texte en rouge.
+La valeur text-decoration: underline double orangered permet de souligner le texte en double (et en orange).
+La valeur text-decoration: underline green permet de souligner le texte en tirets (et en vert).
+La valeur text-decoration: underline wavy teal permet de souligner le texte avec une vague (et en bleu).
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Christiane Dumont et Stephane Pereck.

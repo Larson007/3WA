@@ -1,0 +1,15 @@
+Le border-radius
+Deux mises en application
+
+Arrondir les angles
+Tous les angles à 1em border-radius: 1em
+Tous les angles à 2em border-radius: 2em
+Un seul angle défini border-top-left-radius: 2em
+4 valeurs différentes en une seule déclaration border-radius: 1em 2em 3em 4em
+Faire des cercles
+Un cercle simple
+Un cercle à 4 couleurs
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos et Stephane Pereck.

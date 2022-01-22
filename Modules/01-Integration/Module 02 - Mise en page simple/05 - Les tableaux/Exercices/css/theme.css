@@ -1,0 +1,39 @@
+/* Le code CSS de l'exercice dirigé */
+
+table * {
+    border: 1px solid rgba(0, 0, 0, 0.2);;
+    padding: 1em;
+    font-weight: normal;
+}
+
+thead * {
+    font-weight: bold;
+}
+
+.tableau-complexe {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.tableau-complexe caption{
+    font-size: 2em;
+}
+
+.tableau-complexe tbody tr td:first-child{
+    text-align: left;
+}
+
+.tableau-complexe tbody tr td:nth-child(2){
+    text-align: center;
+}
+
+.tableau-complexe tbody tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tableau-complexe tfoot ,
+.tableau-complexe tbody{
+    text-align: right;
+    border-top: 2px solid #333;
+}

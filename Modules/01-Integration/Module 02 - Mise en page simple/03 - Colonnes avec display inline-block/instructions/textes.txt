@@ -1,0 +1,17 @@
+Colonnes avec display inline-block
+Faire des colonnes avec la propriété display inline-block
+
+Parent sans hack
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque. Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!
+Avec article collés
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque. Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!
+Avec commentaire entre les articles
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque. Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!
+Méthode CSS pure
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque. Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!
+Méthode CSS pure + vertical-align: top
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque. Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

@@ -1,0 +1,27 @@
+/* Le code CSS de l'exercice dirigé */
+
+article {
+    margin-bottom: 1em;
+}
+
+.br-1 {
+    border-radius: 1em;
+}
+
+.br-2 {
+    border-radius: 2em;
+}
+
+.br-4 {
+    border-radius: 1em 2em 3em 4em;
+}
+
+.circle-1 {
+    display: inline-block;
+    padding: auto ;
+    background-color: white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+

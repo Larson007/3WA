@@ -1,0 +1,14 @@
+Template module 1
+Le template des démos du module 1
+
+Un exemple de titre h1
+Un exemple de titre h2
+Un exemple de titre h3
+Un exemple de texte dans un paragraphe contenant un Lien vide (dont l'adresse est simplement l'ancre vide #)
+
+Un exemple de div ayant la classe "parent"
+Un autre paragraphe
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

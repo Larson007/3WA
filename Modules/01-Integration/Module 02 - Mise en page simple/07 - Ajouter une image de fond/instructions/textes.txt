@@ -1,0 +1,50 @@
+Ajouter une image de fond
+Comprendre comment afficher et bien positionner une image de fond
+
+Image versus background
+L'image (ici le logo de la 3WA) est un élément <img>, c'est un contenu et sera référencée par les moteurs de recherche. L'image de fond (les olives) est une décoration déclarée en dans la feuille de style et NE sera PAS référencée par les moteurs de recherche.
+
+Logo 3WA
+
+Répétition de l'image.
+background-repeat: repeat;
+Du texte...
+
+background-repeat: no-repeat;
+Du texte...
+
+background-repeat: repeat-x;
+Du texte...
+
+background-repeat: repeat-y;
+Du texte...
+
+Ajustement de la taille de l'image du fond par rapport à son élément.
+background-size: contain;
+Du texte...
+
+background-size: cover;
+Du texte...
+
+background-size: 50%;
+Du texte...
+
+background-size: 80% 40%;
+Du texte...
+
+Positionnement de l'image.
+background-position: center;
+Du texte...
+
+background-position: right top;
+Du texte...
+
+background-position: right bottom;
+Du texte...
+
+background-position: position 80% 40%;
+Du texte...
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

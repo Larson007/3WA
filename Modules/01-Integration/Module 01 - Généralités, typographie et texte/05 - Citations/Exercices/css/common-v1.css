@@ -1,0 +1,61 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+/* Le corps du document */
+body {
+	font-family: sans-serif;
+	color: #555;
+	background-color: #eee;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 2.5em;
+	color: #DD5735;
+}
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 2em;
+	color: #333;
+}
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 1.5em;
+}
+
+/* Les liens */
+a {
+	text-decoration: none;
+	color: #DD5735;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+.header {
+	text-align: center;
+	background-color: #ddd;
+	border: 1px solid #DD5735;
+}
+
+/* Le pied de page */
+.footer {
+	text-align: center;
+	background-color: #ddd;
+	border: 1px solid #555;
+}
+
+/* *****************************************************************
+VARIOUS
+***************************************************************** */
+
+/* Utile pour mettre en évidence un parent */
+.parent {
+	border: 1px dashed #DD5735;
+}

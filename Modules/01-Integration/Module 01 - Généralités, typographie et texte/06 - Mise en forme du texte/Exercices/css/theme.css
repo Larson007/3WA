@@ -1,0 +1,167 @@
+* {
+    color: #111;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1080px;
+    margin: 20px auto;
+}
+
+code {
+    color: #111;
+    font-family: sans-serif;
+}
+
+li {
+    line-height: 2em;
+}
+
+/** Taille **/
+.taille li:nth-child(1) {
+    font-size: medium;
+}
+.taille li:nth-child(2) {
+    font-size: large;
+}
+.taille li:nth-child(3) {
+    font-size: 14px;
+}
+.taille li:nth-child(4) {
+    font-size: 14pt;
+}
+.taille li:nth-child(5) {
+    font-size: 150%;
+}
+.taille li:nth-child(6) {
+    font-size: 1.5em;
+}
+.taille li:nth-child(7) {
+    font-size: 1.5rem;
+}
+
+/** Graisse **/
+.graisse li:nth-child(1) {
+    font-weight: bold;
+}
+.graisse li strong {
+    font-weight: normal;
+}
+.graisse li:nth-child(3) {
+    font-weight: 700;
+}
+.graisse li:nth-child(4) {
+    font-weight: bolder;
+}
+.graisse li:nth-child(5) {
+    font-weight: lighter;
+}
+
+/** Style **/
+.style li:first-child {
+    font-style: italic;
+    font-weight: bold;
+}
+.style li em {
+    font-style: normal;
+}
+
+/** Hauteur de ligne **/
+.h-ligne li:nth-child(1) {
+    line-height: 1;
+}
+.h-ligne li:nth-child(2) {
+    line-height: 1.5;
+}
+.h-ligne li:nth-child(3) {
+    line-height: 4;
+}
+
+/** letter spacing **/
+.e-lettre li {
+    letter-spacing: 2em;
+}
+
+/** words spacing **/
+.e-mots li {
+    word-spacing: 2em;
+}
+
+/** Gestion-espace **/
+.small {
+    width: 200px;
+    background-color: #ccc;
+    padding: 10px 0;
+    list-style-type: none;
+}
+.gestion-espace ul {
+    padding: 0;
+}
+.gestion-espace li:nth-child(1) {
+    white-space: normal;
+}
+.gestion-espace li:nth-child(2) {
+    white-space: nowrap;
+    margin: 10px 0;
+}
+.gestion-espace li:nth-child(3) {
+    white-space: pre;
+}
+
+/** text-Justify **/
+.txt-justify p:nth-child(3) {
+    text-align: start;
+}
+.txt-justify p:nth-child(4) {
+    text-align: end;
+}
+.txt-justify p:nth-child(5) {
+    text-align: center;
+}
+.txt-justify p:nth-child(6) {
+    text-align: justify;
+}
+
+/** text-indentation **/
+.txt-identation p:last-child {
+    text-indent: 10rem;
+}
+
+/** text-transform **/
+.txt-transform li:nth-child(1) {
+    text-transform: none;
+}
+.txt-transform li:nth-child(2) {
+    text-transform: capitalize;
+}
+.txt-transform li:nth-child(3) {
+    text-transform: uppercase;
+}
+.txt-transform li:nth-child(4) {
+    text-transform: none;
+}
+
+/** text-decoration **/
+.txt-decoration li:nth-child(1) {
+    text-decoration: underline;
+}
+.txt-decoration li:nth-child(2) a {
+    text-decoration: none;
+    color: black !important;
+}
+
+.txt-decoration li:nth-child(3) {
+    text-decoration: overline;
+}
+.txt-decoration li:nth-child(4) {
+    text-decoration: underline red;
+}
+.txt-decoration li:nth-child(5) {
+    text-decoration: underline double orangered;
+}
+.txt-decoration li:nth-child(6) {
+    text-decoration: underline dashed green;
+}
+.txt-decoration li:nth-child(7) {
+    text-decoration: underline wavy teal;
+}

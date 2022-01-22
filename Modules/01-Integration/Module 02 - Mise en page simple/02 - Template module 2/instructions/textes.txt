@@ -1,0 +1,30 @@
+Template module 2
+Le template des démos du module 2 (sémantique + feuille de style commune en version 2)
+
+Un exemple de titre h1
+Un exemple de titre h2
+Un exemple de titre h3
+Un exemple de texte dans un paragraphe contenant un Lien vide (dont l'adresse est simplement l'ancre vide #)
+
+Un exemple de div ayant la classe "parent"
+Un autre paragraphe
+
+Un exemple d'article
+Un autre paragraphe
+
+Un exemple de div avec la classe .card
+Un autre paragraphe
+
+Un exemple de div avec la classe .cards
+... et contenant plusieurs div
+Un autre paragraphe
+
+Un exemple de div avec la classe .cards et la classe .gutter
+... et contenant plusieurs div
+Un autre paragraphe
+
+Un élément <pre> avec la classe .code
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

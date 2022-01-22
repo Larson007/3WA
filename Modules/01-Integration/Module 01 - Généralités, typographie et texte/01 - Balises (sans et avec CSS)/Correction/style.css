@@ -1,0 +1,9 @@
+/* Un selecteur d'élément */
+h1 {
+	color: red;
+}
+
+/* Un selecteur de classe */
+.colored {
+	color: green;
+}

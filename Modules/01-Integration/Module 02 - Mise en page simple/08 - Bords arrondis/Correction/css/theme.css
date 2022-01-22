@@ -1,0 +1,36 @@
+/* Le code CSS de l'exercice dirigé */
+
+.border-1 {
+    border-radius: 1em;
+}
+
+.border-2 {
+    border-radius: 2em;
+}
+
+.border-3 {
+    border-top-left-radius: 2em;
+}
+
+.border-4 {
+    border-radius: 1em 2em 3em 4em;
+}
+
+.cercle-1 {
+    border-radius: 50%;
+    background-color: white;
+    width: 20em;
+    padding: 0;
+    line-height: 20em;
+    text-align: center;
+}
+
+.cercle-2 {
+    border-radius: 50%;
+    border-top: 15rem solid #ff00d7;
+    border-right: 15rem solid #ff8bf6;
+    border-bottom: 15rem solid purple;
+    border-left: 15rem solid #d16bff;
+    width: 0;
+    padding: 0;
+}

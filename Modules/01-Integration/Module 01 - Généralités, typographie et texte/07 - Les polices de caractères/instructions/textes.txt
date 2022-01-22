@@ -1,0 +1,20 @@
+Module 1 - Les polices de caractères
+Découverte des fonts, de leur implémentaion dans le CSS, via Google font et fonts-icons.
+
+Déclaration d'une police avec @font-face
+La règle CSS @font-face{} permet d'importer un/des fichiers de polices de caractères, notamment quand on a des polices spéciales qui ne sont pas présentes sur le système d'exploitation de l'internaute.
+
+Google font
+Google Fonts est un service d’hébergement gratuit de polices d’écritures pour le Web, démarré en 2010. Ces polices sont sous licences libres dont principalement la licence Apache et la SIL OFL.
+
+Les fonts-icons, c’est quoi ?
+Ce sont des polices de caractères qui permettent d’afficher des icônes, des pictogrammes sur un site Web. Crée initialement pour être utilisée avec Bootstrap, elle peut être utilisée sur n’importe quel projet. De nombreuses icônes sont gratuites, personnalisables et redimensionnables à souhait.
+
+Par exemple : Font Awesome
+
+Quelques exemples
+  
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Christiane Dumont et Stephane Pereck.

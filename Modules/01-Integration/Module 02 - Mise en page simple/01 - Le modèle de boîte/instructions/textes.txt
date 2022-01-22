@@ -1,0 +1,24 @@
+Le modèle de boîte
+
+Découverte du modèle de boîte avec margin, padding, border et box-sizing.
+
+Une boîte définie en bloc suivra les règles suivantes :
+
+    La boîte s'étend et rempli 100% de la largeur disponible de son élément parent.
+    On peut lui attribuer une largeur (width, min-width, max-width) et une hauteur (height, min-height, max-height).
+    La propriété margin correspond à la marge externe.
+    La propriété padding correspond à la marge interne.
+    La propriété border ajoute une bordure.
+    Par défaut, quand la propriété box-sizing n'est pas définie avec la valeur border-box, le padding et le border s'ajoutent à la largeur de la boîte.
+
+Voici une 1ère boîte.
+
+Voici une 2ème boîte avec utilisation de margin.
+
+Voici une 3ème boîte avec utilisation de padding.
+
+Voici une 4ème boîte avec utilisation de padding + border.
+
+Voici une 5ème boîte avec utilisation de margin + padding + border.
+
+Voici une 6ème boîte avec utilisation de margin + padding + border + box-sizing: border-box.
