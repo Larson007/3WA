@@ -1,0 +1,212 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+/* Google Fonts Lato : https://fonts.google.com/specimen/Lato?query=Lato */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #40ccea;
+    word-spacing: 10px;
+    text-align: center;
+    border-bottom: 1px dotted #40ccea;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+ul > li {
+    list-style: none;
+}
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+header {
+    text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    background-color: #40ccea;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+nav > ul > li > a {
+    padding: 0 4em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* *****************************************************************
+MAIN
+***************************************************************** */
+
+section {
+    margin: 30px auto;
+}
+
+
+/* Section "Mes derniers voyages"  */
+.link-more {
+    background-color: #0096d0;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.city {
+    column-count: 2;
+    column-gap: 2em;
+}
+
+.city:first-child {
+    padding-bottom: 2em;
+border-bottom: 1px solid black;
+}
+
+.city-text p{
+    margin-bottom: 2em;
+}
+
+.city-maroc img{
+    float: right;
+}
+.city-red {
+    color: #f00;
+}
+.city-red::before {
+    content: "«";
+}
+.city-red::after {
+    content: "»";
+}
+.city-ocre {
+    color: #cd8c56;
+}
+.city-ocre::before {
+    content: "«";
+}
+.city-ocre::after {
+    content: "»";
+}
+
+
+/* *****************************************************************
+A PROPOS
+***************************************************************** */
+.about {
+    background-image: url("../images/fond.jpg");
+    background-size: center;
+    background-position: center;
+    margin: 0 auto;
+    padding: 5em;
+}
+.about-content {
+    background-color: white;
+    width: 50%;
+    padding: 1em;
+}
+
+/* *****************************************************************
+CONTACT
+***************************************************************** */
+
+.contact h2{
+text-transform: uppercase;
+}
+.contact ul {
+padding: 0;}
+.contact-info li{
+font-style: italic;
+padding: 0.2em 0;
+}
+.contact-info a{
+text-decoration: none;
+color: #0096d0;
+}
+.contact-info i{
+padding-right: 0.3em;
+}
+
+.contact-social {
+    margin-bottom: 1em;
+}
+
+.contact-social ul {
+    display: flex;
+    font-size: 2em;
+    margin: 0;
+}
+.contact-social p{
+margin: 0;
+}
+.contact-social li {
+padding-right: 0.1em;
+}
+
+.fa-facebook-square {
+color: blue;
+}
+.fa-twitter-square {
+color: turquoise;
+}
+.fa-pinterest-square {
+color: crimson;
+}
+.fa-instagram-square {
+color: magenta;
+}
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+footer {
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #40ccea;
+}
+footer a {
+    color: white;
+}
