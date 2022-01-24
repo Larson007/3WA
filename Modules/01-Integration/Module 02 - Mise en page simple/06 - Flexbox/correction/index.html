@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Tester les principales propriétés de Flexbox">
+	<title>Flexbox</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Flexbox</h1>
+		<p>Tester les principales propriétés de Flexbox</p>
+	</header>
+
+	<main class="container">
+
+		<h2>Défaut</h2>
+		<ul class="cards parent test-default">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+		<h2>flex-direction: row-reverse</h2>
+		<ul class="cards parent test-direction-row-reverse">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>flex-direction: column</h2>
+		<ul class="cards parent test-direction-column">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>flex-direction: column-reverse</h2>
+		<ul class="cards parent test-direction-column-reverse">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+
+		<h2>nowrap</h2>
+		<ul class="cards parent test-nowrap">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>wrap</h2>
+		<ul class="cards parent test-wrap">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+
+		<h2>align-items: center</h2>
+		<ul class="cards parent test-align-items-center">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>align-items: flex-start</h2>
+		<ul class="cards parent test-align-items-start">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>align-items: flex-end</h2>
+		<ul class="cards parent test-align-items-end">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+
+		<h2>justify-content: center</h2>
+		<ul class="cards parent test-justify-content-center">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>justify-content: flex-start</h2>
+		<ul class="cards parent test-justify-content-start">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>justify-content: flex-end</h2>
+		<ul class="cards parent test-justify-content-end">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>justify-content: space-between</h2>
+		<ul class="cards parent test-justify-content-between">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>justify-content: space-around</h2>
+		<ul class="cards parent test-justify-content-around">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+		<h2>justify-content: space-evenly</h2>
+		<ul class="cards parent test-justify-content-evenly">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+
+		<h2>order</h2>
+		<ul class="cards parent test-order">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+		<h2>grow</h2>
+		<ul class="cards parent test-grow">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+		<h2>shrink</h2>
+		<ul class="cards parent test-shrink">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+			<li>E</li>
+			<li>F</li>
+		</ul>
+
+		<h2>grow</h2>
+
+		<section class="cards parent gutter test-grow">
+			<article>
+				<h2>flex-grow: 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, cumque, suscipit excepturi modi officiis expedita at ea aliquam perspiciatis quia perferendis eum quisquam! Fugit, a, illum, quae velit maxime vitae alias dicta minima voluptate dolores
+					cum corporis dolore et nam rem eius sunt sint ducimus explicabo quasi ex eligendi asperiores. Blanditiis explicabo fuga labore laudantium sed distinctio facilis.</p>
+			</article>
+			<article class="x2">
+				<h2>flex-grow: 2</h2>
+				<p>Asperiores, unde, cum velit obcaecati aspernatur a quisquam sit laudantium nisi nulla tempora repudiandae eos quidem esse eius dolorem et pariatur non iste fuga. Dolor, porro labore quaerat rerum numquam enim? Veniam, maxime, tempore aliquid culpa
+					nesciunt asperiores quasi aperiam labore ipsa veritatis doloremque deserunt nisi non eos ex quibusdam quod tempora ratione aliquam autem dolores est minima sunt? Assumenda, numquam amet enim perferendis corporis cum voluptas sint fuga repellat illo
+					a vel sunt.</p>
+			</article>
+			<article>
+				<h2>flex-grow: 1</h2>
+				<p>Sunt, asperiores molestias excepturi soluta aut officiis minima dolorum commodi quasi tempore dolore labore officia dolorem explicabo esse laudantium eveniet neque incidunt cupiditate fugiat vitae expedita aliquid sequi necessitatibus voluptatibus
+					quibusdam veritatis cum! Quae, modi, architecto.</p>
+			</article>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/* test */
+.test {
+	padding: 1em;
+}
+.test > article {
+	width: 50%;
+	float: left;
+}
+/* overflow */
+.overflow {
+	overflow: hidden;
+}
+
+/* clear */
+.clear {
+	clear: both;
+	border-bottom: 4px solid red;
+}
+
+/* clearfix */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	border-bottom: 4px solid purple;
+}

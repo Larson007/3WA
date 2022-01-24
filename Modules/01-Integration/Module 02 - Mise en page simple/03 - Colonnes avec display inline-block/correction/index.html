@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Faire des colonnes avec la propriété display inline-block">
+	<title>Colonnes avec display inline-block</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Colonnes avec display inline-block</h1>
+		<p>Faire des colonnes avec la propriété display inline-block</p>
+	</header>
+
+	<main class="container">
+
+		<h2>Parent sans hack</h2>
+		<section class="parent cards">
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+		</section>
+
+		<h2>Avec article collés</h2>
+		<section class="parent cards">
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+		</section>
+
+		<h2>Avec commentaire entre les articles</h2>
+		<section class="parent cards">
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article><!--
+			--><article>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+		</section>
+
+		<h2>Méthode CSS pure</h2>
+		<section class="parent cards hack-css">
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+		</section>
+
+		<h2>Méthode CSS pure + vertical-align: top</h2>
+		<section class="parent cards hack-css valign">
+			<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article>Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ratione incidunt eos eveniet cupiditate possimus accusantium quod amet inventore officia!</article>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Le template des démos du module 1">
 	<link rel="stylesheet" href="css/common-v2.css">
 	<link rel="stylesheet" href="css/theme.css">
-	<title>Template module 2</title>
+	<title>Un formulaire simple</title>
 </head>
+
 <body>
-<!-- &lt;&gt; -->
+	<!-- &lt;&gt; -->
 	<header class="header">
 		<h1>Module 2.9 - Un formulaire simple</h1>
 		<p>Le template des démos du module 2</p>
 	</header>
-	
-	<main>
 
+	<main class="container">
+		<form action="" method="get">
+			<fieldset class="form-group form-coord">
+				<legend>Mes coordonnées</legend>
+				<div class="field">
+					<label for="prenom">Prénom</label>
+					<input type="text" name="prenom" id="prenom">
+				</div>
+				<div class="field">
+					<label for="nom">Nom</label>
+					<input type="nom" name="nom" id="nom">
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+				</div>
+
+			</fieldset>
+
+			<fieldset class="form-group form-text">
+				<legend>Ma demande</legend>
+				<select name="demande">
+					<option value="0">Choisir l'objet de ma demande...</option>
+					<option value="q">Question d'ordre général</option>
+					<option value="g">Déclarer un bug gênant</option>
+					<option value="b">Déclarer un bug bloquant</option>
+
+				</select>
+				<textarea name="area" id="area" cols="30" rows="5"></textarea>
+			</fieldset>
+
+			<div class="form-group form-btn">
+				<button type="submit">Valider le formulaire</button>
+			</div>
+		</form>
 	</main>
 
 	<footer class="footer">
-		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
-		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy"
+					src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license"
+				href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par
+			Stephane Pereck.</p>
 	</footer>
-	
+
 </body>
+
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Le modèle de boîte</title>
+	<meta name="description" content="Découverte du modèle de boîte avec margin, padding, border et box-sizing.">
+	<link rel="stylesheet" href="css/common-v1.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Le modèle de boîte</h1>
+		<p>Découverte du modèle de boîte avec margin, padding, border et box-sizing.</p>
+	</header>
+	<main>
+		<article class="intro">
+			<p>Une boîte définie en bloc suivra les règles suivantes :</p>
+			<ul>
+				<li>La boîte s'étend et rempli <strong>100% de la largeur</strong> disponible de son élément parent.</li>
+				<li>On peut lui attribuer une <strong>largeur</strong> (width, min-width, max-width) et une <strong>hauteur</strong> (height, min-height, max-height).</li>
+				<li>La propriété <strong>margin</strong> correspond à la <em>marge externe</em>.</li>
+				<li>La propriété <strong>padding</strong> correspond à la <em>marge interne</em>.</li>
+				<li>La propriété <strong>border</strong> ajoute une <em>bordure</em>.</li>
+				<li>Par défaut, quand la propriété <strong>box-sizing</strong> n'est pas définie avec la valeur <strong>border-box</strong>, le padding et le border s'ajoutent à la largeur de la boîte.</li>
+		</article>
+		<article class="demo">
+			<div class="box box1">
+				<p>Voici une 1<sup>ère</sup> boîte.</p>
+			</div>
+			<div class="box box2">
+				<p>Voici une 2<sup>ème</sup> boîte avec utilisation de margin.</p>
+			</div>
+			<div class="box box3">
+				<p>Voici une 3<sup>ème</sup> boîte avec utilisation de padding.</p>
+			</div>
+			<div class="box box4">
+				<p>Voici une 4<sup>ème</sup> boîte avec utilisation de padding + border.</p>
+			</div>
+			<div class="box box5">
+				<p>Voici une 5<sup>ème</sup> boîte avec utilisation de margin + padding + border.</p>
+			</div>
+			<div class="box box6">
+				<p>Voici une 6<sup>ème</sup> boîte avec utilisation de margin + padding + border + box-sizing: border-box.</p>
+			</div>
+		</article>
+	</main>
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique" target="_blank">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.consultantweb.eu" target="_blank">Christiane Dumont</a>.</p>
+	</footer>
+</body>
+
+</html>

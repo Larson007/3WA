@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Faire des tableaux simples et complexes">
+	<title>Les tableaux</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Les tableaux</h1>
+		<p>Faire des tableaux simples et complexes</p>
+	</header>
+
+	<main class="container">
+
+		<article>
+			<h2>Un tableau simple</h2>
+			<table class="table">
+				<tr>
+					<th>Entête 1</th>
+					<th>Entête 2</th>
+					<th>Entête 3</th>
+					<th>Entête 4</th>
+				</tr>
+				<tr>
+					<td>Case 1</td>
+					<td>Case 2</td>
+					<td>Case 3</td>
+					<td>Case 4</td>
+				</tr>
+				<tr>
+					<td>Case 5</td>
+					<td>Case 6</td>
+					<td>Case 7</td>
+					<td>Case 8</td>
+				</tr>
+			</table>
+
+			<h3>Le même tableau avec des cases fusionnées</h3>
+			<table class="table">
+				<tr>
+					<th>Entête 1</th>
+					<th>Entête 2</th>
+					<th>Entête 3</th>
+					<th>Entête 4</th>
+				</tr>
+				<tr>
+					<td>Case 1</td>
+					<td colspan="2">Case 2</td>
+					<td rowspan="2">Case 4</td>
+				</tr>
+				<tr>
+					<td colspan="2">Case 5</td>
+					<td>Case 7</td>
+				</tr>
+			</table>
+		</article>
+
+		<article>
+			<h2>Un tableau plus complexe</h2>
+			<table class="regions">
+				<caption>Régions françaises</caption>
+				<thead>
+					<tr>
+						<th>Nom</th>
+						<th>Code ISO</th>
+						<th>Code INSEE</th>
+						<th>Superficie (km2)</th>
+						<th>Population 2020</th>
+						<th>Nombre de communes</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="3">Total</td>
+						<td>543 941</td>
+						<td>64 897 954</td>
+						<td>34 839</td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>Auvergne-Rhône-Alpes</td>
+						<td>FR-ARA</td>
+						<td>84</td>
+						<td>69 711</td>
+						<td>8 032 377</td>
+						<td>4 030</td>
+					</tr>
+					<tr>
+						<td>Bourgogne-Franche-Comté</td>
+						<td>FR-BFC</td>
+						<td>27</td>
+						<td>47 784</td>
+						<td>2 783 039</td>
+						<td>3 702</td>
+					</tr>
+					<tr>
+						<td>Bretagne</td>
+						<td>FR-BRE</td>
+						<td>53</td>
+						<td>27 208</td>
+						<td>3 340 379</td>
+						<td>1 208</td>
+					</tr>
+					<tr>
+						<td>Centre-Val de Loire</td>
+						<td>FR-CVL</td>
+						<td>24</td>
+						<td>39 151</td>
+						<td>2 559 073</td>
+						<td>1 757</td>
+					</tr>
+					<tr>
+						<td>Corse</td>
+						<td>FR-COR</td>
+						<td>94</td>
+						<td>8 680</td>
+						<td>344 679</td>
+						<td>360</td>
+					</tr>
+					<tr>
+						<td>Grand Est</td>
+						<td>FR-GES</td>
+						<td>44</td>
+						<td>57 441</td>
+						<td>5 511 747</td>
+						<td>5 121</td>
+					</tr>
+					<tr>
+						<td>Hauts-de-France</td>
+						<td>FR-HDF</td>
+						<td>32</td>
+						<td>31 806</td>
+						<td>5 962 662</td>
+						<td>3 789</td>
+					</tr>
+					<tr>
+						<td>Île-de-France</td>
+						<td>FR-IDF</td>
+						<td>11</td>
+						<td>12 011</td>
+						<td>12 278 210</td>
+						<td>1 268</td>
+					</tr>
+					<tr>
+						<td>Normandie</td>
+						<td>FR-NOR</td>
+						<td>28</td>
+						<td>29 907</td>
+						<td>3 303 500</td>
+						<td>2 652</td>
+					</tr>
+					<tr>
+						<td>Nouvelle-Aquitaine</td>
+						<td>FR-NAQ</td>
+						<td>75</td>
+						<td>84 036</td>
+						<td>5 999 982</td>
+						<td>4 314</td>
+					</tr>
+					<tr>
+						<td>Occitanie</td>
+						<td>FR-OCC</td>
+						<td>76</td>
+						<td>72 724</td>
+						<td>5 924 858</td>
+						<td>4 454</td>
+					</tr>
+					<tr>
+						<td>Pays de la Loire</td>
+						<td>FR-PDL</td>
+						<td>52</td>
+						<td>32 082</td>
+						<td>3 801 797</td>
+						<td>1 238</td>
+					</tr>
+					<tr>
+						<td>Provence-Alpes-Côte d'Azur</td>
+						<td>FR-PAC</td>
+						<td>93</td>
+						<td>31 400</td>
+						<td>5 055 651</td>
+						<td>946</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</article>
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

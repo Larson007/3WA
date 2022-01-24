@@ -1,0 +1,151 @@
+ul[class*="test"] {
+	padding: 0;
+	list-style: none;
+}
+
+/* *************************
+flex-direction
+************************* */
+
+.test-default {
+	display: flex;
+}
+
+.test-direction-row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.test-direction-column {
+	display: flex;
+	flex-direction: column;
+}
+.test-direction-column-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* *************************
+flex-wrap
+************************* */
+
+.test-nowrap {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300px;
+}
+.test-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+/* *************************
+align-items
+************************* */
+
+.test-align-items-center {
+	display: flex;
+	align-items: center;
+}
+.test-align-items-start {
+	display: flex;
+	align-items: flex-start;
+}
+.test-align-items-end {
+	display: flex;
+	align-items: flex-end;
+}
+[class*="test-align-items"] li:nth-child(odd) {
+	line-height: 4em;
+}
+
+/* *************************
+justify-content
+************************* */
+
+.test-justify-content-center {
+	display: flex;
+	justify-content: center;
+}
+.test-justify-content-start {
+	display: flex;
+	justify-content: flex-start;
+}
+.test-justify-content-end {
+	display: flex;
+	justify-content: flex-end;
+}
+.test-justify-content-between {
+	display: flex;
+	justify-content: space-between;
+}
+.test-justify-content-around {
+	display: flex;
+	justify-content: space-around;
+}
+.test-justify-content-evenly {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* *************************
+order
+************************* */
+
+.test-order {
+	display: flex;
+}
+.test-order li:nth-child(1) {
+	order: 4;
+}
+.test-order li:nth-child(2) {
+	order: 2;
+}
+.test-order li:nth-child(3) {
+	order: 6;
+}
+.test-order li:nth-child(4) {
+	order: 1;
+}
+.test-order li:nth-child(5) {
+	order: 3;
+}
+.test-order li:nth-child(6) {
+	order: 5;
+}
+
+/* *************************
+grow
+************************* */
+
+.test-grow {
+	display: flex;
+}
+.test-grow > * {
+	flex-grow: 1;
+	flex-basis: 1em;
+}
+.test-grow .x2 {
+	flex-grow: 2;
+}
+.test-grow li:nth-child(3) {
+	flex-grow: 2;
+}
+
+/* *************************
+shrink
+************************* */
+
+.test-shrink {
+	display: flex;
+}
+
+.test-shrink > * {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 10em;
+}
+
+.test-shrink li:nth-child(3) {
+	flex-shrink: 6;
+}

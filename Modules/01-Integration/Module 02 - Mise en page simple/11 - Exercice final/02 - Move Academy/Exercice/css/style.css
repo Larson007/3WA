@@ -1,0 +1,320 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+/* https://fonts.google.com/specimen/Open+Sans?query=open+sans */
+/* https://fonts.google.com/specimen/Economica?query=economica */
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Open+Sans&display=swap");
+:root {
+    --clr1: #7e4a7c;
+    --clr2: #b878b5;
+    --clr3: #ffeefe;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #363636;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+a,
+button {
+    font-family: "Economica", sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--clr1);
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--clr2);
+}
+
+h3 {
+    font-size: 30px;
+    color: var(--clr1);
+    margin-top: 0;
+}
+
+.link {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--clr1);
+    padding: 0.5em 0.8em;
+    display: inline-block;
+}
+
+.form-btn {
+    font-size: 25px;
+}
+
+span {
+    color: var(--clr1);
+    font-style: italic;
+}
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+header img {
+    margin: 2em auto;
+    display: block;
+    width: 40%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: uppercase;
+    background-color: var(--clr1);
+    padding: 1em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 24px;
+}
+
+/*? *****************************************************************
+MAIN
+***************************************************************** */
+
+/* *****************************************************************
+ABOUT
+***************************************************************** */
+
+.about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.about-image,
+.about-texte,
+.about-list {
+    width: 30%;
+}
+
+.about-list ul {
+    list-style: none;
+}
+
+.about-list li {
+    padding: 0.5em 0;
+}
+
+.about-list i {
+    font-weight: bold;
+    color: var(--clr2);
+}
+
+.about h2 {
+    width: 100%;
+}
+
+.about p {
+    font-weight: bold;
+}
+
+.about p:first-child {
+    margin-top: 0;
+}
+
+/* *****************************************************************
+TEACHER
+***************************************************************** */
+
+.teachers {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.teacher-card {
+    display: flex;
+    flex-flow: row wrap;
+    width: 48%;
+    margin-bottom: 3em;
+}
+
+.teacher-card-image {
+    width: 50%;
+}
+
+.teacher-card-texte {
+    width: 50%;
+    font-weight: bold;
+}
+
+.teacher-card-texte a {
+    align-self: flex-end;
+}
+
+/* *****************************************************************
+CLASSES
+***************************************************************** */
+
+.tableau {
+    display: flex;
+    justify-content: center;
+}
+
+.table-day {
+    font-weight: bold;
+}
+
+.table-empty {
+    background-color: var(--clr3);
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: normal;
+}
+
+thead tr {
+    background-color: var(--clr1);
+    color: white;
+}
+
+td,
+th {
+    border: 1px solid var(--clr2);
+    padding: 0.8em 2em;
+    font-size: 0.8rem;
+}
+
+/* *****************************************************************
+BOOKING
+***************************************************************** */
+
+.formulaire {
+    padding: 1em;
+    border: 1px solid var(--clr2);
+    margin-bottom: 3em;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr3);
+    color: var(--clr1);
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 2em;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.form-user-name,
+.form-user-email {
+    width: 45%;
+}
+
+.form-user-name input,
+.form-user-email input {
+    width: 70%;
+    padding: 0.4em;
+}
+.form-user-name label,
+.form-user-email label {
+    width: 20%;
+    padding: 0.4em;
+}
+
+.form-teacher-name,
+.form-teacher-day,
+.form-teacher-session {
+    width: 30%;
+}
+
+.form-teacher-name select,
+.form-teacher-day select,
+.form-teacher-session select {
+    width: 70%;
+    border-color: var(--clr1);
+    padding: 0.4em;
+} 
+
+.form-teacher-name label,
+.form-teacher-day label,
+.form-teacher-session label {
+    width: 30%;
+    padding: 0.4em;
+} 
+
+.form-btn button {
+    display: block;
+    border: none;
+    margin: 0 auto;
+}
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+.social {
+    background-color: var(--clr1);
+    
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.social a {
+    padding: 0.5em;
+    margin: 1em 2em;
+    height: auto;
+}
+.social i {
+    color: white;
+    font-size: 1.5em;
+}
+
+.copyright {
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    font-size: 14px;
+}
+.copyright img {
+    width: 5%;
+}
+.copyright a {
+    color: white;
+}
+

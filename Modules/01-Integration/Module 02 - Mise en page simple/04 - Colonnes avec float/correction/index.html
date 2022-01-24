@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Faire des colonnes avec la propriété float">
+	<title>Colonnes avec float</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Colonnes avec float</h1>
+		<p>Faire des colonnes avec la propriété float</p>
+	</header>
+
+	<main class="container">
+
+		<h2>Parent sans clear ni overflow</h2>
+		<section class="parent test">
+			<article class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article class="card">Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+		</section>
+
+		<h2>Parent avec overflow</h2>
+		<section class="parent test overflow">
+			<article class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article class="card">Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+		</section>
+
+		<h2>Parent avec clear</h2>
+		<section class="parent test">
+			<article class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article class="card">Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+			<div class="clear"></div>
+		</section>
+
+		<h2>Parent avec clearfix</h2>
+		<section class="parent test clearfix">
+			<article class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo a dolorum quas quasi incidunt ducimus repudiandae sequi cum minus itaque.</article>
+			<article class="card">Eligendi, voluptates, culpa necessitatibus cum magni repellat impedit commodi ducimus veniam repudiandae sint nobis hic ab consequuntur vero? Est, suscipit!</article>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.parent > article {
+	width: 50%;
+	display: inline-block;
+}
+.hack-css {
+	font-size: 0;
+}
+.hack-css * {
+	font-size: initial;
+}
+.valign * {
+	vertical-align: top;
+}

@@ -1,0 +1,37 @@
+body {
+  line-height: 1.5;
+}
+
+.box {
+  background-color: #CCC;
+}
+
+.box2 {
+  margin: 2em;
+}
+
+.box3 {
+  padding: 2em;
+}
+
+.box4 {
+  padding: 2em;
+  border: 2px solid #DD5735;
+}
+
+.box5, .box6 {
+  width: 60%;
+}
+
+.box5 {
+  margin: 2em;
+  padding: 2em;
+  border: 2px solid #DD5735;
+}
+
+.box6 {
+  margin: 2em;
+  padding: 2em;
+  border: 2px solid #DD5735;
+  box-sizing: border-box;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Comprendre comment afficher et bien positionner une image de fond">
+	<title>Ajouter une image de fond</title>
+	<link rel="stylesheet" href="css/common-v2.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Ajouter une image de fond</h1>
+		<p>Comprendre comment afficher et bien positionner une image de fond</p>
+	</header>
+
+	<main class="container">
+
+		<article>
+			<h2>Image <em>versus</em> background</h2>
+			<p>L'image (ici le logo de la 3WA) est un élément &lt;img&gt;, c'est un contenu et sera référencée par les
+				moteurs de recherche. L'image de fond (les olives) est une décoration déclarée en dans la feuille de
+				style et NE sera PAS référencée par les moteurs de recherche.</p>
+			<p class="block bg-large"><img src="img/logo-3wa.png" alt="Logo 3WA"></p>
+		</article>
+
+		<article>
+			<h2>Répétition de l'image.</h2>
+			<pre class="code">background-repeat: repeat;</pre>
+			<p class="block bg-small bg-repeat">Du texte...</p>
+			<pre class="code">background-repeat: no-repeat;</pre>
+			<p class="block bg-small bg-repeat-no">Du texte...</p>
+			<pre class="code">background-repeat: repeat-x;</pre>
+			<p class="block bg-small bg-repeat-x">Du texte...</p>
+			<pre class="code">background-repeat: repeat-y;</pre>
+			<p class="block bg-small bg-repeat-y">Du texte...</p>
+		</article>
+
+		<article>
+			<h2>Ajustement de la taille de l'image du fond par rapport à son élément.</h2>
+			<pre class="code">background-size: contain;</pre>
+			<p class="block bg-large bg-repeat-no bg-size-contain">Du texte...</p>
+			<pre class="code">background-size: cover;</pre>
+			<p class="block bg-large bg-repeat-no bg-size-cover">Du texte...</p>
+			<pre class="code">background-size: 50%;</pre>
+			<p class="block bg-large bg-repeat-no bg-size-50">Du texte...</p>
+			<pre class="code">background-size: 80% 40%;</pre>
+			<p class="block bg-large bg-repeat-no bg-size-80-40">Du texte...</p>
+		</article>
+
+		<article>
+			<h2>Positionnement de l'image.</h2>
+			<pre class="code">background-position: center;</pre>
+			<p class="block bg-small bg-repeat-no bg-position-center">Du texte...</p>
+			<pre class="code">background-position: right top;</pre>
+			<p class="block bg-small bg-repeat-no bg-position-right-top">Du texte...</p>
+			<pre class="code">background-position: right bottom;</pre>
+			<p class="block bg-small bg-repeat-no bg-position-right-bottom">Du texte...</p>
+			<pre class="code">background-position: position 80% 40%;</pre>
+			<p class="block bg-small bg-repeat-no bg-position-80-40">Du texte...</p>
+		</article>
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy"
+					src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license"
+				href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par
+			Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,1 +1,70 @@
-/* Le code CSS de l'exercice dirigé */
+/** Form  **/
+.form-group, select, textarea {
+    margin: 2em;
+    padding: 1em;
+    font-size: 1.6rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+
+/** Form Coordonnées **/
+.field:nth-child(3) {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+legend {
+    padding: 0 1em;
+    font-size: 1.8rem;
+}
+.field {
+    padding: 1em 0;
+    display: flex;
+    
+}
+.field input {
+    width: 70%;
+}
+label {
+    width: 30%;
+    padding: 0.5em;
+}
+input {
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+}
+
+/** Form Demande **/
+.form-text {
+    display: flex;
+    flex-direction: column;
+}
+select, textarea {
+
+    box-sizing: content-box;
+    margin: 0.5em 0;
+    
+}
+
+/** Form Button **/
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 1em 2em;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #dd5735;
+    border: 1px solid #dd5735;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+button:hover {
+    color: #dd5735;
+    background-color: #fff;
+}
