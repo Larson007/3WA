@@ -1,0 +1,59 @@
+/* Le code CSS de la démo */
+
+h3 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1em;
+    color: black;
+}
+
+.header-page,
+.footer-page {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article {
+    display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+    /* Mettre ici les différentes règles concernées le desktop */
+
+    main {
+        padding: 0;
+        margin: 0 4em;
+    }
+    
+    article {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    /* Mettre ici les différentes règles concernées la tablette*/
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    article {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* Mettre ici les différentes règles concernées le mobile */
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    article {
+        width: 100%;
+    }
+}

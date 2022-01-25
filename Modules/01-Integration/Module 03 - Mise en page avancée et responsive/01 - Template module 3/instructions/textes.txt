@@ -1,0 +1,45 @@
+Template module 3
+Le template des démos du module 3 (feuille de style commune en version 3)
+
+Un exemple de titre h1
+Un exemple de titre h2
+Un exemple de titre h3
+Un exemple de texte dans un paragraphe contenant un Lien vide (dont l'adresse est simplement l'ancre vide #)
+
+Un exemple de div ayant la classe "parent"
+Un autre paragraphe
+
+Un exemple d'article
+Un autre paragraphe
+
+Un exemple de div avec la classe .card
+Un autre paragraphe
+
+Un exemple de div avec la classe .cards
+... et contenant plusieurs div
+Un autre paragraphe
+
+Un exemple de div avec la classe .cards et la classe .gutter
+... et contenant plusieurs div
+Un autre paragraphe
+
+Un élément <pre> avec la classe .code
+Un autre paragraphe
+
+Entête 1	Entête 2	Entête 3	Entête 4
+Pied 1	Pied 2	Pied 3	Pied 4
+Case 1	Case 2	Case 3	Case 4
+Case 5	Case 6	Case 7	Case 8
+Un autre paragraphe
+
+Mes coordonnées
+Prénom
+Nom
+Email
+Ma demande
+
+Choisir l'objet de ma demande...
+Valider le formulaire
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.
