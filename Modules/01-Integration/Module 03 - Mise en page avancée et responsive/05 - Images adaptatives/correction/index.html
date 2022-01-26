@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Images adaptatives avec les attributs srcset et sizes / l'élément &lt;picture&gt;">
+	<title>Images adaptatives</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Images adaptatives</h1>
+		<p>Images adaptatives avec les attributs srcset et sizes / l'élément &lt;picture&gt;</p>
+	</header>
+	<main class="container">
+		<article class="hd">
+			<h2>Démo srcset et descripteur x</h2>
+			<p>Le navigateur sélectionne la version HD de l'image si l'écran est HD.<br>
+				Si le navigateur ne reconnaît pas srcset ou si l'écran n'est pas HD, l'image chargée est celle de src.</p>
+			<img src="img/papillon-600.jpg" alt="Deux papillons posés sur des fleurs." srcset="img/papillon-600HD.jpg 2x">
+		</article>
+		<article class="desc-w">
+			<h2>Démo srcset et descripteur w</h2>
+			<p>J'indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère comme convenant le mieux.</p>
+			<img src="img/papillon-600HD.jpg" srcset="img/papillon-400.jpg 400w, img/papillon-600.jpg 600w, img/papillon-600HD.jpg 1200w" alt="Deux papillons posés sur des fleurs.">
+		</article>
+		<article class="sizes">
+			<h2>Démo srcset et sizes</h2>
+			<p>sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage.</p>
+			<img src="img/papillon-600HD.jpg" alt="Deux papillons posés sur des fleurs." srcset="img/papillon-400.jpg 400w, img/papillon-600.jpg 600w, img/papillon-600HD.jpg 1200w" sizes="(max-width: 480px) 400px, (max-width: 960px) 600px, (mmin-width: 960px) 1200px"><!-- (min-width: 900px) 400px -->
+		</article>
+		<picture>
+			<source media="(max-width: 768px)" srcset="img/clownfish-mobile.jpg, img/clownfish-mobile-hd.jpg 2x">
+			<source media="(max-width: 960px)" srcset="img/clownfish-tablette.jpg, img/clownfish-tablette-hd.jpg 2x">
+			<source media="(max-width: 1024px)" srcset="img/clownfish-desktop.jpg, img/clownfish-desktop-hd.jpg 2x">
+			<source media="(min-width: 1025px)" srcset="img/clownfish.jpg">
+			<img src="img/clownfish.jpg" alt="Image par défaut pour les navigateurs ne prenant pas en charge picture">
+		</picture>
+	</main>
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.cath2nos.com">Catherine Denos</a>.</p>
+	</footer>
+</body>
+
+</html>

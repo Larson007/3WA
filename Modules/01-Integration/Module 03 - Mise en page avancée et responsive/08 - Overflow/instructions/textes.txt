@@ -1,0 +1,25 @@
+Overflow
+Gestion du dépassement avec overflow et text-overflow
+
+Avec la valeur "visible"
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae nobis, tempore ex porro voluptatum quod error ad quam! Earum culpa, mollitia nostrum itaque pariatur sapiente consectetur, commodi explicabo cumque ut repellendus esse error ea excepturi vel? Incidunt consequatur, voluptatibus reprehenderit fugiat facilis labore hic magnam dolorem? Laudantium nostrum eligendi quia ipsam nisi nulla, consequatur aperiam autem eos doloribus adipisci!
+
+Avec la valeur "hidden"
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae nobis, tempore ex porro voluptatum quod error ad quam! Earum culpa, mollitia nostrum itaque pariatur sapiente consectetur, commodi explicabo cumque ut repellendus esse error ea excepturi vel? Incidunt consequatur, voluptatibus reprehenderit fugiat facilis labore hic magnam dolorem? Laudantium nostrum eligendi quia ipsam nisi nulla, consequatur aperiam autem eos doloribus adipisci!
+
+Avec la valeur "scroll"
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae nobis, tempore ex porro voluptatum quod error ad quam! Earum culpa, mollitia nostrum itaque pariatur sapiente consectetur, commodi explicabo cumque ut repellendus esse error ea excepturi vel? Incidunt consequatur, voluptatibus reprehenderit fugiat facilis labore hic magnam dolorem? Laudantium nostrum eligendi quia ipsam nisi nulla, consequatur aperiam autem eos doloribus adipisci!
+
+Avec la valeur "auto"
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae nobis, tempore ex porro voluptatum quod error ad quam! Earum culpa, mollitia nostrum itaque pariatur sapiente consectetur, commodi explicabo cumque ut repellendus esse error ea excepturi vel? Incidunt consequatur, voluptatibus reprehenderit fugiat facilis labore hic magnam dolorem? Laudantium nostrum eligendi quia ipsam nisi nulla, consequatur aperiam autem eos doloribus adipisci!
+
+Avec "text-overflow" et "ellipsis"
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Avec "text-overflow" et " "
+Ne fonctionne que sur Firefox
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos et Stephane Pereck.

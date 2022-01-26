@@ -1,0 +1,325 @@
+Grid Layout (propriétés)
+Les principales propriétés de CSS Grid layout
+
+Simple
+Item 1
+Item 2
+Item 3
+Item 4
+Simple alt
+Item 1
+Item 2
+Item 3
+Item 4
+Repeat avec 12 cases
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Gap
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Gap alt
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify items: center
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify items: start
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify items: end
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align items: center
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align items: start
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align items: end
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align items: stretch
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify content: center
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify content: start
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify content: end
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify content: between
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Justify content: around
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: center
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: start
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: end
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: space-between
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: space-around
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Align content: space-evenly
+Item 1
+Item 2
+Item 3
+Item 4
+Item 5
+Item 6
+Item 7
+Item 8
+Item 9
+Item 10
+Item 11
+Item 12
+Grid items
+Header
+Main article
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.
+
+Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.
+
+Sidebar
+Footer
+Grid items alt
+Header
+Main article
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.
+
+Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.
+
+Sidebar
+Footer
+Grid areas
+Header
+Main article
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.
+
+Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.
+
+Sidebar
+Footer
+Grid areas alt
+Header
+Main article
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.
+
+Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.
+
+Sidebar
+Footer
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

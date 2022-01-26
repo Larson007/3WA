@@ -1,0 +1,29 @@
+/* Le code CSS de la démo */
+
+body {
+    background-image: url("../images/phare.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 4em auto;
+    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+article {
+width: 50%;
+background: none;
+display: block;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}

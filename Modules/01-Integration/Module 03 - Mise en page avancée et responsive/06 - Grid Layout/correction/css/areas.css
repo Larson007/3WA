@@ -1,0 +1,70 @@
+
+/* *****************************************************************
+ SECTION
+***************************************************************** */
+
+.container {
+	padding: 2em;
+}
+
+h2,
+h3 {
+	margin: 0;
+}
+
+section header,
+section footer,
+section nav,
+section aside {
+	padding: 1em;
+}
+
+section nav a {
+	display: block;
+	margin: 1rem 0;
+	padding: 1rem;
+	border: 1px solid;
+}
+
+section aside a {
+	font-size: 3rem;
+}
+
+section aside a:hover {
+	text-decoration: none;
+}
+
+/* *****************************************************************
+ GRID
+***************************************************************** */
+
+.grid {
+	display: grid;
+	grid-template-columns: 17% auto 17%;
+	grid-template-areas: 
+		"header header header"
+		"nav main aside"
+		"footer footer footer";
+	gap: 1rem;
+}
+
+.grid header {
+	grid-area: header;
+	background-color: #ddd;
+}
+.grid nav {
+	grid-area: nav;
+	background-color: #fc3;
+}
+.grid main {
+	grid-area: main;
+	background-color: #fff;
+}
+.grid aside {
+	grid-area: aside;
+	background-color: #fa3;
+}
+.grid footer {
+	grid-area: footer;
+	background-color: #bbb;
+}

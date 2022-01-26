@@ -1,0 +1,7 @@
+/* Le code CSS de la démo */
+
+article img, article picture {
+max-width: 100%;
+width: auto;
+height: auto;
+}

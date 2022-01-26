@@ -1,0 +1,20 @@
+Images adaptatives
+Images adaptatives avec les attributs srcset et sizes / l'élément <picture>
+
+Démo srcset et descripteur x
+Le navigateur sélectionne la version HD de l'image si l'écran est HD.
+Si le navigateur ne reconnaît pas srcset ou si l'écran n'est pas HD, l'image chargée est celle de src.
+
+Deux papillons posés sur des fleurs.
+Démo srcset et descripteur w
+J'indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère comme convenant le mieux.
+
+Deux papillons posés sur des fleurs.
+Démo srcset et sizes
+sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage.
+
+Deux papillons posés sur des fleurs.
+Image par défaut pour les navigateurs ne prenant pas en charge picture
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

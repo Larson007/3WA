@@ -1,0 +1,99 @@
+/* Le code CSS de la démo */
+
+/*****************************************************************/
+/**                         GRID                                **/
+/*****************************************************************/
+
+.grid {
+    margin: 0.5em 0;
+    display: grid;
+    grid-template-rows: repeat(auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    gap: 0.5em;
+}
+
+.bloc-header {
+    background-color: #ddd;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 6;
+}
+
+nav {
+    background-color: #fc3;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+}
+
+main {
+    background-color: #fff;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5;
+}
+
+aside {
+    background-color: #fa3;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-row-end: 4;
+    grid-column-end: 6;
+}
+
+.bloc-footer {
+    background-color: #bbb;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 6;
+}
+
+/*****************************************************************/
+/**                       COMMUN                                **/
+/*****************************************************************/
+
+h2 {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.grid * {
+    padding: 0.5em 1em;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul li {
+    border: 1px solid red;
+    margin: 0.5em 0;
+    padding: 0.5em !important;
+    color: red;
+}
+
+aside ul {
+    display: flex;
+    padding: 0 !important;
+}
+
+aside ul li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+aside ul li a {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+aside ul li a i {
+    font-size: 2em;
+    padding: 0 !important;
+    margin: 0 0.15em;
+}

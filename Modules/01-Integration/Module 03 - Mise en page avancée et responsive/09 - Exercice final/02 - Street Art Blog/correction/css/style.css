@@ -1,0 +1,504 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+
+/* *****************************************************************
+GENERAL
+***************************************************************** */
+
+body {
+	background-color: #ededed;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.5;
+	color: #1d1e3d;
+}
+
+img {
+	max-width: 100%;
+	width: auto; 
+	height: auto; 
+}
+
+main, .header {
+	background-color: #fff;
+	padding: 3rem;
+}
+
+nav, 
+h1, 
+h2, 
+h3, 
+q {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mali', cursive;
+}
+
+ul {
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1rem 0;
+}
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+header {
+	text-align: center;
+}
+
+.header {
+	padding: 2rem 0;
+}
+nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+nav a {
+	font-size: 2.4rem;  
+	font-weight: 600;
+	color: #1d1e3d;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-left: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	transition: all 0.7s;
+	margin-bottom: 1rem;
+}
+
+nav a:hover, 
+nav a:focus, 
+nav a.current {
+	border-left: #037d9d 3px solid;
+	border-bottom: #037d9d 3px solid;
+	background-color: #ededed;
+}
+
+.banner-accueil, .banner-galerie {
+	background: url(../img/banner1.jpg) no-repeat center center;
+	background-size: cover;	
+	padding: 10rem 3rem;	
+	text-align: center;
+}
+
+h1 {
+	color: #db0059;
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.5;
+	background-color: rgba(255,255,255,.8);
+	display: inline-block;
+	padding: 2rem;
+}
+
+/* *****************************************************************
+BLOCKQUOTE
+***************************************************************** */
+
+blockquote, 
+q {
+	quotes: none;
+}
+
+blockquote::before, 
+blockquote::after,
+q:before, 
+q:after {
+	content: '';
+	content: none;
+}
+
+blockquote {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 3rem 5rem;
+	padding: 3rem 2rem;
+	border-left: 3px solid #037d9d;
+	border-bottom: 3px solid #037d9d;
+	background-color: #ededed;
+}
+
+q, 
+cite {
+	display: block;
+	line-height: 1.5;
+}
+
+q {
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+cite {
+	font-style: normal;
+	font-size: 2rem;
+}
+
+/* *****************************************************************
+ARTICLES
+***************************************************************** */
+
+h2 {
+	margin-top: 5rem;
+	font-size: 2.8rem;  
+	text-align: center;
+}
+
+.actu h2, 
+.interviews h2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.actu h2::before, 
+.interviews h2::before {
+	font-size: 4rem; 
+	font-family: 'FontAwesome';
+}
+
+.actu h2::before {
+	color: #037d9d; 
+	content:"\f073";
+}
+
+article {
+	margin-top: 3rem;
+	background-color: #ededed;
+	padding: 2rem;
+	overflow: hidden;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+.actu h3 {
+	color: #037d9d;
+}
+
+.date {
+	font-size: 1.4rem;
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+article img {
+	margin-bottom: 2rem;
+}
+
+.interviews h2::before {
+	color: #db0059;
+	content:"\f130";
+}
+
+.interviews h3 {
+	color: #db0059;
+}
+
+.suite {
+	background-color: #1d1e3d;
+	color: white;
+	text-decoration: none;
+	border-left: transparent 3px solid;
+	border-bottom: transparent 3px solid;
+	display: inline-block;
+	padding: 1rem 2rem;
+	float: right;
+}
+
+.suite:hover, 
+.suite:focus {
+	color: #1d1e3d;
+	background-color: white;
+	border-left: #1d1e3d 3px solid;
+	border-bottom: #1d1e3d 3px solid;
+}
+
+/* *****************************************************************
+PAGE GALERIE
+***************************************************************** */
+
+.banner-galerie {
+	background: url(../img/banner2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.galerie {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+	margin-top: 5rem;
+}
+
+.portrait {
+	grid-row: span 2;
+}
+
+.galerie img {
+	align-self: stretch;
+	justify-self: stretch;
+	object-fit: cover;
+}
+
+aside {
+	margin-top: 5rem;
+}
+
+.list-blog, 
+.events {
+	background-color: #ededed;
+	padding: 2rem 3rem;
+	margin-bottom: 2rem;
+}
+
+.list-blog h2, 
+.events h2 {
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list-blog h2::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 5rem;
+	color: #db0059;
+	content: "\f086";
+}
+
+.list-blog li {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 2;
+}
+
+.list-blog li::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	content: "\f100";
+	color: #db0059;
+	margin-right: 1rem;
+}
+
+.events {
+	padding-right: 1rem;
+}
+
+.events h2::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 5rem;
+	color: #037d9d;
+	content: "\f073";
+}
+
+.events ul {
+	height: 200px;
+	overflow: auto;
+	padding-right: 1rem
+}
+
+.events li {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.events li::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	content: "\f00c";
+	margin-right: 1rem;
+	color: #037d9d;
+}
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+footer {
+	color: white;
+	background-color: #db0059;
+	padding: 2rem;
+}
+
+.formulaire, 
+.social {
+	padding: 2rem 0;
+}
+
+.formulaire h3, 
+.social h3 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+form {
+	color: white;
+	padding: 2rem 2rem 3rem 2rem;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+input {
+	border: 0;
+	padding: 1rem;
+	color: white;
+}
+
+label {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+input[type="email"] {
+	background-color: #f2d1de; 
+	margin-bottom: 2rem;
+	color: #db0059;
+	width: 80%;
+	border-radius: 0.5em;
+}
+
+input[type="submit"] {
+	border:0;
+	background-color: #fff;
+	color: #db0059;
+	margin: 0 auto;
+}
+
+.pictos {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.pictos a {
+	margin: 0 1.5rem;
+	text-decoration: none;
+}
+
+.pictos a::before {
+	font-family: 'Font Awesome 5 Brands';
+	font-weight: 600;
+	color: white;
+	font-size: 3rem;
+}
+
+.facebook::before {
+	content:"\f09a";
+}
+
+.twitter::before {
+	content:"\f099";
+}
+
+.instagram::before {
+	content:"\f16d";
+}
+
+.dribbble::before {
+	content:"\f17d";
+}
+
+footer p {
+	text-align: center;
+	margin: 3rem 0;
+}
+
+/* *****************************************************************
+LICENSE
+***************************************************************** */
+
+.license {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+
+.license img {
+	width: 65px;
+	height: auto;
+}
+
+.license a {
+	text-decoration: none;
+	color: #DD5735;
+}
+
+/* *****************************************************************
+TABLETTE
+***************************************************************** */
+
+@media screen and (min-width: 780px) {
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+/* *****************************************************************
+DESKTOP
+***************************************************************** */
+
+@media screen and (min-width: 980px) {
+	.wrapper {
+		max-width: 1100px;
+		margin: auto;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem;
+	}
+	.header img {
+		width: 70%;
+	}
+	nav li {
+		margin-left: 1rem;
+	}
+	blockquote {
+		margin: 3rem 10rem;
+	}
+	.actu, 
+	.interviews,
+	aside {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	article {
+		width: 48%;
+	}
+	section h2 {
+		flex: 1 0 100%;
+	}
+	footer .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.formulaire, 
+	.social{
+		width: 48%;
+	}
+}

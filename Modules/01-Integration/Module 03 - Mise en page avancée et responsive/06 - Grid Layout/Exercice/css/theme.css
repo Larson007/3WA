@@ -1,0 +1,62 @@
+/* Le code CSS de la démo */
+
+.grid {
+    display: grid; 
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto; 
+    grid-gap: 0.5em;
+    height: auto;
+}
+
+
+.bloc-header {
+    background-color: #ddd;
+    padding: 0 1em;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 6;
+}
+
+
+.bloc-article-1 {
+    background-color: #fff;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 4;
+}
+
+.bloc-article-2 {
+    background-color: #fc3;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    grid-column-end: 5;
+}
+
+.bloc-article-3 {
+    background-color: #fa3;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-row-end: 3;
+    grid-column-end: 6;
+}
+
+.bloc-article-4 {
+    background-color: #f83;
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 6;
+}
+
+.bloc-footer {
+    background-color: #bbb;
+    padding:  0 1em;
+    font-weight: bold;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 6;
+}

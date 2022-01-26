@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Le template des démos du module 3 (feuille de style commune en version 3)">
+	<title>Images adaptatives</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+<!-- &lt; &gt; -->
+
+<body>
+
+	<header class="header">
+		<h1>Module 3.5 - Images adaptatives</h1>
+		<p>Images adaptatives avec les attributs srcset et sizes / l'élément &lt;picture&gt;
+		</p>
+	</header>
+
+	<main class="container">
+		<article>
+			<h2>Démo srcset et descripteur x</h2>
+			<p>Le navigateur sélectionne la version HD de l'image si l'écran est HD.
+			</p>
+			<p>Si le navigateur ne reconnaît pas srcset ou si l'écran n'est pas HD, l'image chargée est celle de src.
+			</p>
+			<img src="images/papillon-600.jpg" srcset="images/papillon-600HD.jpg 2x"
+				alt="Deux papillons posés sur des fleurs">
+		</article>
+
+		<article>
+			<h2>Démo srcset et descripteur w</h2>
+			<p>J'indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère comme
+				convenant le mieux.
+			</p>
+			<img src="images/papillon-600HD.jpg" alt="" srcset="images/papillon-400.jpg 900w">
+		</article>
+
+		<article>
+			<h2>Démo srcset et sizes</h2>
+			<p>sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage.
+			</p>
+			<picture>
+				<source media="(max-width: 768px)" srcset="images/papillon-400.jpg">
+				<source media="(max-width: 960px)" srcset="images/papillon-600.jpg">
+				<source media="(min-width: 961px)" srcset="images/papillon-600HD.jpg">
+				<img src="images/papillon-600HD.jpg" alt="Deux papillons posés sur des fleurs">
+			</picture>
+		</article>
+
+		<article>
+			<picture>
+				<source media="(max-width: 768px)" srcset="images/clownfish-mobile.jpg">
+				<source media="(max-width: 960px)" srcset="images/clownfish-tablette.jpg">
+				<source media="(min-width: 961px)" srcset="images/clownfish-desktop.jpg">
+				<img src="images/clownfish.jpg" alt="clownfish">
+			</picture>
+		</article>
+
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy"
+					src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license"
+				href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par
+			Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

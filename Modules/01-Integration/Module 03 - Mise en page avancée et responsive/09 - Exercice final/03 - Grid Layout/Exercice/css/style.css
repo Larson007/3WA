@@ -1,0 +1,14 @@
+@media screen and (min-width: 1200px) {
+    /* Mettre ici les différentes règles concernées le desktop */
+
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+    /* Mettre ici les différentes règles concernées la tablette*/
+
+}
+
+@media screen and (max-width: 780px) {
+    /* Mettre ici les différentes règles concernées le mobile */
+
+}

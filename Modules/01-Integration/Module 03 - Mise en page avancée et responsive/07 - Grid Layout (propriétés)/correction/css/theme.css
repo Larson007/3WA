@@ -1,0 +1,222 @@
+/* Le code CSS de la démo */
+
+/* template */
+.test-simple {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 150px auto;
+}
+.test-simple-alt {
+	display: grid;
+	grid-template: auto / 150px auto;
+}
+.test-repeat {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(4, auto);
+}
+
+/* gap */
+.test-gap {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	row-gap: 2em;
+	column-gap: 4px;
+}
+.test-gap-alt {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	gap: 2em 4px;
+}
+
+/* justify-items */
+.test-justify-items-center {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-items: center;
+}
+.test-justify-items-start {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-items: start;
+}
+.test-justify-items-end {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-items: end;
+}
+
+/* align-items */
+.test-align-items-center {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-items: center;
+	height: 50vh;
+}
+.test-align-items-start {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-items: start;
+	height: 50vh;
+}
+.test-align-items-end {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-items: end;
+	height: 50vh;
+}
+
+/* justify-content */
+.test-justify-content-center {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-content: center;
+}
+.test-justify-content-start {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-content: start;
+}
+.test-justify-content-end {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-content: end;
+}
+.test-justify-content-between {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-content: space-between;
+}
+.test-justify-content-around {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	justify-content: space-around;
+}
+
+/* align-content */
+.test-align-content-center {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-content: center;
+	height: 50vh;
+}
+.test-align-content-start {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-content: start;
+	height: 50vh;
+}
+.test-align-content-end {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-content: end;
+	height: 50vh;
+}
+.test-align-content-between {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-content: space-between;
+	height: 50vh;
+}
+.test-align-content-around {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	align-content: space-around;
+	height: 50vh;
+}
+
+/* template-items */
+.test-items {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	gap: 1em;
+}
+.test-items .area-header {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.test-items .area-main {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.test-items .area-sidebar {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+.test-items .area-footer {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+/* template-items alt */
+.test-items-alt {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	gap: 1em;
+}
+.test-items-alt .area-header {
+	grid-row: 1 / 2;
+	grid-column: 1 / 5;
+}
+.test-items-alt .area-main {
+	grid-row: 2 / 3;
+	grid-column: 1 / 3;
+}
+.test-items-alt .area-sidebar {
+	grid-row: 2 / 3;
+	grid-column: 4 / 5;
+}
+.test-items-alt .area-footer {
+	grid-row: 3 / 4;
+	grid-column: 1 / 5;
+}
+
+/* template-items */
+.test-areas {
+	display: grid;
+	grid-template: repeat(3, auto) / repeat(4, auto);
+	gap: 1em;
+}
+.test-areas .area-header {
+	grid-area: 1 / 1 / 2 / 5;
+}
+.test-areas .area-main {
+	grid-area: 2 / 1 / 3 / 3;
+}
+.test-areas .area-sidebar {
+	grid-area: 2 / 4 / 3 / 5;
+}
+.test-areas .area-footer {
+	grid-area: 3 / 1 / 4 / 5;
+}
+
+/* template-areas alt */
+.test-areas-alt {
+	display: grid;
+	/*grid-template: repeat(3, auto) / repeat(4, auto);*/
+	grid-template-areas:
+		"header header header header"
+		"main main . sidebar"
+		"footer footer footer footer";
+	gap: 1em;
+}
+.test-areas-alt .area-header {
+	grid-area: header;
+}
+.test-areas-alt .area-main {
+	grid-area: main;
+}
+.test-areas-alt .area-sidebar {
+	grid-area: sidebar;
+}
+.test-areas-alt .area-footer {
+	grid-area: footer;
+}

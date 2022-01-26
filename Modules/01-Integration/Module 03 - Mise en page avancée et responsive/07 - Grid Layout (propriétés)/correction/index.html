@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Les principales propriétés de CSS Grid layout">
+	<title>Grid layout</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Grid layout</h1>
+		<p>Les principales propriétés de CSS Grid layout</p>
+	</header>
+
+	<main class="main container">
+
+		<h2>Simple</h2>
+		<section class="cards parent test-simple">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+		</section>
+
+		<h2>Simple alt</h2>
+		<section class="cards parent test-simple-alt">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+		</section>
+
+		<h2>Repeat avec 12 cases</h2>
+		<section class="cards parent test-repeat">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Gap</h2>
+		<section class="cards parent test-gap">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Gap alt</h2>
+		<section class="cards parent test-gap-alt">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify items: center</h2>
+		<section class="cards parent test-justify-items-center">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify items: start</h2>
+		<section class="cards parent test-justify-items-start">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify items: end</h2>
+		<section class="cards parent test-justify-items-end">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align items: center</h2>
+		<section class="cards parent test-align-items-center">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align items: start</h2>
+		<section class="cards parent test-align-items-start">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align items: end</h2>
+		<section class="cards parent test-align-items-end">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify content: center</h2>
+		<section class="cards parent test-justify-content-center">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify content: start</h2>
+		<section class="cards parent test-justify-content-start">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify content: end</h2>
+		<section class="cards parent test-justify-content-end">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify content: between</h2>
+		<section class="cards parent test-justify-content-between">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Justify content: around</h2>
+		<section class="cards parent test-justify-content-around">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align content: center</h2>
+		<section class="cards parent test-align-content-center">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align content: start</h2>
+		<section class="cards parent test-align-content-start">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align content: end</h2>
+		<section class="cards parent test-align-content-end">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align content: between</h2>
+		<section class="cards parent test-align-content-between">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Align content: around</h2>
+		<section class="cards parent test-align-content-around">
+			<article>Item 1</article>
+			<article>Item 2</article>
+			<article>Item 3</article>
+			<article>Item 4</article>
+			<article>Item 5</article>
+			<article>Item 6</article>
+			<article>Item 7</article>
+			<article>Item 8</article>
+			<article>Item 9</article>
+			<article>Item 10</article>
+			<article>Item 11</article>
+			<article>Item 12</article>
+		</section>
+
+		<h2>Grid items</h2>
+		<section class="cards parent colors test-items">
+			<header class="area-header">Header</header>
+			<article class="area-main">
+				<h2>Main article</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.</p>
+				<p>Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.</p>
+			</article>
+			<aside class="area-sidebar">Sidebar</aside>
+			<footer class="area-footer">Footer</footer>
+		</section>
+
+		<h2>Grid items alt</h2>
+		<section class="cards parent colors test-items-alt">
+			<header class="area-header">Header</header>
+			<article class="area-main">
+				<h2>Main article</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.</p>
+				<p>Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.</p>
+			</article>
+			<aside class="area-sidebar">Sidebar</aside>
+			<footer class="area-footer">Footer</footer>
+		</section>
+
+		<h2>Grid areas</h2>
+		<section class="cards parent colors test-areas">
+			<header class="area-header">Header</header>
+			<article class="area-main">
+				<h2>Main article</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.</p>
+				<p>Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.</p>
+			</article>
+			<aside class="area-sidebar">Sidebar</aside>
+			<footer class="area-footer">Footer</footer>
+		</section>
+
+		<h2>Grid areas alt</h2>
+		<section class="cards parent colors test-areas-alt">
+			<header class="area-header">Header</header>
+			<article class="area-main">
+				<h2>Main article</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, provident tempore odio quas totam reiciendis quis numquam repellendus nisi nemo.</p>
+				<p>Minima, pariatur, architecto natus provident voluptatibus deleniti odio quae perferendis commodi vero alias debitis odit facilis distinctio necessitatibus dicta autem.</p>
+			</article>
+			<aside class="area-sidebar">Sidebar</aside>
+			<footer class="area-footer">Footer</footer>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>
