@@ -1,1 +1,49 @@
 /* Le code CSS de la démo */
+
+article {
+    margin-bottom: 5em;
+}
+
+.container-overflow {
+    max-width: 740px; /* On donne une largeur au container */
+    margin-left: auto; /* On centre son contenu */
+    margin-right: auto;
+}
+
+.bloc-large {
+    width: 500px;
+    height: 80px;
+}
+
+.bloc-small {
+    width: 240px;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-text-overflow p {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+
+}
+
+.overflow-ellipsis p {
+    text-overflow: "";
+    white-space: nowrap;
+    overflow: hidden;
+}

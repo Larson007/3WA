@@ -1,27 +1,290 @@
+/*********************************************/
+/**             STYLE COMMUN                **/
+/*********************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito&display=swap");
+:root {
+    --colr1: #00748d;
+    --colr2: #cb8606;
+    --colr3: #f9f9f9;
+    --txt: #414141;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--txt);
+    background-color: #ccc;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto 5em auto;
+}
+
+h1,
+h2,
+h3,
+nav {
+    font-family: "Fjalla One", sans-serif;
+}
+
+h1 {
+    color: var(--colr2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1::before {
+    content: "- ";
+    color: var(--colr1);
+    font-size: 30px;
+}
+
+h1::after {
+    content: " -";
+    color: var(--colr1);
+}
+
+article h2 {
+    color: var(--colr1);
+    font-size: 25px;
+    text-align: center;
+    padding: 2em 0;
+}
+
+article h2::before,
+h3::before {
+    content: "- ";
+    color: var(--colr2);
+}
+article h2::after,
+h3::after {
+    content: " -";
+    color: var(--colr2);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header nav * {
+    font-size: 20px;
+}
+
+/** header **/
+header, footer{
+    background-color: var(--colr1);
+}
+
+header nav {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    align-items: flex-end;
+}
+.nav-logo img {
+    margin-right: 0.5em;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.nav-link a {
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link a:hover,
+.active {
+    background-color: white !important;
+    color: var(--colr1) !important;
+}
+
+/** Main **/
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 70% 30%;
+    gap: 1em;
+}
+main h1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    margin-top: 3em;
+}
+
+.article-01 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    height: 100%
+}
+.article-02 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+}
+
+.article-03 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+.article-04 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+
+/** Actualité **/
+
+.actu {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.actu h2 {
+    width: 100%;
+}
+.actu img {
+    display: block;
+    max-width: 40%;
+    height: 100%;
+}
+
+.actu-texte {
+    width: 60%;
+    padding-left: 1em;
+}
+
+.actu-texte p:first-child {
+    margin-bottom: 1em;
+}
+
+.actu a {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    background-color: var(--colr1);
+}
+
+/** Témoignages **/
+
+.temoignages {
+    height: 400px;
+    overflow: auto;
+}
+
+.citation {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    row-gap: 0.5em;
+    margin: 0.5em;
+}
+
+.citation * {
+    padding: 0.2em;
+}
+
+.citation-border {
+    display: block;
+    border-bottom: 4px solid var(--colr2);
+    width: 40%;
+    margin: 2em auto;
+}
+
+/** Tweet **/
+
+.tweet li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5em 0;
+}
+.tweet li img {
+    margin-right: 0.2em;
+}
+
+/** footer **/
+footer nav {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-rs {
+list-style: none;
+display: flex;
+}
+
+.nav-rs li, .nav-rs a{
+margin: 0;
+padding: 0;
+}
+.nav-rs i {
+color: white;
+font-size: 1.8em;
+margin-left: 1em;
+}
+
 @media screen and (min-width: 1500px) {
     /* Mettre ici les différentes règles concernées le desktop-large */
-
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
     /* Mettre ici les différentes règles concernées le desktop */
-
 }
 
 @media screen and (min-width: 780px) and (max-width: 1100px) {
     /* Mettre ici les différentes règles concernées la tablette*/
-
 }
 
 @media screen and (min-width: 630px) and (max-width: 780px) {
     /* Mettre ici les différentes règles concernées le mobile */
-
 }
 
 @media screen and (max-width: 630px) {
     /* Mettre ici les différentes règles concernées le mobile-small */
-
 }
-
-
-

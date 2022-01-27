@@ -24,12 +24,12 @@ Le contenu a un maximum de 1500px de large mais les fonds de couleur de l'entêt
 
 ## TAILLE DES POLICES
 
-- par défaut : 18px
-- titre du site : 20px
-- menu : 20px
-- titre de la page d'accueil : 30px et 20px
-- titre des pages intérieures : 30px
-- sous-titres : 25px
+- par défaut : 18px *
+- titre du site : 20px *
+- menu : 20px *
+- titre de la page d'accueil : 30px et 20px *
+- titre des pages intérieures : 30px *
+- sous-titres : 25px *
 - titres articles : 20px
 - textes colonne de droite : 16px
 - auteurs : 14px
