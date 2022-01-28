@@ -1,0 +1,53 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+.center {
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* *****************************************************************
+ TRANSFORM
+***************************************************************** */
+
+.scale {
+	position: relative;
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
+	border: 10px solid #DD5735;
+	border-radius: 50%;
+}
+
+.scale a {
+	display: block;
+	text-decoration: none;
+	color: #DD5735;
+ }
+
+.scale img {
+	vertical-align: top;
+	transition: all .5s;
+}
+
+.scale:hover img {
+	transform: scale(0.6);
+}
+
+.scale figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.scale:hover figcaption {
+	opacity: 1;
+	transform: scale(2) translateY(-.7em);
+}

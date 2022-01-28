@@ -1,0 +1,20 @@
+Transform, transition et animation
+Découverte des propriétés transform, transition et animation
+
+Transform
+Transform: translate
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Transform: scale
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Transform: rotate
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Transform: skew
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Transform: multiple
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Transition
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Animation
+OK
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Logo 3W Academy

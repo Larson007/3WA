@@ -1,0 +1,34 @@
+/* Le code CSS de la démo */
+.box {
+    background-color: gold;
+    color: #333;
+    display: block;
+    width: 200px;
+    height: auto;
+    padding: 1em;
+    margin: 0 auto;
+    transition: transform 0.10s ease-in-out;
+}
+
+/**animation**/
+.btn-animation, .btn-hack{
+    background-color: rgb(223, 58, 58);
+    color: white;
+    padding: 1em 2em;
+    border-radius: 3px;
+    border-color: rgb(223, 58, 58);
+}
+.btn-animation:active ~ .animation {
+    transform: translate(80%) scale(0.5) rotate(45deg) skew(15deg, 0deg);
+}
+
+/**hack**/
+#hack {
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    opacity: 0;
+}
+#hack:checked ~ .animation  {
+    transform: translate(80%);
+}

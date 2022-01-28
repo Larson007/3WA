@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Découverte des propriétés transform, transition et animation">
+	<title>Transform, transition et animation</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Transform, transition et animation</h1>
+		<p>Découverte des propriétés transform, transition et animation</p>
+	</header>
+
+	<main class="container">
+
+		<article>
+			<h2>Transform</h2>
+
+			<h3>Transform: translate</h3>
+			<div class="box test-transform-translate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+
+			<h3>Transform: scale</h3>
+			<div class="box test-transform-scale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+
+			<h3>Transform: rotate</h3>
+			<div class="box test-transform-rotate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+
+			<h3>Transform: skew</h3>
+			<div class="box test-transform-skew">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+
+			<h3>Transform: multiple</h3>
+			<div class="box test-transform-multiple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+		</article>
+
+		<article>
+			<h2>Transition</h2>
+			<div class="box test-transition">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+		</article>
+
+		<article>
+			<h2>Animation</h2>
+			<a id="btn" class="button">OK</a>
+			<div id="box" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.</div>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+	</footer>
+
+	<script type="text/javascript">
+		// Elements
+		let elBtn = document.getElementById('btn');
+		let elBox = document.getElementById('box')
+
+		// Click
+		elBtn.addEventListener('click', function () {
+			elBox.classList.toggle('test-animation');
+		});
+	</script>
+
+</body>
+
+</html>

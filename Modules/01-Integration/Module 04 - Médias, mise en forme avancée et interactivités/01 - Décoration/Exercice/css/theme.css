@@ -1,0 +1,121 @@
+/* Le code CSS de la démo */
+
+.default {
+    padding: 3em;
+    background: linear-gradient(#004d7a, #a8eb12);
+    color: white;
+}
+
+.linear {
+    padding: 3em;
+    background: linear-gradient(#004d7a, yellow, #a8eb12);
+    color: white;
+}
+
+.linear-angle {
+    padding: 3em;
+    background: linear-gradient(
+        to right top,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1
+    );
+}
+
+.linear-angle-prc {
+    padding: 3em;
+    background: linear-gradient(
+        45deg,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1
+    );
+}
+
+.linear-x {
+    padding: 3em;
+    background: repeating-linear-gradient(90deg, #3f87a6, #ebf8e1 15%, #f69d3c 20%);
+}
+
+.radial {
+    padding: 3em;
+    background: #f7ac48;
+    background: radial-gradient(#f7ac48, #c21772);
+}
+
+.radial-circle {
+    padding: 3em;
+    background: #f7ac48;
+    background: radial-gradient(closest-side, #f7ac48, #c21772);
+}
+
+.radial-inscrit-prc {
+    padding: 3em;
+    background: #f7ac48;
+    background: radial-gradient(circle at 25% 80%, #f7ac48, #c21772);
+}
+
+/** box-shadow **/
+
+.box-shadow-small {
+    padding: 3em;
+    box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.75);
+}
+.box-shadow-big {
+    padding: 3em;
+    box-shadow: 0px 17px 17px 0px rgba(50, 50, 50, 0.75);
+}
+.box-shadow-inside {
+    padding: 3em;
+    box-shadow: inset 1px 1px 1px 1px rgba(50, 50, 50, 0.75);
+}
+.box-shadow-color {
+    padding: 3em;
+    box-shadow: 0px 7px 7px 0px rgba(182, 22, 22, 0.75);
+}
+.box-shadow-etale {
+    padding: 3em;
+    box-shadow: 0px 0px 20px 0px rgba(182, 22, 22, 0.75);
+}
+.box-shadow-multiple {
+    padding: 3em;
+    box-shadow: 0px 10px 10px 0px rgba(27, 182, 22, 0.75), 0px 20px 20px 0px rgba(182, 22, 22, 0.75);
+}
+
+/** Texte shadow **/
+
+.box {
+    padding: 3em;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.texte-shadow-small > p{
+    text-shadow: 1px 1px 2px black;
+}
+.texte-shadow-big > p{
+    text-shadow: 6px 6px 6px black;
+}
+.texte-shadow-color > p{
+    text-shadow: 6px 6px 6px #CE5937;
+}
+.texte-shadow-multiple > p{
+    text-shadow: 1px 1px 1px rgb(226, 152, 40), 2px 2px 2px rgb(50, 175, 192), 3px 3px 3px rgb(206, 50, 206);
+}

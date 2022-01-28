@@ -1,0 +1,47 @@
+Décoration
+Découverte des propriétés CSS liées à la décoration: dégradés et ombres
+
+Dégradés
+Dégradé linéaire avec le minimum de paramètres
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé linéaire avec plusieurs couleurs
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé linéaire avec un angle
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé linéaire avec des point d'arret en pourcentage
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé linéaire répété plusieurs fois
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé radial
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé radial en cercle
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé radial en cercle inscrit
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Dégradé radial en cercle inscrit placé à 25%
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre sur les boîtes
+Ombre petite
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre grande
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre interne
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre colorée
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre étalée
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre multiple
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, magnam, fugiat, odio sequi dolorum dolor corrupti perspiciatis debitis dolores fugit dolorem assumenda harum libero quaerat vero saepe quis similique sunt.
+Ombre sur les textes
+Ombre petite
+Lorem ipsum dolor sit amet
+Ombre grande
+Lorem ipsum dolor sit amet
+Ombre colorée
+Lorem ipsum dolor sit amet
+Ombre multiple
+Lorem ipsum dolor sit amet
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

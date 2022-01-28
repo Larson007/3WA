@@ -1,0 +1,100 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+article + article {
+	margin-top: 2em;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+.box {
+	margin: 4em;
+	padding: 4em;
+	color: rgba(0,0,0,0.7);
+	background-color: #eee;
+}
+
+/* *****************************************************************
+GRADIENT
+***************************************************************** */
+
+.test-linear {
+	background-image: linear-gradient(#fc3, #f63);
+}
+.test-linear-colors {
+	background-image: linear-gradient(#9c3, #fc3, #f63);
+}
+.test-linear-angle {
+	background-image: linear-gradient(90deg,#9c3, #fc3, #f63);
+}
+.test-linear-percent {
+	background-image: linear-gradient(90deg,#9c3 40%, #fc3 40%, #f63 60%);
+}
+.test-linear-repeat {
+	background-image: repeating-linear-gradient(90deg,#9c3, #fc3, #f63);
+	background-size: 25%;
+}
+.test-radial {
+	background-image: radial-gradient(#fc3, #f63);
+}
+.test-radial-circle {
+	background-image: radial-gradient(circle, #fc3, #f63);
+}
+.test-radial-closest {
+	background-image: radial-gradient(circle closest-side, #fc3, #f63);
+}
+.test-radial-closest-2 {
+	background-image: radial-gradient(circle closest-side at 25%, #fc3, #f63);
+}
+
+/* *****************************************************************
+BOX-SHADOW
+***************************************************************** */
+
+.test-box {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+.test-box-large {
+	box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+}
+.test-box-inset {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset;
+}
+.test-box-color {
+	box-shadow: 5px 10px 10px #f63;
+}
+.test-box-spread {
+	box-shadow: 0 0 5px 10px #f63;
+}
+.test-box-multiple {
+	box-shadow: 0 5px 5px #9c3, 0 15px 15px #fc3, 0 25px 25px #f63;
+}
+
+/* *****************************************************************
+TEXT-SHADOW
+***************************************************************** */
+
+.text div {
+	padding: 2em;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #eee;
+}
+.test-text {
+	text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+.test-text-large {
+	text-shadow: 4px 8px 4px rgba(0,0,0,0.7);
+}
+.test-text-color {
+	text-shadow: 4px 8px 4px #f63;
+}
+.test-text-multiple {
+	text-shadow: 1px 1px 1px #9c3, 2px 2px 2px #fc3, 3px 3px 3px #f63;
+}
