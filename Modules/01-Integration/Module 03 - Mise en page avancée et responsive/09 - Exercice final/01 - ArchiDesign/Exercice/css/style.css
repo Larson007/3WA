@@ -43,16 +43,6 @@ h1 {
     text-align: center;
 }
 
-h1::before {
-    content: "- ";
-    color: var(--colr1);
-    font-size: 30px;
-}
-
-h1::after {
-    content: " -";
-    color: var(--colr1);
-}
 
 article h2 {
     color: var(--colr1);
@@ -82,8 +72,9 @@ header nav * {
 }
 
 /** header **/
-header, footer{
-    background-color: var(--colr1);
+header {
+	background: url(../images/path.png) repeat-x 0 bottom #00748D;
+	color: white;
 }
 
 header nav {
@@ -129,122 +120,13 @@ header nav {
     color: var(--colr1) !important;
 }
 
-/** Main **/
-
-main {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 70% 30%;
-    gap: 1em;
-}
-main h1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 2;
-    grid-column-end: 3;
-    margin-top: 3em;
-}
-
-.article-01 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-row-end: 3;
-    grid-column-end: 2;
-    height: 100%
-}
-.article-02 {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    grid-row-end: 4;
-    grid-column-end: 2;
-}
-
-.article-03 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-column-end: 3;
-}
-.article-04 {
-    grid-row-start: 3;
-    grid-column-start: 2;
-    grid-row-end: 4;
-    grid-column-end: 3;
-}
-
-/** Actualité **/
-
-.actu {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-}
-.actu h2 {
-    width: 100%;
-}
-.actu img {
-    display: block;
-    max-width: 40%;
-    height: 100%;
-}
-
-.actu-texte {
-    width: 60%;
-    padding-left: 1em;
-}
-
-.actu-texte p:first-child {
-    margin-bottom: 1em;
-}
-
-.actu a {
-    position: absolute;
-    bottom: 0;
-    display: inline-block;
-    padding: 0.5em 1em;
-    color: white;
-    text-decoration: none;
-    background-color: var(--colr1);
-}
-
-/** Témoignages **/
-
-.temoignages {
-    height: 400px;
-    overflow: auto;
-}
-
-.citation {
-    display: grid;
-    grid-template: auto auto / auto auto;
-    row-gap: 0.5em;
-    margin: 0.5em;
-}
-
-.citation * {
-    padding: 0.2em;
-}
-
-.citation-border {
-    display: block;
-    border-bottom: 4px solid var(--colr2);
-    width: 40%;
-    margin: 2em auto;
-}
-
-/** Tweet **/
-
-.tweet li {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 0.5em 0;
-}
-.tweet li img {
-    margin-right: 0.2em;
-}
 
 /** footer **/
+footer {
+	background: url(../images/path.png) repeat-x 0 top #00748D;
+	color: white;
+}
+
 footer nav {
     padding: 2em 0;
     display: flex;
