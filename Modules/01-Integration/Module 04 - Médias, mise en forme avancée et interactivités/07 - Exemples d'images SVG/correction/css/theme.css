@@ -1,0 +1,31 @@
+/* Le code CSS de la démo */
+.etoile {
+	fill: #ffe200;
+}
+
+.graphique rect {
+	fill: white;
+	stroke:black;
+	stroke-width:2;
+}
+
+.graphique path {
+	fill:none;
+	stroke:#CC0000;
+	stroke-width: 3;
+}
+
+.smiley .visage {
+	stroke: none;
+	fill: #f1bd3a;
+}
+
+.smiley .yeux {
+	fill: black;
+	stroke: none;
+}
+
+.smiley .bouche {
+	stroke: black;
+	stroke-width: 3px;
+}

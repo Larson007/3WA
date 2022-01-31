@@ -1,0 +1,49 @@
+/*Position relative*/
+
+.bloc-1 {
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.bloc-1 .content {
+    position: relative;
+}
+
+.bloc-1 legend {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 0.5em;
+    width: 100%;
+    padding: 1em;
+}
+
+/*Position absolute*/
+
+.bloc-2 {
+    display: inline-block;
+}
+
+.bloc-2 .content {
+    position: relative;
+}
+
+.bloc-2 .content legend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 360px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 99;
+    color: rgba(255, 255, 255, 0);
+    transition: color .2s, background-color 1s;
+    
+}
+
+.bloc-2 .content legend:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 1);
+}

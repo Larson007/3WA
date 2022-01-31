@@ -1,0 +1,41 @@
+/* Le code CSS de la démo */
+
+.barre-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin: 10em auto;
+
+}
+
+.barre {
+    width: 40px;
+    height: 200px;
+    background-color: white;
+    margin: 1em;
+    animation: load 1.5s infinite ;
+}
+
+.barre-1 {
+    animation-delay: 0.4s;
+}
+
+.barre-2 {
+    animation-delay: 0.6s;
+}
+
+.barre-3 {
+    animation-delay: 0.8s;
+}
+
+@keyframes load {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0.7);
+    }
+}

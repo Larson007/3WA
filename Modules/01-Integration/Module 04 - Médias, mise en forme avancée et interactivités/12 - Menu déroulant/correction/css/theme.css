@@ -1,0 +1,47 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+article + article {
+	margin-top: 2em;
+}
+
+/* *****************************************************************
+MENU
+***************************************************************** */
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #333;
+	color: #fff;
+}
+.menu a {
+	display: inline-block;
+	min-width: 10em;
+	padding: 1em 2em;
+	color: #eee;
+}
+.menu a:hover {
+	text-decoration: none;
+	background: #DD5735;
+}
+.menu > ul {
+	display: flex;
+	justify-content: center;
+}
+.menu > ul > li {
+	position: relative;
+}
+.menu > ul > li ul {
+	position: absolute;
+	display: none;
+}
+.menu > ul > li:hover ul {
+	display: block;
+}
+.menu > ul ul li + li {
+	border-top: 1px solid #444;
+}

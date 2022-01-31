@@ -1,0 +1,41 @@
+Positionnement: fixed et sticky
+Utilisation de sticky pour la nav et fixed pour le footer
+
+Rubrique 1
+Rubrique 2
+Rubrique 3
+Rubrique 4
+Rubrique 5
+Première partie
+Article 1.1
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia pariatur necessitatibus similique voluptates provident in nobis repudiandae reprehenderit odio nam harum accusamus, quasi nesciunt neque illo error, quas itaque quam.
+
+Quod in nemo, mollitia minima laborum cupiditate libero qui porro sequi! Hic quae, odit! Rem est quas quia voluptate sint dolor dicta nobis nihil, laborum possimus, similique aperiam, totam dignissimos!
+
+Aut itaque cum eius esse. Animi sint molestias cumque dolor. Nesciunt in debitis at quibusdam, ut? Dolores, ipsa pariatur, ducimus aliquid deserunt libero ad asperiores architecto! Consequatur maiores quam, beatae.
+
+Article 1.2
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia pariatur necessitatibus similique voluptates provident in nobis repudiandae reprehenderit odio nam harum accusamus, quasi nesciunt neque illo error, quas itaque quam.
+
+Quod in nemo, mollitia minima laborum cupiditate libero qui porro sequi! Hic quae, odit! Rem est quas quia voluptate sint dolor dicta nobis nihil, laborum possimus, similique aperiam, totam dignissimos!
+
+Aut itaque cum eius esse. Animi sint molestias cumque dolor. Nesciunt in debitis at quibusdam, ut? Dolores, ipsa pariatur, ducimus aliquid deserunt libero ad asperiores architecto! Consequatur maiores quam, beatae.
+
+Deuxième partie
+Article 2.1
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed id cupiditate officiis corporis consequuntur ducimus, necessitatibus quasi quibusdam molestiae aliquam enim ab. Tempora perspiciatis iste voluptatibus facere omnis quisquam quod!
+
+Est consequuntur veritatis aperiam reprehenderit tempora. Quos voluptas dolorum minus nesciunt beatae, eligendi delectus, sunt tenetur autem suscipit, cum perspiciatis modi voluptatibus placeat a obcaecati. Quod eum, a odit eius.
+
+Quis libero, veniam non in excepturi optio. Doloribus voluptate mollitia atque, blanditiis dignissimos neque repellendus quisquam sint veniam quam suscipit libero, deserunt explicabo laborum fuga reiciendis. Modi temporibus, dolorem ab.
+
+Article 2.2
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed id cupiditate officiis corporis consequuntur ducimus, necessitatibus quasi quibusdam molestiae aliquam enim ab. Tempora perspiciatis iste voluptatibus facere omnis quisquam quod!
+
+Est consequuntur veritatis aperiam reprehenderit tempora. Quos voluptas dolorum minus nesciunt beatae, eligendi delectus, sunt tenetur autem suscipit, cum perspiciatis modi voluptatibus placeat a obcaecati. Quod eum, a odit eius.
+
+Quis libero, veniam non in excepturi optio. Doloribus voluptate mollitia atque, blanditiis dignissimos neque repellendus quisquam sint veniam quam suscipit libero, deserunt explicabo laborum fuga reiciendis. Modi temporibus, dolorem ab.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

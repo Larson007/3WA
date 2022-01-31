@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Galerie d'images avec le plugin jQuery Fancy Box">
+	<title>Plugin jQuery Fancy Box</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Plugin jQuery Fancy Box</h1>
+		<p>Galerie d'images avec le plugin jQuery Fancy Box</p>
+	</header>
+	<main class="container">
+		<article>
+			<h2>Fancy Box</h2>
+			<div class="gallery">
+				<a href="img/abstract1-grand.jpg" data-fancybox="gallery" data-caption="Abstract #1">
+					<img src="img/abstract1-vignette.jpg" alt="" />
+				</a>
+				<a href="img/abstract2-grand.jpg" data-fancybox="gallery" data-caption="Abstract #2">
+					<img src="img/abstract2-vignette.jpg" alt="" />
+				</a>
+				<a href="img/nature1-grand.jpg" data-fancybox="gallery" data-caption="Nature #1">
+					<img src="img/nature1-vignette.jpg" alt="" />
+				</a>
+				<a href="img/nature2-grand.jpg" data-fancybox="gallery" data-caption="Nature #2">
+					<img src="img/nature2-vignette.jpg" alt="" />
+				</a>
+				<a href="img/nature3-grand.jpg" data-fancybox="gallery" data-caption="Nature #3">
+					<img src="img/nature3-vignette.jpg" alt="" />
+				</a>
+				<a href="img/tech1-grand.jpg" data-fancybox="gallery" data-caption="Tech #1">
+					<img src="img/tech1-vignette.jpg" alt="" />
+				</a>
+				<a href="img/tech2-grand.jpg" data-fancybox="gallery" data-caption="Tech #2">
+					<img src="img/tech2-vignette.jpg" alt="" />
+				</a>
+				<a href="img/tech3-grand.jpg" data-fancybox="gallery" data-caption="Tech #3">
+					<img src="img/tech3-vignette.jpg" alt="" />
+				</a>
+			</div>
+		</article>
+	</main>
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.cath2nos.com">Catherine Denos</a>.</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script>
+		$('[data-fancybox="gallery"]').fancybox({});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/* Le code CSS de la démo */
+section {
+    border: 1px dotted #DD5735;
+}
+
+article {
+    margin: 2em ;
+}
+
+.sticky {
+    background-color: #f9c;
+    position: sticky;
+    top: 0;
+}
+
+.static {
+    background-color: #9c6;
+    position: static;
+}
+
+.relative {
+    background-color: #fc3;
+    position: relative;
+    left: -5em;
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute-bloc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f93;
+    display: inline-block;
+    padding: 0.75em 2em;
+}
+
+.fixed {
+    position: fixed;
+    background-color: #69c;
+    width: 20%;
+    top: 0;
+    right: 0;
+
+}

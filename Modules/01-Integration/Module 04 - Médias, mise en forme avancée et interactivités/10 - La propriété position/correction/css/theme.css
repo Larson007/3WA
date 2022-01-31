@@ -1,0 +1,45 @@
+/* Le code CSS de la démo */
+.container {
+	margin: 2em auto;
+}
+article {
+	margin: 2em 0;
+}
+
+/* Position */
+.static {
+	position: static;
+	left: -5em;
+	background-color: #9c6;
+}
+.relative {
+	position: relative;
+	left: -10em;
+	z-index: 1;
+	background-color: #fc3;
+}
+.absolute-parent {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 2em;
+	z-index: 2;
+	background-color: #f93;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	width: 20em;
+	background-color:  #69c;
+}
+.sticky {
+	position: sticky;
+	top: 0;
+	background-color: #f9c;
+	z-index: 3;
+}

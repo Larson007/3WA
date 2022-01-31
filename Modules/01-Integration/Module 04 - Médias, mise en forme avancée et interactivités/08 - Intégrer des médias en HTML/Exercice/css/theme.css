@@ -1,0 +1,25 @@
+/* Le code CSS de la démo */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+article * {
+    padding: 1em 0;
+}
+
+video {
+    width: 60%;
+}
+
+audio {
+    height: 80px;
+}

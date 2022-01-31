@@ -1,0 +1,28 @@
+Menu déroulant
+Faire un menu déroulant avec le positionnement absolu
+
+Rubrique 1
+Rubrique 2
+Rubrique 2.1
+Rubrique 2.2
+Rubrique 2.3
+Rubrique 2.4
+Rubrique 3
+Rubrique 3.1
+Rubrique 3.2
+Rubrique 3.3
+
+Lorem ipsum dolor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste, ducimus, enim, nesciunt pariatur nam error sequi repellat nostrum ratione expedita quae sed illo quos eligendi alias illum corporis quis!
+
+Inventore, possimus, nemo, ex, nesciunt necessitatibus hic quo consequatur quae at doloribus illum maiores odit sapiente molestiae quis? Porro, ratione, dolores iste saepe mollitia dolorem accusamus explicabo necessitatibus sequi perspiciatis.
+
+Lorem ipsum dolor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestiae fugiat quo nemo earum aut saepe. Doloribus distinctio commodi nihil aliquam atque. Hic, quo ad blanditiis culpa accusantium velit repudiandae.
+
+Tempore, dolore porro provident praesentium ut. Saepe incidunt provident reprehenderit nisi porro nemo sint molestias laborum. Quia animi tempora omnis quod nobis! Explicabo, saepe alias eum fugiat voluptatibus quo voluptatem.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.
+

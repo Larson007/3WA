@@ -1,0 +1,53 @@
+/* Le code CSS de la démo */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bloc {
+width: 300px;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+position: relative;
+
+}
+
+
+
+.content {
+    background-color: orange;
+    color: #DD5735;
+    text-align: center;
+    padding: 2em 1em;
+    line-height: 1.5em;
+
+}
+
+.absolute {
+    background-color: #DD5735;
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    padding: 0.5em;
+    width: 125px;
+    text-align: center;
+    z-index: 99;
+    left: 0;
+}
+
+.absolute p:nth-child(2) {
+    font-size: 1.5em;
+}
+
+span {
+        font-size: 3em;
+        position: relative;
+        top: -10px;
+        left: -10px;
+}

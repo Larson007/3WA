@@ -1,0 +1,9 @@
+Favicon
+Utilisation d'un favicon
+
+Le favicon est une icône associée à un site web
+Les navigateurs les affichent dans l'onglet de la page.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Christiane Dumont.

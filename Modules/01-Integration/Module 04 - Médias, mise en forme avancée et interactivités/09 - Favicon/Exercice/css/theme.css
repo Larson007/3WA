@@ -1,0 +1,12 @@
+/* Le code CSS de la démo */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article * {
+    padding: 1em 0;
+}

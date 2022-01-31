@@ -1,0 +1,21 @@
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10em 0;
+    background-color: #dd5735;
+    list-style: none;
+}
+
+ul li {
+	padding: 1em;
+	font-size: 1.2em;
+	color: #fff;
+	transition: background-color 1s, transform 0.5s ease-in-out; 
+}
+
+ul li:hover {
+    background-color: gold;
+    transform: scale(1.5);
+    color: black;
+}

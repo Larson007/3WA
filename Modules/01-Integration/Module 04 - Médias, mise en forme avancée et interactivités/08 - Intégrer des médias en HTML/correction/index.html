@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Utilisation de services tiers et des éléments AUDIO, VIDEO pour intégrer des sons et des vidéos">
+	<title>Intégrer des médias en HTML</title>
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Intégrer des médias en HTML</h1>
+		<p>Utilisation de services tiers et des éléments AUDIO, VIDEO pour intégrer des sons et des vidéos</p>
+	</header>
+	<main class="container">
+		<article>
+			<h2>La dernière conférence de Lea Verou (sur Vimeo)</h2>
+			<iframe src="https://player.vimeo.com/video/364399309" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			<p><a href="https://vimeo.com/364399309">Lea Verou - The Web Design Cheat Code: Using SVG to Bridge CSS&rsquo; Gaps</a> from <a href="https://vimeo.com/fronteers">Fronteers</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+		</article>
+		<article>
+			<h2>La balise video</h2>
+			<video poster="medias/bunny.jpg" controls>
+				Votre navigateur est obsolète. Pour pouvoir lire cette vidéo, veuillez le mettre à jour.
+				<source src="medias/bunny.mp4" type="video/mp4">
+				<source src="medias/bunny.ogv" type="video/ogv">
+			</video>
+		</article>
+		<article>
+			<h2>La balise audio</h2>
+			<audio controls loop>
+				<source src="medias/space.mp3" type="audio/mp3">
+				<source src="medias/space.ogg" type="audio/ogg">
+				<source src="medias/space.wav" type="audio/wav">
+			</audio>
+		</article>
+	</main>
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.cath2nos.com">Catherine Denos</a>.</p>
+	</footer>
+</body>
+
+</html>

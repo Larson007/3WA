@@ -1,0 +1,59 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+.center {
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* *****************************************************************
+ ANIMATION
+***************************************************************** */
+
+.loader {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	animation: anim-loader linear 1s infinite;
+}
+
+.rond1, 
+.rond2, 
+.rond3, 
+.rond4, 
+.rond5 {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.rond1 {
+	border: 2px solid blue;
+}
+
+.rond2 {
+	border: 2px solid yellow;
+	top:5px;
+	left:5px;
+}
+
+.rond3 {
+	border: 2px solid red;
+	top: -5px;
+	left: 5px;
+}
+
+@keyframes anim-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}

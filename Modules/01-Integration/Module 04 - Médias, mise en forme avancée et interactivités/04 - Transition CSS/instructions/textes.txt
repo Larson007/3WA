@@ -1,0 +1,11 @@
+Transition CSS
+Faire un effet de transition sur éléments du menu
+
+Rubrique 1
+Rubrique 2
+Rubrique 3
+Rubrique 4
+Rubrique 5
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

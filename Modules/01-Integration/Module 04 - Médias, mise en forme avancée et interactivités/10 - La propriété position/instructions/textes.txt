@@ -1,0 +1,62 @@
+La propriété position
+La propriété position et ses différentes valeurs: static, relative, absolute, fixed et sticky
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article avec la position: sticky et la propriété top:0
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article avec la position: static
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, iste, ducimus, enim, nesciunt pariatur nam error sequi repellat nostrum ratione expedita quae sed illo quos eligendi alias illum corporis quis!
+
+Inventore, possimus, nemo, ex, nesciunt necessitatibus hic quo consequatur quae at doloribus illum maiores odit sapiente molestiae quis? Porro, ratione, dolores iste saepe mollitia dolorem accusamus explicabo necessitatibus sequi perspiciatis.
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article avec la position: relative et un décallage à gauche de 5em
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestiae fugiat quo nemo earum aut saepe. Doloribus distinctio commodi nihil aliquam atque. Hic, quo ad blanditiis culpa accusantium velit repudiandae.
+
+Tempore, dolore porro provident praesentium ut. Saepe incidunt provident reprehenderit nisi porro nemo sint molestias laborum. Quia animi tempora omnis quod nobis! Explicabo, saepe alias eum fugiat voluptatibus quo voluptatem.
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article avec la position: relative et un sous élément en position: absolute
+position: absolute
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article avec la position: fixed
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Un article sans position définie
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident sunt delectus eum. Iure, minus maxime debitis obcaecati voluptatem harum ea cupiditate quae. Harum, minima porro nisi ipsa magni minus delectus!
+
+Unde sequi consequuntur libero omnis. Dolorem, doloribus, consequuntur vitae obcaecati enim deserunt ea cum qui illo iusto ad sed officiis quos sunt vero placeat quidem perferendis magni quasi culpa alias.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

@@ -1,0 +1,52 @@
+/* Le code CSS de la démo */
+.circle-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10em auto;
+    position: relative;
+    animation: load 1s infinite linear;
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    border: 6px solid;
+}
+
+.circle-1 {
+    border-color:blue;
+    top: 0;
+    left: 0;
+}
+
+.circle-2 {
+    border-color: yellow;
+    z-index: 50;
+    top: 25px;
+    left: 0px;
+
+}
+
+.circle-3 {
+    border-color: red;
+    z-index: 100;
+    top: 0px;
+    left: -25px;
+
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

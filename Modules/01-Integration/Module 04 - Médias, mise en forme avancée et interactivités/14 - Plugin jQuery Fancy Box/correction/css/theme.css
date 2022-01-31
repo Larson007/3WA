@@ -1,0 +1,21 @@
+
+/* *****************************************************************
+ PLUGIN
+***************************************************************** */
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gallery a {
+	width: calc(100% / 4);
+	padding: 1rem
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}

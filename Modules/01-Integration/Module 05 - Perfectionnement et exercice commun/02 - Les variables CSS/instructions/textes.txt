@@ -1,0 +1,10 @@
+Les variables CSS
+Découverte des variables CSS et comment les implémenter
+
+Pourquoi utiliser des variables en CSS
+Les sites peuvent avoir des feuilles de style où de nombreuses valeurs sont répétées (couleurs, typos ...),qu'il faudra mettre à jour si besoin. Les variables CSS permettent de stocker une valeur à un endroit puis de réutiliser cette valeur (on factorise ainsi le code).
+
+En savoir plus
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

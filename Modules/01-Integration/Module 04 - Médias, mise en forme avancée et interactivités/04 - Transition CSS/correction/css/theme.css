@@ -1,0 +1,25 @@
+
+/* *****************************************************************
+ MENU
+***************************************************************** */
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	margin: 12em 0;
+	color: #fff;
+	background-color: #DD5735;
+}
+nav a {
+	padding: 1em;
+	font-size: 1.2em;
+	color: #fff;
+	transition: color .2s, background-color 1s, transform .5s;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-color: #fc3;
+	color: #333;
+	transform: scale(1.5);
+}

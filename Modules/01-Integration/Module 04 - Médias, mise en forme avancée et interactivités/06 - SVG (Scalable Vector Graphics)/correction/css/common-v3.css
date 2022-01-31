@@ -1,0 +1,274 @@
+/*
+
+Ultime version de la feuille de style commune (à réutiliser dans les modules 4 et 5)
+
+Ajout de la marge entre les sections
+Ajout des la section form depuis le corrigé de l'exercice "form" du module 2
+Ajout de la section table (version proche du corrigé de l'exercice "table" du module 2 mais avec quelques ajustements)
+
+*/
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+	font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+}
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+/* Le corps du document */
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	font-family: sans-serif;
+	color: #555;
+	background-color: #eee;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+	font-size: 4rem;
+	color: #DD5735;
+}
+
+/* Le titre de second niveau  */
+h2 {
+	font-size: 3.2rem;
+	color: #333;
+}
+
+
+/* Le titre de troisème niveau */
+h3 {
+	font-size: 2.4rem;
+}
+
+/* Les liens */
+a {
+	text-decoration: none;
+	color: #DD5735;
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+/* Contenu principal */
+main {
+	padding: 2em;
+}
+
+/* Les articles */
+article {
+	background-color: #fff;
+	padding: 1em;
+}
+
+/* marge entre les sections */
+section + section {
+	margin-top: 2em;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+.container {
+	max-width: 1100px; /* On donne une largeur au container */
+	margin-left: auto; /* On centre son contenu */
+	margin-right: auto;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+/* L'entête de la page */
+.header {
+	padding: 1em;
+	text-align: center;
+	color: #999;
+	background-color: #444;
+}
+
+/* Pas de marge pour le titre pricipal */
+.header h1 {
+	margin: 0;
+}
+
+/* Le pied de page */
+.footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+}
+
+/* *****************************************************************
+CARDS
+***************************************************************** */
+
+.card,
+.cards > * {
+	padding: 2em;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.gutter > * {
+	margin: 1em;
+}
+
+/* *****************************************************************
+FORM
+***************************************************************** */
+
+/* Style pour une barre d'outils => ou placer les boutons */
+.toolbar {
+	padding: 1em 2em;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 0.5em;
+}
+
+/* Style de chaque groupe de champs (fieldset) */
+fieldset {
+	margin: 2em 0;
+	padding: 1em;
+	font-size: 1.6rem;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 0.5em;
+}
+
+legend {
+	padding: 0 1em;
+	font-size: 1.8rem;
+}
+
+/* Style de chaque champ (field) */
+.field {
+	display: flex;
+	padding: 1em 0;
+}
+
+.field label {
+	width: 30%;
+}
+
+.field .value {
+	width: 70%;
+}
+
+.field input {
+	width: 100%;
+}
+
+.field + .field {
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+/* Style de chaque libélé */
+label {
+	padding: 0.5em;
+}
+
+/* Style de chaque input */
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type*="date"],
+select,
+textarea {
+	display: inline-block;
+	padding: 0.5em 1em;
+	font-size: 1.6rem;
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+}
+select,
+textarea {
+	width: 100%;
+}
+textarea {
+	display: block;
+	min-height: 10em;
+}
+
+/* Style de chaque bouton */
+.button {
+	display: inline-block;
+	padding: 1em 2em;
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #DD5735;
+	border: 2px solid #DD5735;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: #DD5735;
+	background-color: #fff;
+}
+
+/* *****************************************************************
+TABLE
+***************************************************************** */
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table caption,
+.table th,
+.table td {
+	padding: 1em;
+	border: 1px solid #ddd;
+}
+.table thead {
+	border-bottom: 2px solid #999;
+}
+.table tfoot {
+	border-top: 2px solid #999;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* *****************************************************************
+VARIOUS
+***************************************************************** */
+
+/* Utile pour mettre en évidence un parent */
+.parent {
+	border: 1px dashed #DD5735;
+}
+
+/* Utile pour mettre en forme du code informatique */
+.code {
+	padding: 0.5em;
+	font-family: Monaco, monospace;
+	font-size: 14px;
+	color: #000;
+	background-color: #ddd;
+	border: 1px solid #bbb;
+}

@@ -1,0 +1,58 @@
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+figure {
+	display: inline-block; /* la largeur = la largeur de l'image */
+	margin: 1em 0;
+}
+
+figcaption {
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+}
+
+img {
+	vertical-align: top; /* pour supprimer l'espace sous les images */
+}
+
+/* *****************************************************************
+ POSITION RELATIVE
+***************************************************************** */
+
+.rel figcaption {
+	position: relative;
+	top: -3em;
+	line-height: 3em;
+	text-align: center;
+}
+
+/* *****************************************************************
+POSITION ABSOLUTE
+***************************************************************** */
+
+.abs {
+	position: relative;
+}
+
+.abs figcaption {
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	/* centrage du content */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* transparent */
+	opacity: 0;
+}
+
+.abs:hover figcaption {
+	/* opaque */
+	opacity: 1;
+}

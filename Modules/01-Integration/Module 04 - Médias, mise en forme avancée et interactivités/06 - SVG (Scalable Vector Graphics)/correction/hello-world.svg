@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="400" height="400">
+	<style>
+		.fond {
+			fill: #0bf;
+		}
+	</style>
+	<!-- Un rectangle simple pour le fond (la couleur est modifiée par du css) -->
+	<rect x="0" y="0" width="400" height="400" fill="blue" class="fond" />
+
+	<!-- Un groupe avec des propriétés communes contenant des lignes et un cercle -->
+	<g stroke="#f93" stroke-width="10" stroke-linecap="round">
+
+		<!-- Plusieur fois la même ligne mais avec une rotation différente -->
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(0)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(15)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(30)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(45)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(60)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(75)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(90)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(105)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(120)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(135)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(150)" />
+		<line x1="200" y1="50" x2="200" y2="350" transform-origin="center" transform="rotate(165)" />
+
+		<!-- Un cercle -->
+		<circle cx="200" cy="200" r="100" fill="#fc3" />
+	</g>
+
+	<!-- On peut aussi écrire du texte, attention à l'ancrage du texte -->
+	<text x="200" y="200" text-anchor="middle" alignment-baseline="middle" font-size="30" font-family="sans-serif" fill="#f33">Hello World !</text>
+
+	<!-- un élément path comprenant un chemin complexe pour dessiner un nuage -->
+	<path stroke="#fff" stroke-width="10" fill="#fff" fill-opacity="0.8" d=" M 79.72 49.60 C 86.00 37.29 98.57 29.01 111.96 26.42 C 124.27 24.11 137.53 26.15 148.18 32.90 C 158.08 38.78 165.39 48.87 167.65 60.20 C 176.20 57.90 185.14 56.01 194.00 57.73 C 206.08 59.59 217.92 66.01 224.37 76.66 C 227.51 81.54 228.85 87.33 229.23 93.06 C 237.59 93.33 246.22 95.10 253.04 100.19 C 256.69 103.13 259.87 107.67 258.91 112.59 C 257.95 118.43 252.78 122.38 247.78 124.82 C 235.27 130.43 220.23 130.09 207.98 123.93 C 199.33 127.88 189.76 129.43 180.30 128.57 C 173.70 139.92 161.70 147.65 148.86 149.93 C 133.10 153.26 116.06 148.15 104.42 137.08 C 92.98 143.04 78.96 143.87 66.97 139.04 C 57.75 135.41 49.70 128.00 46.60 118.43 C 43.87 109.95 45.81 100.29 51.30 93.32 C 57.38 85.18 67.10 80.44 76.99 78.89 C 74.38 69.20 74.87 58.52 79.72 49.60 Z"/>
+	
+</svg>

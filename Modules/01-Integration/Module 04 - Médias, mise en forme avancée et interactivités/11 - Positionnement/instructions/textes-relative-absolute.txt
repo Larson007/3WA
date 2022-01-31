@@ -1,0 +1,11 @@
+Positionnement: relative et absolute
+Utilisation de la position relative et de la postion absolute pour bien placer une légende
+
+Position relative
+Coucher de soleil sur la mer avec un ponton
+Coucher de soleil
+Position absolute
+Coucher de soleil sur la mer avec un pontonCoucher de soleil
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.

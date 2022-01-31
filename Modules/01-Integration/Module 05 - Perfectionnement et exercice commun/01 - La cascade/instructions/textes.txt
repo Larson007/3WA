@@ -1,0 +1,21 @@
+La cascade
+Comprendre les différents facteurs de la cascade: l'ordre dans la source, la spécificité et l'importance
+
+L'ordre dans la source
+Un article ayant la classe .outer. Le texte de ce paragraphe est de couleur verte, c'est le selecteur .outer p qui est appliqué.
+
+Un paragraphe ayant la classe .inner. Le texte de ce paragraphe est de couleur verte, c'est le selecteur .outer p qui est appliqué car il est écrit après le sélecteur article .inner dans la source. Les deux sélécteurs ayant la même spécificité (1 classe + 1 élément), c'est l'ordre dans la source qui compte.
+
+La spécificité
+Un article ayant la classe .alice. Le texte de ce paragraphe est de couleur bleue, c'est le selecteur .alice p qui est appliqué car il possède la plus grande spécificité (1 classe + 1 élément), supérieure à .alice (1 classe).
+
+Un paragraphe ayant la classe .bob. Le texte de ce paragraphe est de couleur rouge orangé, c'est le selecteur .alice .bob qui est appliqué car il possède la plus grande spécificité (2 classes), supérieure à p.bob (1 classe + 1 élément) et à .bob (1 classe).
+
+L'importance
+Un article ayant la classe .base
+
+Un paragraphe ayant la classe .important. Le texte de ce paragraphe est de couleur rouge, c'est la propriété color: red du selecteur .important qui est appliqué car il y a la déclaration !important.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.
