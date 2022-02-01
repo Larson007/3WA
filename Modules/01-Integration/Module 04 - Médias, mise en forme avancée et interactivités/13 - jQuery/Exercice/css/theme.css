@@ -1,0 +1,33 @@
+/* Le code CSS de la démo */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article * {
+    padding: 1.5em;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 3px;
+margin: 0 auto;
+}
+
+
+button {
+    color: white;
+    background-color: tomato;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    margin: 0 0.1em;
+    border: none;
+
+
+}

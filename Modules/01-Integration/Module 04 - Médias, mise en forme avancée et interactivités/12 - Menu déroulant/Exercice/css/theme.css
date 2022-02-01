@@ -1,0 +1,59 @@
+/* Le code CSS de la démo */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    margin: 2em 0;
+}
+
+article * {
+    padding: 1em 0;
+}
+
+.menu {
+    background-color: #333;
+}
+.menu ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+}
+.menu ul li {
+    list-style: none;
+    padding: 1em 2em;
+    min-width: 10em;
+    position: relative;
+    text-align: center;
+}
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+/*  sous menu */
+
+.menu ul >li>ul {
+    display: none;
+
+}
+
+.menu a:hover {
+text-decoration: none;
+color: tomato !important;
+}
+
+.menu ul li:hover ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    background-color: #333;
+}
