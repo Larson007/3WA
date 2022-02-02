@@ -1,0 +1,637 @@
+/** Style Commun **/
+
+@import url("https://fonts.googleapis.com/css2?family=Athiti&family=Merienda:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr1: #4c4343;
+    --clr2: #ebe3db;
+    --clr3: #950000;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Athiti", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2em auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 0.8rem;
+}
+
+h3 {
+    font-size: 0.7rem;
+}
+
+h4 {
+    font-size: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+i {
+    color: var(--clr3);
+    font-size: 0.8rem;
+    margin: 0 0.8em;
+}
+
+/** Header **/
+
+header {
+    padding-top: 2em;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+}
+
+.logo > img {
+    max-width: 8rem;
+    width: auto;
+    height: auto;
+}
+
+.logo > h1 {
+    font-family: "Athiti", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 0.5rem auto 1rem;
+}
+
+header nav ul li {
+    display: block;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--clr1);
+    color: white;
+}
+
+header nav ul li:nth-child(1) {
+    display: block;
+    font-weight: bolder;
+    border-top: 2px solid var(--clr1);
+    border-bottom: 2px solid var(--clr1);
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem;
+    color: black;
+    background-color: var(--clr2);
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: var(--clr1);
+}
+
+/** Main **/
+
+.container {
+    max-width: 780px;
+    margin: 0 1em;
+}
+
+/*Carousel*/
+.slick-prev {
+    left: 0.5rem !important;
+    z-index: 99;
+}
+.slick-prev::before {
+    font-family: FontAwesome !important;
+    content: "\f0a8" !important;
+}
+.slick-next {
+    right: 0.5rem !important;
+    z-index: 99;
+}
+.slick-next::before {
+    font-family: FontAwesome !important;
+    content: "\f0a9" !important;
+}
+
+.slick-active button::before {
+    color: tomato !important;
+}
+
+.slick-dots li button:before{
+    font-size: 0.7rem !important;
+}
+
+main h1 {
+    margin: 3em auto 1em;
+    font-size: 0.9rem;
+}
+
+/*Acceuil*/
+main p {
+    padding: 0.5em 0;
+    font-size: 0.6rem;
+}
+
+/*Menu*/
+.card {
+    background-color: var(--clr2);
+    margin-bottom: 36px;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 1em;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+
+/*TODO hover */
+
+/* IMAGES HOVER */
+.menu-prix {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(76, 67, 67, 0.9);
+}
+
+.menu > img:hover + .menu-prix {
+    display: flex;
+}
+
+.menu-prix-detail {
+    border: 7px solid white;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-prix-detail h4 {
+    font-size: 1.8rem;
+}
+
+.menu-prix-detail p {
+    font-size: 1.2rem;
+}
+
+.card ul li {
+    border-bottom: 1px dashed var(--clr1);
+    padding: 0.4em;
+    font-weight: bold;
+}
+
+.card ul li:last-of-type {
+    border-bottom: none;
+    padding: 0.4em;
+    font-weight: bold;
+}
+
+.card ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr1);
+    color: white;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.card ul li a img {
+    margin-right: 1em;
+    width: 30px;
+    height: 30px;
+}
+
+/** FOOTER **/
+
+footer {
+    background: url("../images/footer-bg.jpg");
+    background-size: cover/100% 100%;
+    color: white;
+    text-align: center;
+}
+.horaire,
+.contact,
+.social {
+    display: block;
+}
+footer h3 {
+    border-bottom: 1px dashed white;
+    padding: 3em 0 1em;
+}
+
+footer p {
+    padding: 0 20% 0 20%;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social i {
+    font-size: 1.7em;
+    color: white;
+    margin: 0.5em 0.7em 4em;
+}
+
+@media screen and (max-width: 780px) {
+    /* Mettre ici les différentes règles concernées le desktop */
+
+    /** Header **/
+
+    header {
+        padding-top: 2em;
+        display: block;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 3em;
+    }
+
+    .logo img {
+        max-width: 40%;
+        width: auto;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-family: "Athiti", sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin: 0.5rem auto 1rem;
+    }
+
+    header nav ul li {
+        display: block;
+        font-weight: bolder;
+        border-bottom: 2px solid var(--clr1);
+        color: white;
+    }
+
+    header nav ul li:nth-child(1) {
+        display: block;
+        font-weight: bolder;
+        border-top: 2px solid var(--clr1);
+        border-bottom: 2px solid var(--clr1);
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+        display: inline-block;
+        width: 100%;
+        padding: 0.8rem;
+        color: black;
+        background-color: var(--clr2);
+    }
+
+    header nav ul li a:hover {
+        color: white;
+        background-color: var(--clr1);
+    }
+
+    /** Main **/
+
+    .container {
+        max-width: 780px;
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+
+    /*Carousel*/
+    .slick-prev {
+        left: 0.5rem !important;
+        z-index: 99;
+    }
+    .slick-prev::before {
+        font-family: FontAwesome !important;
+        content: "\f0a8" !important;
+    }
+    .slick-next {
+        right: 0.5rem !important;
+        z-index: 99;
+    }
+    .slick-next::before {
+        font-family: FontAwesome !important;
+        content: "\f0a9" !important;
+    }
+
+    .slick-active button::before {
+        color: tomato !important;
+    }
+
+    main h1 {
+        margin: 3em auto 1em;
+        font-size: 0.9rem;
+    }
+
+    /*Acceuil*/
+    main p {
+        padding: 0.5em 0;
+        font-size: 0.9rem;
+    }
+
+    /*Menu*/
+    .card {
+        background-color: var(--clr2);
+        margin-bottom: 2rem;
+    }
+
+    .card h3 {
+        margin: 0;
+        padding: 1em;
+    }
+
+    /* .card > img {
+    max-width: 100%;
+} */
+
+    .card ul li {
+        border-bottom: 1px dashed var(--clr1);
+        padding: 0.4em;
+        font-weight: bold;
+    }
+
+    .card ul li:last-of-type {
+        border-bottom: none;
+        padding: 0.4em;
+        font-weight: bold;
+    }
+
+    .card ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--clr1);
+        color: white;
+        padding: 0.5em;
+        margin: 1em;
+    }
+
+    .card ul li a img {
+        margin-right: 1em;
+        width: 30px;
+        height: 30px;
+    }
+
+    /** FOOTER **/
+
+    footer {
+        background: url("../images/footer-bg.jpg");
+        background-size: cover/100% 100%;
+        color: white;
+        text-align: center;
+    }
+    .horaire,
+    .contact,
+    .social {
+        display: block;
+    }
+    footer h3 {
+        border-bottom: 1px dashed white;
+        padding: 3em 0 1em;
+    }
+
+    footer p {
+        padding: 0 20% 0 20%;
+    }
+
+    .social ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social i {
+        font-size: 1.7em;
+        color: white;
+        margin: 0.5em 0.7em 4em;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 980px) {
+    /** Header **/
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--clr2);
+    }
+    header nav ul li {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        margin: 0 3rem;
+    }
+    header nav ul li:first-child {
+        border: none;
+    }
+    header nav ul li a {
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+    header nav ul li a:hover {
+        color: white;
+        background-color: var(--clr1);
+    }
+
+    /** Container **/
+
+    .container {
+        max-width: 980px;
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 980px) {
+    article h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    /** Container **/
+
+    .container {
+        max-width: 1400px;
+        padding: 0 1em;
+        margin: 0 auto;
+    }
+
+    /** Header **/
+
+    header {
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 2em auto;
+        max-width: 1400px;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 1em;
+        border-bottom: none;
+    }
+
+    header nav ul li:nth-child(1) {
+        border: none;
+    }
+
+    /* Carousel*/
+
+    .slick-prev {
+        left: 3rem !important;
+    }
+    .slick-prev::before, .slick-next::before {
+        font-size: 2.5rem !important;
+    }
+    .slick-next {
+        right: 3rem !important;
+    }
+
+    .slick-dots li button:before{
+        font-size: 1rem !important;
+    }
+
+    .slick-active button::before {
+        color: tomato !important;
+
+    }
+
+    /** MAIN **/
+
+    /*Acceuil*/
+
+    .presentation {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .presentation img {
+        max-width: 40%;
+    }
+
+    main p {
+        margin-right: 2em;
+        font-size: 1.1rem;
+    }
+
+    /*Menu*/
+    .card {
+        margin-bottom: 2em;
+    }
+    .card:nth-child(2) {
+        margin: 0 20px 36px 20px;
+    }
+
+    .card h3 {
+        margin: 0;
+        padding: 1.5em;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    /** FOOTER **/
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 3em;
+    }
+    .horaire,
+    .contact,
+    .social {
+        display: block;
+        width: 30%;
+    }
+    footer h3 {
+        border-bottom: 1px dashed white;
+        padding: 1rem;
+        margin: 1em auto 1em;
+    }
+
+    footer p {
+        padding: 0 20%;
+    }
+
+    .social i {
+        font-size: 1.7em;
+        color: white;
+        margin: 0.5em 0.3em;
+    }
+}
