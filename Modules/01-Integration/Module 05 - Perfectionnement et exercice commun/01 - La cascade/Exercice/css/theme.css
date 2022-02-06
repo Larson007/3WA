@@ -1,0 +1,71 @@
+/* Le code CSS de la démo */
+:root {
+    --purple: purple;
+    --green: green;
+    --blue: blue;
+    --orangered: orangered;
+    --orange: orange;
+    --yellow: yellow;
+    --red: red;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    margin: 2em;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+code {
+    background-color: #333;
+    border-radius: 3px;
+    color: white;
+    font-weight: normal;
+    padding: 0 1em;
+}
+
+/* ================================
+Article .outer
+==================================*/
+
+.outer p {
+    color: var(--green);
+}
+
+article .inner {
+    color: var(--green);
+}
+
+/* ================================
+Article .alice
+==================================*/
+
+.alice p {
+    color: var(--blue);
+}
+
+.alice .bob {
+    color: var(--orangered);
+}
+
+/* ================================
+Article .base
+==================================*/
+
+.important {
+    color: var(--red) !important;
+}

@@ -1,0 +1,40 @@
+/* Le code CSS de la démo */
+
+:root {
+--textClr: #444;
+--colr: #DD5735;
+--font: Arial;
+--titleSize: 20px
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    padding: 2em 1em;
+}
+
+article  * {
+    color: var(--textClr);
+    font-family: var(--font);
+}
+
+article h2 {
+    font-size: var(--titleSize);
+}
+
+article p {
+    margin: 2em 0;
+}
+
+article a {
+color: white;
+background-color: var(--colr);
+padding: 1em;
+
+}

@@ -1,0 +1,30 @@
+AideSection 1Section 2Section 3
+Menu accessible
+Ajouter un menu accessible qui devient visible lors du premier focus (touche tab)
+
+Appuyez sur la touche TAB pour afficher le menu accessible puis pour séléctionner la bonne section, ensuite appuyez sur la touche ENTREE pour valider.
+
+Section 1
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, cumque molestias voluptatem id et fuga unde facilis delectus impedit ipsum! Consectetur, mollitia? Blanditiis minus eum omnis ullam suscipit praesentium provident odio ex fuga perferendis ratione laudantium dolorum fugit dicta quidem id similique, explicabo culpa quam corrupti voluptatibus ad repudiandae adipisci.
+
+Quibusdam soluta labore eos tenetur laudantium perspiciatis ad obcaecati vitae cumque error blanditiis id dolore unde voluptas veniam, quod alias, repudiandae facilis illum qui libero! Quasi perferendis, assumenda sapiente necessitatibus consectetur culpa rerum perspiciatis sunt, eos ducimus ab excepturi molestiae saepe dolor quos minus nobis consequuntur reprehenderit alias, sit esse?
+
+Impedit officia consectetur totam maiores ipsam voluptate commodi culpa soluta laboriosam? Ipsam debitis accusantium ex consectetur sint earum beatae exercitationem accusamus rem possimus! Ducimus nam perferendis voluptas incidunt iste! Inventore nulla laborum illum quibusdam amet ipsam, cumque perferendis, consequuntur neque id facere dolor quis? Sint accusamus placeat veniam voluptate delectus.
+
+Section 2
+Sit placeat, laudantium illo minima eaque et rem cumque hic quas vitae, praesentium labore iste commodi alias suscipit quidem voluptatem autem! Quam accusantium corporis obcaecati, quae fugiat, perferendis tempora nulla voluptate cum adipisci laborum quisquam similique eos quia. Dolorum vel doloribus excepturi debitis quo, magni commodi libero earum mollitia provident.
+
+Tempora, temporibus aspernatur vel ratione, commodi iste culpa debitis neque earum, quisquam error quibusdam blanditiis fuga nobis minus et corrupti possimus quia dolor nulla. Nisi pariatur ex ipsam modi architecto fuga libero harum quis soluta, corporis commodi recusandae beatae veniam dignissimos repellat eos dolore neque, minima error ducimus? Vel, consequatur!
+
+Sequi commodi ex dolorem perferendis nemo et necessitatibus veniam sint. Explicabo cupiditate repellendus, illum eius tempora voluptatum quos debitis ipsa totam consequatur vel! Et repellendus animi sapiente est ea? Sed consequatur cupiditate explicabo, distinctio ipsum cum quaerat ea quasi eius quos nihil eum ullam! Magni quos quibusdam facilis dolor incidunt.
+
+Section 3
+Ut sunt inventore sequi architecto a temporibus tempora saepe, dolore nihil dolorum nam suscipit culpa voluptate odit hic doloremque quia obcaecati est rerum, iusto natus? Quos qui facere atque, minima in consequatur soluta, nobis at harum aut nisi ratione ipsum rerum! Qui deleniti nihil consequatur sapiente cumque obcaecati facere reiciendis!
+
+Doloribus, maxime impedit corrupti delectus nemo cumque. Eum doloremque iure id, ad minima soluta vitae nesciunt dolor! Et tempore ea, quis asperiores illum enim iste incidunt ut libero blanditiis dolorem sed velit nam. Dolorem optio natus aut autem asperiores est, quod ut magni amet, voluptate harum exercitationem labore veniam eos.
+
+Totam magni nihil, atque nesciunt aliquam debitis sunt molestiae recusandae. Sint aperiam vel in molestias et, sapiente mollitia, culpa ea aut repellat asperiores unde voluptatem ipsam nihil quia. Fuga iure repellendus maxime sequi odit numquam, aliquid non suscipit saepe soluta nisi sunt aut? Eveniet similique, nostrum nam corporis porro sed.
+
+Propriété de la 3W Academy
+
+Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Stephane Pereck.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Le template des démos du module 3 (feuille de style commune en version 3)">
+	<link rel="stylesheet" href="css/common-v3.css">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+	<title>La cascade</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<h1>Module 5.1 - La cascade</h1>
+		<p>Comprendre les différents facteurs de la cascade: l'ordre dans la source, la spécificité et l'importance
+		</p>
+	</header>
+
+	<main class="container">
+
+		<article class="outer">
+			<h2>L'ordre dans la source</h2>
+			<p>Un article ayant la classe <code>.outer</code>. Le texte de ce paragraphe est de couleur verte, c'est le selecteur <code>.outer p</code> qui est appliqué.</p>
+			<p class="inner">Un paragraphe ayant la classe <code>.inner</code>. Le texte de ce paragraphe est de couleur verte, c'est le selecteur <code>.outer p</code> qui est appliqué car il est écrit après le sélecteur <code>article .inner</code> dans la source. Les deux sélécteurs ayant la même spécificité (1 classe + 1 élément), c'est l'ordre dans la source qui compte.</p>
+		</article>
+
+		<article class="alice">
+			<h2>La spécificité</h2>
+			<p>Un article ayant la classe <code>.alice</code>. Le texte de ce paragraphe est de couleur bleue, c'est le selecteur <code>.alice p</code> qui est appliqué car il possède la plus grande spécificité (1 classe + 1 élément), supérieure à <code>.alice</code> (1 classe).</p>
+			<p class="bob">Un paragraphe ayant la classe <code>.bob</code>. Le texte de ce paragraphe est de couleur rouge orangé, c'est le selecteur <code>.alice .bob</code> qui est appliqué car il possède la plus grande spécificité (2 classes), supérieure à <code>p.bob</code> (1 classe + 1 élément) et à <code>.bob</code> (1 classe).</p>
+		</article>
+
+		<article class="base">
+			<h2>L'importance</h2>
+			<p>Un article ayant la classe <code>.base</code></p>
+			<p class="important">Un paragraphe ayant la classe <code>.important</code>. Le texte de ce paragraphe est de couleur rouge, c'est la propriété <code>color: red</code> du selecteur <code>.important</code> qui est appliqué car il y a la déclaration <code>!important</code>.</p>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy"
+					src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license"
+				href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par
+			Stephane Pereck.</p>
+	</footer>
+
+</body>
+
+</html>

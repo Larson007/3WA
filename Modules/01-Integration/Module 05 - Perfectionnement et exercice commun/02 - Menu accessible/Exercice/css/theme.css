@@ -1,0 +1,38 @@
+/* Le code CSS de la démo */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    margin: 2em 0;
+}
+article * {
+    margin: 1em 0;
+}
+
+nav {
+    position: absolute;
+    top: -10em;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    background-color: rgb(58, 57, 70);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a:focus,
+nav a:hover {
+    top: 10em;
+}
