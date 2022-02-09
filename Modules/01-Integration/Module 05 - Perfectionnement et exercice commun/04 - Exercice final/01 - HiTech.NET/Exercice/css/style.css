@@ -1,0 +1,755 @@
+@charset "UTF-8";
+/* ====================
+    @Omport CSS
+======================*/
+@import url(c:\wamp64\www\Educations\3WA\Modules\01-Integration\Module 05 - Perfectionnement et exercice commun\04 - Exercice final\01 - HiTech.NET\Exercice\css\normalize.css);
+/* Slider */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: -25px;
+}
+
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
+/* ====================
+    Fonts
+======================*/
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+/* ====================
+    Variables Color
+======================*/
+/* =====================
+    STYLE COMMUN
+======================*/
+body {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1.5rem;
+  background-color: #eee !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Menu Bar
+======================= */
+.menu-bar {
+  background-color: #e2f7ff;
+}
+
+.menu-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-bar ul li i {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+}
+
+/* contenaire
+======================*/
+.contenaire {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.contenaire-main {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Link
+======================*/
+a {
+  color: #0c6588 !important;
+  font-weight: 500 !important;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* =====================================================================
+====================================================================== */
+/* ====================
+    Header
+======================*/
+header {
+  background-image: url("../images/header.jpg");
+}
+
+header a {
+  text-decoration: none !important;
+}
+
+header .header-top {
+  margin: 1.5em 0;
+  color: #e2f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-top .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-top .logo img {
+  width: 6rem;
+  height: auto;
+}
+
+header .header-top .logo .logo-title {
+  padding: 0 0.5rem;
+}
+
+header .header-top .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1em;
+}
+
+header .header-top .search input {
+  background-color: #e2f7ff;
+  border: 2px solid white;
+  border-radius: 2.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+header .header-top .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+}
+
+header .header-top .user div {
+  padding: 1rem;
+}
+
+header .header-top .user div i {
+  font-size: 1.8rem;
+}
+
+header .header-top .user .user-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header-top .user .user-items a,
+header .header-top .user .user-items i {
+  color: white !important;
+}
+
+/* =====================================================================
+====================================================================== */
+/* ====================
+    Main
+======================*/
+main {
+  background-color: #fff;
+  /* 
+    Présentation
+======================*/
+  /* 
+    Description
+======================*/
+  /* 
+    Caractéristiques
+======================*/
+}
+
+main h1 {
+  margin-top: 4rem;
+}
+
+main .breadcrumb-item i,
+main .breadcrumb-item a {
+  color: #0c6588;
+}
+
+main .breadcrumb-item i {
+  padding-right: 0.5rem;
+}
+
+main .nav-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+main .nav-top ul li {
+  margin-right: 4rem;
+}
+
+main .presentation {
+  margin-top: 5rem;
+}
+
+main .presentation .caract-badge a {
+  text-decoration: none;
+}
+
+main .presentation .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .presentation .product .product-slider {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+}
+
+main .presentation .product .product-detail {
+  width: 50%;
+  margin: 1rem;
+}
+
+main .presentation .product .product-price {
+  margin-bottom: 1.5rem;
+}
+
+main .presentation .product .product-price .product-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eee;
+  text-align: center;
+}
+
+main .presentation .product .product-price .product-shop .price {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .presentation .product .product-price .product-shop .product-add {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+main .presentation .product .product-price .product-shop .product-add .product-add-cart {
+  display: block;
+  background-color: #0c6588;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bolder !important;
+  padding: 1rem;
+}
+
+main .presentation .product .product-price .product-shop .product-add .product-add-whish {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+main .presentation .product .product-price .garantie {
+  background-color: #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+main .presentation .product .product-price .garantie p {
+  margin: 0;
+}
+
+main .descriptif .descriptif-article {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .descriptif .descriptif-article .descr-title {
+  width: 100%;
+}
+
+main .descriptif .descriptif-article .descr-img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .descriptif .descriptif-article .descr-text {
+  width: 50%;
+}
+
+main .caract .caract-affichage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+
+main .caract .caract-affichage .caract-title {
+  width: 30%;
+  padding: 0 2rem;
+}
+
+main .caract .caract-affichage .caract-table {
+  width: 70%;
+}
+
+main .caract .caract-affichage .caract-table table {
+  width: 100%;
+  border: 2px solid lightgray;
+}
+
+main .caract .caract-affichage .caract-table table tr {
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+}
+
+main .caract .caract-affichage .caract-table table tr td {
+  padding: 1rem;
+  width: 50%;
+}
+
+/* =====================================================================
+====================================================================== */
+/* ====================
+    FOOTER
+======================*/
+footer {
+  background: url("../images/footer.jpg");
+  color: #ddd;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer h4 {
+  margin-bottom: 2rem;
+}
+
+footer .footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-items .footer-item-row {
+  margin: 4rem 0;
+  text-align: center;
+  width: 50%;
+}
+
+footer .footer-items .footer-item-row ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-items .footer-item-row ul img {
+  padding: 0 0.1rem;
+}
+
+footer .footer-items .footer-item-row ul li {
+  margin: 0 1rem;
+}
+
+footer .footer-items .footer-item-row ul a {
+  width: 0;
+}
+
+footer .footer-items .footer-item-row ul i {
+  color: #8d8d8d;
+  font-size: 1.3rem;
+}
+
+footer .footer-items .footer-item-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+footer .footer-items .footer-item-column a {
+  color: #ddd !important;
+}
+/*# sourceMappingURL=style.css.map */

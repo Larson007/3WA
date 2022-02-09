@@ -1,0 +1,12 @@
+{
+  "name": "05_-_demo_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css --style expanded",
+    "minify": "sass ./scss/style.scss:./css/style.min.css --style compressed"
+  },
+  "author": "Mohamed Ben Allal",
+  "license": "ISC"
+}

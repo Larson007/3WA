@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+body {
+  background: #FCEEB5;
+  font-family: 'Supermercado One', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #39C0ED;
+}
+
+#card {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#card .card__content {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px 5px 0 0;
+}
+
+#card .card__content__left {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background-color: #39C0ED;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px 0 0 0;
+}
+
+#card .card__content__left img {
+  border-radius: 50%;
+}
+
+#card .card__content__left p {
+  text-shadow: 2px 2px 2px #969696;
+}
+
+#card .card__content__right {
+  padding: 1rem;
+  width: 80%;
+}
+
+#card .card__content__right--top .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#card .card__content__right--top .name p {
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#card .card__content__right--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#card .card__content__right--bottom i {
+  padding-right: 0.2rem;
+  color: #FFA900;
+}
+
+#card .card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 0 5px 5px;
+}
+
+#card .card__btn button {
+  width: 50%;
+  padding: 1.5rem;
+  border: none;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  text-transform: capitalize;
+}
+
+#card .card__btn button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#card .card__btn button:first-child {
+  background-color: #F93154;
+  border-radius: 0 0 0 5px;
+}
+
+#card .card__btn button:last-child {
+  background-color: #00B74A;
+  border-radius: 0 0 5px 0;
+}
+
+.style2 {
+  position: relative;
+  padding: 15px 30px;
+  border: 2px solid #41f321;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #41f321;
+  letter-spacing: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.style2:hover {
+  color: #3f3f3f;
+}
+
+.style2 span {
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #41f321;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+  z-index: -1;
+}
+
+.style2:hover span {
+  width: 300px;
+  height: 300px;
+}
+/*# sourceMappingURL=style.css.map */

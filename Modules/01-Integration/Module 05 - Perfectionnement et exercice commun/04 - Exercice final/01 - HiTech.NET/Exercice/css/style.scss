@@ -1,0 +1,402 @@
+/* ====================
+    @Omport CSS
+======================*/
+
+@import "normalize.css";
+@import "slick.scss";
+@import "slick-theme.scss";
+
+/* ====================
+    Fonts
+======================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/* ====================
+    Variables Color
+======================*/
+
+$bg-body: #eee;
+$bg-blue: #0c6588;
+$bg-nav: #e2f7ff;
+$bg-main: #fff;
+$bg-footer: #333;
+$title-color: #333;
+$text-color: #555;
+$text-header: #e2f7ff;
+$text-footer: #ddd;
+$link: #0c6588;
+$link-hover: #000;
+$link-footer: #eee;
+$bg-warranty: rgb(221, 221, 221);
+
+/* =====================
+    STYLE COMMUN
+======================*/
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1.5rem;
+    background-color: $bg-body !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Raleway", sans-serif;
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+/* Menu Bar
+======================= */
+
+.menu-bar {
+    background-color: $bg-nav;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        list-style: none;
+        margin: 0;
+        li {
+            i {
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* contenaire
+======================*/
+
+.contenaire {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.contenaire-main {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Link
+======================*/
+
+a {
+    color: $link !important;
+    font-weight: 500 !important;
+}
+a:hover {
+    color: $link-hover;
+}
+
+/* =====================================================================
+====================================================================== */
+
+/* ====================
+    Header
+======================*/
+
+header {
+    background-image: url("../images/header.jpg");
+    a {
+        text-decoration: none !important;
+    }
+    .header-top {
+        margin: 1.5em 0;
+        color: $text-header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            display: flex;
+            img {
+                width: 6rem;
+                height: auto;
+            }
+            .logo-title {
+                padding: 0 0.5rem;
+            }
+        }
+        .search {
+            display: flex;
+            flex-grow: 1;
+            margin: 1em;
+
+            input {
+                background-color: $bg-nav;
+                border: 2px solid white;
+                border-radius: 2.5rem;
+                padding: 1rem;
+                width: 100%;
+            }
+        }
+        .user {
+            display: flex;
+            justify-content: end;
+            text-align: center;
+            div {
+                padding: 1rem;
+                i {
+                    font-size: 1.8rem;
+                }
+            }
+            .user-items {
+                display: flex;
+                flex-direction: column;
+                a,
+                i {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+/* =====================================================================
+====================================================================== */
+
+/* ====================
+    Main
+======================*/
+main {
+
+    h1{
+        margin-top: 4rem;
+    }
+    background-color: $bg-main;
+    .breadcrumb-item {
+        i,
+        a {
+            color: $link;
+        }
+        i {
+            padding-right: 0.5rem;
+        }
+    }
+
+    .nav-top {
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            li {
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    /* 
+    Présentation
+======================*/
+
+    .presentation {
+        margin-top: 5rem;
+        .caract-badge {
+            a {
+                text-decoration: none;
+            }
+        }
+        .product {
+            display: flex;
+            .product-slider {
+                width: 50%;
+                margin: 1rem;
+                text-align: center;
+            }
+            .product-detail {
+                width: 50%;
+                margin: 1rem;
+            }
+            .product-price {
+                margin-bottom: 1.5rem;
+                .product-shop {
+                    display: flex;
+                    background-color: $bg-body;
+                    text-align: center;
+                    .price {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .product-add {
+                        width: 50%;
+                        padding: 0.5rem;
+
+                        .product-add-cart {
+                            display: block;
+                            background-color: $bg-blue;
+                            color: white !important;
+                            text-decoration: none;
+                            font-weight: bolder !important;
+                            padding: 1rem;
+                        }
+                        .product-add-whish {
+                            display: block;
+                            background-color: $bg-main;
+                            text-decoration: none;
+                            padding: 1rem;
+                        }
+                    }
+                }
+                .garantie {
+                    background-color: $bg-warranty;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1.5rem;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+/* 
+    Description
+======================*/
+
+    .descriptif {
+        .descriptif-article {
+            margin-top: 2rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            .descr-title {
+                width: 100%;
+            }
+            .descr-img {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .descr-text {
+                width: 50%;
+            }
+        }
+    }
+
+/* 
+    Caractéristiques
+======================*/
+.caract {
+    .caract-affichage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        .caract-title {
+            width: 30%;
+            padding: 0 2rem;
+        }
+        .caract-table {
+            width: 70%;
+            table {
+                width: 100%;
+                border: 2px solid lightgray;
+                tr {
+                    border-bottom: 1px solid lightgray;
+                    text-align: left;
+                    td {
+                        padding: 1rem;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+
+/* =====================================================================
+====================================================================== */
+
+/* ====================
+    FOOTER
+======================*/
+
+footer {
+    background: url("../images/footer.jpg");
+    color: $text-footer;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    h4 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-items {
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer-item-row {
+            margin: 4rem 0;
+            text-align: center;
+            width: 50%;
+
+            ul  {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                img {
+                    padding: 0 0.1rem;
+                }
+                li {
+                    margin: 0 1rem;
+                }
+                a {
+                    width: 0;
+                }
+                i {
+                    color: rgb(141, 141, 141);
+                    font-size: 1.3rem;
+
+                }
+            }
+        }
+
+        .footer-item-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            a{
+                color: $text-footer !important;
+            }
+        }
+    }
+}

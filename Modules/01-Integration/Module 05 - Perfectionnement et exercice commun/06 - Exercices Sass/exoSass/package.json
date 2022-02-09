@@ -1,0 +1,11 @@
+{
+  "name": "exosass",
+  "version": "1.0.0",
+  "description": ".installer sass  .personnalisé votre style comme bon vous semble .utiliser les variable et les mixins .amusez vous bien",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch css/style.scss css/style.css"
+  },
+  "author": "MBA",
+  "license": "ISC"
+}

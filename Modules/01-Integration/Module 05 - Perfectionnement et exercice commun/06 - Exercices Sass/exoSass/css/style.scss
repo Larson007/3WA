@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+body {
+    background: #FCEEB5;
+    // font-family: Abel, Arial, Verdana, sans-serif;
+    font-family: 'Supermercado One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #39C0ED;
+}
+
+#card {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 5px;
+    .card__content {
+        background-color: #fff;
+        display: flex;
+        border-radius: 5px 5px 0 0;
+        &__left {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: column wrap;
+            background-color: #39C0ED;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px 0 0 0;
+            img {
+                border-radius: 50%;
+            }
+            p {
+                text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+            }
+        }
+        &__right {
+            padding: 1rem;
+            width: 80%;
+            &--top {
+                .name {
+                    display: flex;
+                    p {
+                        padding-right: 0.5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            &--bottom {
+                display: flex;
+                justify-content: space-between;
+                i {
+                    padding-right: 0.2rem;
+                    color: #FFA900;
+                }
+
+            }
+        }
+    }
+    .card__btn {
+        display: flex;
+        border-radius: 0 0 5px 5px;
+        button {
+            width: 50%;
+            padding: 1.5rem;
+            border: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.2s ease-in;
+            text-transform: capitalize;
+            &:hover {
+                transform: scale(1.02);
+            }
+            &:first-child {
+                background-color: #F93154;
+                border-radius: 0 0 0 5px;
+            }
+            &:last-child {
+                background-color: #00B74A;
+                border-radius: 0 0 5px 0;
+            }
+        }
+    }
+}
