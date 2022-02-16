@@ -12,7 +12,7 @@ Avant de voir ces méthodes, quelques explications sont nécessaires à propos d
 
 ### Window :
 
-````bash
+````js
 console.log(window);
 ````
 
@@ -88,7 +88,7 @@ console.log(li);
 querySelectorAll()
 ````
 
-Cette méthode permet de sélectionner une groupe d'éléments appelés NodeList. On peut sélectionner tous les éléments, elle accepte tous types de sélecteurs CSS, et également 
+Cette méthode permet de sélectionner une groupe d'éléments appelés NodeList. On peut sélectionner tous les éléments, elle accepte tous types de sélecteurs CSS, et également
 
 ##### les pseudo-sélecteurs.
 

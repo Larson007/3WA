@@ -44,13 +44,13 @@ let timeoutId = window.setTimeout(callBackFunction [, delay, param1, param2, ...
 
 #### Paramètres
 
-- callBackFunction : c'est la fonction qui sera appelée une fois le délai dépassé. On peut ici fournir un nom de fonction défini ailleurs dans notre code ou directement une fonction anonyme (comme pour toutes les fonctions évènementielles JavaScript qui appellent une fonction de callBack),
-- delay (optionnel) : le délai en millisecondes avant que la fonction de callBack ne soit appelée. Par défaut, ce paramètre vaut 0, la fonction est exécutée dès que possible. Astuce : 1000 ms = 1 s
-- param1, param2... (optionnels) : les paramètres (valeurs) qui seront passés à la fonction de callBack. Attention ces paramètres ne sont pas compatibles avec IE9 (Internet Explorer 9).
+- `callBackFunction` : c'est la fonction qui sera appelée une fois le délai dépassé. On peut ici fournir un nom de fonction défini ailleurs dans notre code ou directement une fonction anonyme (comme pour toutes les fonctions évènementielles JavaScript qui appellent une fonction de callBack),
+- `delay` (optionnel) : le délai en millisecondes avant que la fonction de callBack ne soit appelée. Par défaut, ce paramètre vaut 0, la fonction est exécutée dès que possible. Astuce : 1000 ms = 1 s
+- `param1`, `param2`... (optionnels) : les paramètres (valeurs) qui seront passés à la fonction de callBack. Attention ces paramètres ne sont pas compatibles avec IE9 (Internet Explorer 9).
 
 #### Valeur de retour
 
-- timeoutId : un identifiant unique fourni par Javascript si vous souhaitez retrouver et arrêter votre "timer" avant son exécution par exemple,
+- `timeoutId` : un identifiant unique fourni par Javascript si vous souhaitez retrouver et arrêter votre "timer" avant son exécution par exemple,
 
 *Exemple : un message alert après 3 secondes
 En utilisant une fonction anonyme directement dans l'appel de setTimeout*
@@ -82,7 +82,7 @@ let  intervalID  =  window.setInterval(callBackFunction [, delay, param1, param2
 
 #### Paramètres
 
-- intervalID : un identifiant unique fourni par Javascript que nous récupérons au lancement de **setinterval**.
+- `intervalID` : un identifiant unique fourni par Javascript que nous récupérons au lancement de **setinterval**.
 
 ***Exemple : afficher un compteur de secondes depuis le chargement complet de la page
 Le code JavaScript du fichier `main.js`***
@@ -219,7 +219,6 @@ function updateFps()
 ````
 
 ***Fichier `index.html`***
-
 
 ````html
 <html  lang="fr">

@@ -1,0 +1,18 @@
+body
+{
+    background-image: url('../img/graveyard.gif');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#zombietomb
+{
+    transform: scale(2);
+    width:100px;
+    height:100px;
+    /* border: 1ps solid red; */
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}

@@ -1,0 +1,14 @@
+#ball {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 3rem;
+    color: #333;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./images/terrain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

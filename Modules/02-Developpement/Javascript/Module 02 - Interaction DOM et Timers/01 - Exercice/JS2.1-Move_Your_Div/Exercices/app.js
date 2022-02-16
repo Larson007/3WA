@@ -13,43 +13,10 @@ const btnHide = document.getElementById("hideModal");
 const btnMove = document.getElementById("moveDiv");
 
 
-let position = [
-    ["0%", "0%"],
-    ["50%", "0%"],
-    ["100%", "50%"],
-    ["50%", "100%"],
-    ["0%", "50%"],
-];
-
-//console.log(position[2][0]);
-
-
-// Methode Itération
-
-btnMove.addEventListener("click", function () {
-    switch (box.style.left === position[0][0] && box.style.top === position[0][1]) {
-        case 1:
-            box.style.left = position[1][0];
-            box.style.top = position[1][1];
-            console.log(box.style.left);
-        break;
-        case 2:
-            box.style.left = position[2][0];
-            box.style.top = position[2][1];
-            console.log(box.style.left);
-        break;
-
-    default:
-        break;
-}
-});
-
 
 
 
 // Methode if
-
-/************************
 
 
 btnMove.addEventListener("click", function () {
@@ -102,4 +69,3 @@ btnHide.addEventListener("click", function () {
     modal.classList.remove("active");
 });
 
-*****************************/

@@ -1,0 +1,15 @@
+#animationArea {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.pbox {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #0000ff;
+    border-radius: 25px;
+}

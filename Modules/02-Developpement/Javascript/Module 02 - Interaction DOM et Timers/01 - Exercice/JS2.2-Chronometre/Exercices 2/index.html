@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>StartArkanoid</title>
+    <title>un chronomètre en secondes avec setTimeout</title>
 </head>
 
 <body>
-    <div id="ball">
-        <!-- <i class="fa-solid fa-futbol"></i> -->
-        <img src="images/ball.png" alt="" width="50px">
+    <div class="timer">
+        <i class="fa-solid fa-clock"></i>
+        <p id="chrono"></p>
     </div>
+    <div class="player">
+        <button id="start"><i class="fa-solid fa-play"></i></button>
+        <button id="stop"><i class="fa-solid fa-pause"></i></button>
+        <button id="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
+    </div>
+
     <script src="main.js"></script>
 </body>
 

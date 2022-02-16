@@ -1,0 +1,9 @@
+body {
+	background-color: gray;
+}
+
+#animation-window {
+	background-color: black;
+	width: 100px;
+	height: 100px;
+}
