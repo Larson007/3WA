@@ -6,9 +6,11 @@
 
 const billboard = document.querySelector("#billboard").querySelector("span");
 const firingButton = document.getElementById("firing-button");
+const cancelButton = document.getElementById("stop-button");
+const resetButton = document.getElementById("reset-button");
 const Ramp = document.getElementById("launching-ramp");
 const moon = document.getElementById("moon");
-const test = document.getElementById("test");
+
 
 // Objet qui contient les données du countDown
 const chrono = {
@@ -21,12 +23,6 @@ const rocket = {
     imgStandBy: "images/rocket1.png",
     imgCharging: "images/rocket2.gif",
     imgLaunching: "images/rocket3.gif",
-    xPos: 0,
-    yPos: 0,
-    xDir: 1,  // 1, -1 or 0
-    yDir: 1,  // 1, -1 or 0
-    speedX: 0.8,
-    speedY: 1
 };
 
 // Valeur par défault de l'affichage
@@ -51,35 +47,66 @@ firingButton.addEventListener("click", () => {
     function countDown() {
         // On decremente le Countdown en commencent à 10
         chrono.count--;
+
+        if (chrono.count >= 9 && chrono.count > 0 ) {
+            cancelButton.classList.add("enabled");
+            cancelButton.addEventListener("click", () => {
+                clearInterval(chrono.countTotal);
+                rocket.htlmEl.src = rocket.imgStandBy;
+            });
+        }
+
         //Si le Countdown atteind 0
-        if (chrono.count <= 0) {
+        else if (chrono.count <= 0) {
             // On arret l'interval d'animation du Countdown
             clearInterval(chrono.countTotal);
-            // Rocket3.gif charger a la fin du countDown
-            rocket.htlmEl.src = rocket.imgLaunching;
-            // ajout a la rocket la class .tookoff qui gère l'animation de décollage
-            rocket.htlmEl.classList.add("tookOff");
-            // Ajout au bouton la class .disable a la fin du countDown
-            firingButton.classList.add("disabled");
-            // Le bouton n'est plus clickable a la fin fu countDown
-            firingButton.style.pointerEvents("none");
-
+            cancelButton.classList.remove("enabled");
+            launch();
+            fireButton();
+            
+            
         }
         // affichage du Countdown dans le DOM
-        billboard.innerText = (chrono.count > 9 ? chrono.count : "0" + chrono.count);
+        billboard.innerText = chrono.count;
+        console.log(chrono.count);
+        
     }
     // On définit la fréquence de déclanchement de la fonction countDown
-    chrono.countTotal = setInterval(countDown, 100);
+    chrono.countTotal = setInterval(countDown, 500);
 });
 
 
 /* -------- Gestion de la Fusée
 ********************************/
 function launch() {
+    // Rocket3.gif charger a la fin du countDown
+    rocket.htlmEl.src = rocket.imgLaunching;
+    // ajout a la rocket la class .tookoff qui gère l'animation de décollage
     rocket.htlmEl.classList.add("tookOff");
 }
 
+/* -------- Boutton Launch
+********************************/
+function fireButton() {
+    // Ajout au bouton la class .disable a la fin du countDown
+    firingButton.classList.add("disabled");
+    // Le bouton n'est plus clickable a la fin fu countDown
+    firingButton.style.pointerEvents("none");
 
+}
+
+/* -------- Boutton Reset
+********************************/
+// function reset() {
+    
+//     resetButton.classList.add("enabled");
+//     resetButton.addEventListener("click", () => {
+//         chrono.count = 10;
+//         rocket.htlmEl.classList.remove("tookOff");
+//         rocket.htlmEl.src = rocket.imgStandBy;
+//     });
+// }
+// reset();
 /************************************************************************************/
 /* ******************************** CODE PRINCIPAL **********************************/
 /************************************************************************************/

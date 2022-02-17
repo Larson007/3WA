@@ -23,10 +23,39 @@ body {
     cursor: pointer;
 }
 
+#stop-button {
+    position: absolute;
+    left:200px;
+    bottom: 100px;
+    width:75px;
+    height:75px;
+    cursor: default;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+#reset-button {
+    position: absolute;
+    left:300px;
+    bottom: 100px;
+    width:75px;
+    height:75px;
+    cursor: default;
+    opacity: 0.4;
+    pointer-events: none;
+
+}
 
 .disabled {
     filter:grayscale(100%);
     cursor: default;
+}
+
+.enabled {
+    opacity: 1 !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
 }
 
 #billboard {
