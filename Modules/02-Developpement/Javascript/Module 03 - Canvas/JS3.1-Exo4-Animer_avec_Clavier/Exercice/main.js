@@ -3,9 +3,10 @@
 // On défini le propriété de notre carré que l'on va dessiner dans un objet
 let square = {
     color: "#F93154",
-    length: 20,
-    x: 10,
-    y: 10
+    width: 200,
+    height: 50,
+    x: 300,
+    y: 700
 };
 
 let ground = {
@@ -19,7 +20,7 @@ let ground = {
 
 // Notre context et notre Canvas sont définis dans le Scope global pour un accès par nos fonctions
 let canvasDom;
-let ctx;
+let context;
 
 
 // Dès que le DOM est chargé on commence
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     canvasDom = document.getElementById("canvas");
 
-    ctx = canvasDom.getContext("2d");
+    context = canvasDom.getContext("2d");
 
     displaySquare();
 
@@ -40,16 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function displaySquare() {
 
     // On vide le Canvas avant de redessiner
-    ctx.clearRect(0, 0, canvasDom.width, canvasDom.height);
+    context.clearRect(0, 0, canvasDom.width, canvasDom.height);
 
     // Affichage du terrain
-    ctx.fillStyle = ground.color;
-    ctx.fillRect(ground.posX, ground.posY, canvasDom.width, canvasDom.height);
+    context.fillStyle = ground.color;
+    context.fillRect(ground.posX, ground.posY, canvasDom.width, canvasDom.height);
 
 
     // Affichage du carrée
-    ctx.fillStyle = square.color;
-    ctx.fillRect(square.x, square.y, square.length, square.length);
+    context.fillStyle = square.color;
+    context.fillRect(square.x, square.y, square.width, square.height);
 }
 
 // Gestion du mouvement lors du keyDown
@@ -58,7 +59,7 @@ function moveSquare(e) {
         switch(e.key)
         {
             case 'ArrowRight':
-                if (square.x + square.length < canvasDom.width ) square.x++;
+                if (square.x + square.width < canvasDom.width ) square.x++;
                 break;
             case 'ArrowLeft':
                 if (square.x > 0) square.x--;
@@ -67,7 +68,7 @@ function moveSquare(e) {
                 if (square.y > 0) square.y--;
                 break;
             case 'ArrowDown':
-                if (square.y + square.length < canvasDom.height) square.y++;
+                if (square.y + square.height < canvasDom.height) square.y++;
                 break;
         }
     

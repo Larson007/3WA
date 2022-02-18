@@ -297,7 +297,8 @@ Pour remplacer notre carré par un cercle nous allons modifier notre variable sq
 ```js
 'use strict';
 
-// On défini le propriété de notre cercle que l'on va dessiner dans un objet let circle = {
+// On défini le propriété de notre cercle que l'on va dessiner dans un objet 
+let circle = {
 
 color: "#FF0000",
 radius:10,
@@ -305,9 +306,13 @@ x:20,
 y:20
 };
 
-// Notre context et notre Canvas sont définis dans le Scope global pour un accès par nos fonctions let canvasDom; let ctx;
+// Notre context et notre Canvas sont définis dans le Scope global pour un accès par nos fonctions let canvasDom; 
 
-// Dès que le DOM est chargé on commence document.addEventListener('DOMContentLoaded', function () {
+let ctx;
+
+// Dès que le DOM est chargé on commence 
+
+document.addEventListener('DOMContentLoaded', function () {
 
 // L'objet du DOM Canvas
 canvasDom = document.querySelector('#canvas');
@@ -322,41 +327,53 @@ displayCircle();
 document.addEventListener('keydown', moveCircle);
 });
 
-/** Gestionnaire d'évènement clavier
 
-@param {event} e l'évènement keydown */ function moveCircle(e) {
+/** Gestionnaire dévènement clavier
+ * @param {event} e l'évènement keydow
+ */
+function moveSquare(e)
+{
 
-// on détecte la touche et la direction puis on change les coordonnées switch(e.key) {
-
-case 'ArrowRight':
-    if (circle.x + circle.radius < canvasDom.width) circle.x++;
-    break;
-case 'ArrowLeft':
-    if (circle.x - circle.radius > 0) circle.x--;
-    break;
-case 'ArrowUp':
-    if (circle.y - circle.radius > 0) circle.y--;
-    break;
-case 'ArrowDown':
-    if (circle.y + circle.radius < canvasDom.height) circle.y++;
-    break;
+    // on détecte la touche et la direction puis on change les coordonnées
+    switch(e.key) {
+        case 'ArrowRight':
+            if (circle.x + circle.radius < canvasDom.width) circle.x++;
+            break;
+        case 'ArrowLeft':
+            if (circle.x - circle.radius > 0) circle.x--;
+            break;
+        case 'ArrowUp':
+            if (circle.y - circle.radius > 0) circle.y--;
+            break;
+        case 'ArrowDown':
+            if (circle.y + circle.radius < canvasDom.height) circle.y++;
+            break;
+// On dessine notre cercle 
+displayCircle();
 }
 
-// On dessine notre cercle displayCircle(); }
-
 /** Fonction qui affiche le cercle avec ces coordonnées et la couleur défini dans le contexte
+*/ function displayCircle() { 
+    // On vide le Canvas avant de redessiner 
+    ctx.clearRect(0, 0, canvasDom.width, canvasDom.height);
 
-*/ function displayCircle() { // On vide le Canvas avant de redessiner ctx.clearRect(0, 0, canvasDom.width, canvasDom.height);
+    // On dit au contexte que la couleur de remplissage est gris 
+    ctx.fillStyle = '#DDDDDD'; 
 
-// On dit au contexte que la couleur de remplissage est gris 
-ctx.fillStyle = '#DDDDDD'; 
+    // On rempli le Canvas de gris en fond 
+    ctx.fillRect(0, 0, canvasDom.width, canvasDom.height);
 
-// On rempli le Canvas de gris en fond 
-ctx.fillRect(0, 0, canvasDom.width, canvasDom.height);
+    // On dit au contexte que la couleur de remplissage est rouge 
+    ctx.fillStyle = circle.color;
 
-// On dit au contexte que la couleur de remplissage est rouge 
-ctx.fillStyle = circle.color;
-
-/On trace un nouveau cercle rempli/ // on commence le tracé ctx.beginPath(); // on trace un arc fermé (un cercle) ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI); // on dessine sur le canvas en remplissant le tracé ctx.fill(); // On aurait pu dessiner sur le Canvas seulement le contour ! //ctx.stroke(); 
+    //On trace un nouveau cercle rempli
+    // on commence le tracé 
+    ctx.beginPath(); 
+    // on trace un arc fermé (un cercle) 
+    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI); 
+    // on dessine sur le canvas en remplissant le tracé 
+    ctx.fill(); 
+    // On aurait pu dessiner sur le Canvas seulement le contour ! 
+    ctx.stroke(); 
 }
 ````

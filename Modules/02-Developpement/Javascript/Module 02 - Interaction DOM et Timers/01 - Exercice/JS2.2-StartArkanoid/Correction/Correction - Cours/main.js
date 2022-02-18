@@ -23,9 +23,6 @@ function moveBall() {
     if (ball.xPos > 100 || ball.xPos < 0) {
         ball.xDir = -ball.xDir;
     }
-    if (ball.yPos > 100 || ball.yPos < 0) {
-        ball.yDir = -ball.yDir;
-    }
     
     requestAnimationFrame(moveBall);
 }
