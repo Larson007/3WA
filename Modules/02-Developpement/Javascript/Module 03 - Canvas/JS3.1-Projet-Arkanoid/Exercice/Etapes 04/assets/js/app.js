@@ -1,5 +1,8 @@
 // 'use strict';
 
+// TODO Angle de la balle lors du rebond en fonction de la position sur le paddle (gauche/milieu/droit)
+// TODO Fonction Start et Pause via ENTER
+
 let canvasDom = document.getElementById("canvas");
 let context = canvasDom.getContext('2d');
 
@@ -26,17 +29,13 @@ let ball = {
     speedY: 10
 };
 
-let test = 200;
-// paddle
 let paddle = {
     color: "#1266F1",
     width: 200,
     height: 30,
-    xPos: 0,
+    xPos: (canvasDom.width - 200) / 2,
     yPos: canvasDom.height - 30,
-    // yPos: canvasDom.height - 100,
     xDir: 5,
-    //yDir: -5,
     rightPressed: false,
     leftPressed: false,
 };
@@ -46,6 +45,59 @@ let gameover = {
     size: "5rem",
     color: "#F93154"
 };
+
+let bricks = {
+    row: 3,
+    column: 5,
+    width: 130,
+    height: 30,
+    xPos: 0,
+    yPos: 0,
+    xPadding: 20,
+    yPadding: 20,
+    xMargin: 30,
+    yMargin: 60
+};
+
+
+/* ------Gestion des bricks
+***************************************/
+
+// On créer un tableau bricksArray qui contient les columns/rows des bricks qui elles mêmes conteindront un objet indiquant leur postion x/y du canvas
+let bricksArray = [];
+for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
+    bricksArray[columnArray] = [];
+    for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
+        bricksArray[columnArray][rowArray] = { x: bricks.xPos, y: bricks.yPos };
+    }
+}
+
+
+function bricksDisplay() {
+    for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
+        for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
+
+            bricks.xPos = (columnArray * (bricks.width + bricks.xPadding)) + bricks.xMargin;
+            bricks.yPos = (rowArray * (bricks.height + bricks.yPadding)) + bricks.yMargin;
+            bricksArray[columnArray][rowArray].x = bricks.xPos;
+            bricksArray[columnArray][rowArray].y = bricks.yPos;
+            context.beginPath();
+            context.rect(bricks.xPos, bricks.yPos, bricks.width, bricks.height);
+            context.fillStyle = "#ddd";
+            context.fill();
+            context.closePath();
+
+        }
+    }
+}
+
+/*---------------------------------------
+*****************************************/
+
+
+
+
+
 
 
 
@@ -122,6 +174,26 @@ function ballDisplay() {
 
 
 
+
+
+/* ------Gestion du RELOAD
+***************************************/
+function initPositions() {
+    document.addEventListener("keydown", (e) => {
+        if (e.keyCode === 32) {
+            document.location.reload();
+        }
+    });
+
+}
+/*---------------------------------------
+*****************************************/
+
+
+
+
+
+
 /* ------Gestion du GAMEOVER
 ***************************************/
 function gameOverDisplay() {
@@ -134,6 +206,16 @@ function gameOverDisplay() {
     context.shadowBlur = 15;
     context.shadowColor = "red";
     context.fillText("GAME OVER", canvasDom.width / 2, canvasDom.height / 2, canvasDom.height / 2);
+    context.shadowBlur = 0;
+    context.closePath();
+
+    context.beginPath();
+    context.fillStyle = "white";
+    context.font = `${gameover.size} ${gameover.font}`;
+    context.textAlign = "center";
+    context.shadowBlur = 15;
+    context.shadowColor = "white";
+    context.fillText("Press SpaceBar to Relaod", canvasDom.width / 2, (canvasDom.height / 2) + 100, canvasDom.height / 2);
     context.shadowBlur = 0;
     context.closePath();
 }
@@ -159,7 +241,6 @@ function detectCollisions() {
         // x > paddleX && x < paddleX + paddleWidth
         if (ball.xPos > paddle.xPos && ball.xPos < paddle.xPos + paddle.width) {
             ball.yDir = -ball.yDir;
-            console.log(`${ball.yDir}`);
         }
         else {
             gameOverDisplay();
@@ -185,8 +266,10 @@ function playGame() {
     context.clearRect(0, 0, canvasDom.width, canvasDom.height);
     ballDisplay();
     paddleDisplay();
-    paddleControl()
+    bricksDisplay();
+    paddleControl();
     detectCollisions();
+    initPositions();
 
     requestAnimationFrame(playGame);
 }
