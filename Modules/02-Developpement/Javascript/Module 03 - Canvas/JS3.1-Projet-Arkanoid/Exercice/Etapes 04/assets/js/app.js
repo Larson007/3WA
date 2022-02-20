@@ -6,11 +6,8 @@
 let canvasDom = document.getElementById("canvas");
 let context = canvasDom.getContext('2d');
 
-// Bordure du canvas
-canvasDom.style.border = "2px solid black";
 
-
-let board = {
+const board = {
     color: 0,
     width: 800,
     height: 800,
@@ -18,7 +15,7 @@ let board = {
     yDir: 0
 };
 // ball
-let ball = {
+const ball = {
     color: "#00B74A",
     radius: 20,
     xPos: canvasDom.width / 2,
@@ -29,7 +26,7 @@ let ball = {
     speedY: 10
 };
 
-let paddle = {
+const paddle = {
     color: "#1266F1",
     width: 200,
     height: 30,
@@ -40,13 +37,13 @@ let paddle = {
     leftPressed: false,
 };
 
-let gameover = {
+const gameover = {
     font: "Fira Code",
     size: "5rem",
     color: "#F93154"
 };
 
-let bricks = {
+const bricks = {
     row: 3,
     column: 5,
     width: 130,
@@ -58,48 +55,6 @@ let bricks = {
     xMargin: 30,
     yMargin: 60
 };
-
-
-/* ------Gestion des bricks
-***************************************/
-
-// On créer un tableau bricksArray qui contient les columns/rows des bricks qui elles mêmes conteindront un objet indiquant leur postion x/y du canvas
-let bricksArray = [];
-for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
-    bricksArray[columnArray] = [];
-    for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
-        bricksArray[columnArray][rowArray] = { x: bricks.xPos, y: bricks.yPos };
-    }
-}
-
-
-function bricksDisplay() {
-    for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
-        for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
-
-            bricks.xPos = (columnArray * (bricks.width + bricks.xPadding)) + bricks.xMargin;
-            bricks.yPos = (rowArray * (bricks.height + bricks.yPadding)) + bricks.yMargin;
-            bricksArray[columnArray][rowArray].x = bricks.xPos;
-            bricksArray[columnArray][rowArray].y = bricks.yPos;
-            context.beginPath();
-            context.rect(bricks.xPos, bricks.yPos, bricks.width, bricks.height);
-            context.fillStyle = "#ddd";
-            context.fill();
-            context.closePath();
-
-        }
-    }
-}
-
-/*---------------------------------------
-*****************************************/
-
-
-
-
-
-
-
 
 
 /* ------Gestion du paddle
@@ -256,6 +211,67 @@ function detectCollisions() {
 /*---------------------------------------
 *****************************************/
 
+
+
+
+
+/* ------Gestion des bricks
+***************************************/
+
+// On créer un tableau bricksArray qui contient les columns/rows des bricks qui elles mêmes conteindront un objet indiquant leur postion x/y du canvas
+let bricksArray = [];
+
+for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
+    bricksArray[columnArray] = [];
+    for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
+        bricksArray[columnArray][rowArray] = { x: bricks.xPos, y: bricks.yPos, status: 1 };
+    }
+}
+
+function bricksDisplay() {
+    for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
+        for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
+
+            if (bricksArray[columnArray][rowArray].status === 1) {
+                bricks.xPos = (columnArray * (bricks.width + bricks.xPadding)) + bricks.xMargin;
+                bricks.yPos = (rowArray * (bricks.height + bricks.yPadding)) + bricks.yMargin;
+                bricksArray[columnArray][rowArray].x = bricks.xPos;
+                bricksArray[columnArray][rowArray].y = bricks.yPos;
+                context.beginPath();
+                context.rect(bricks.xPos, bricks.yPos, bricks.width, bricks.height);
+                context.fillStyle = "#ddd";
+                context.fill();
+                context.closePath();
+            }
+
+        }
+    }
+}
+
+let bricksArrayCollision = [];
+
+function bricksCollision() {
+    for (let columnArray = 0; columnArray < bricks.column; columnArray++) {
+        for (let rowArray = 0; rowArray < bricks.row; rowArray++) {
+            bricksArrayCollision = bricksArray[columnArray][rowArray];
+            if (bricksArrayCollision.status === 1) {
+                if (ball.xPos > bricksArrayCollision.x && ball.xPos < bricksArrayCollision.x + bricks.width && ball.yPos > bricksArrayCollision.y && ball.yPos < bricksArrayCollision.y + bricks.height) {
+                    ball.yDir = -ball.yDir;
+                    bricksArrayCollision.status = 0;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------------------------
+*****************************************/
+
+
+
+
+
+
 /* ------Gestion des Animations
 ***************************************/
 
@@ -269,8 +285,8 @@ function playGame() {
     bricksDisplay();
     paddleControl();
     detectCollisions();
+    bricksCollision();
     initPositions();
-
     requestAnimationFrame(playGame);
 }
 requestAnimationFrame(playGame);
