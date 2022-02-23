@@ -30,6 +30,7 @@ const board = {
     xDir: 0,
     yDir: 0
 };
+
 // ball
 const ball = {
     color: "#00B74A",
@@ -180,7 +181,7 @@ function initPositions() {
         }
     });
 }
-
+initPositions();
 /*---------------------------------------
 *****************************************/
 
@@ -243,8 +244,8 @@ function detectCollisions() {
             if (life.lives < 0) {
                 // GAMEOVER
                 gameOverDisplay();
-                document.location.stopPropagation();
-                document.location.reload();
+                // document.location.stopPropagation();
+                // document.location.reload();
                 window.cancelAnimationFrame(playGame);
             }
             else {
@@ -380,6 +381,8 @@ function victoryDisplay() {
 /* ------Gestion des Animations
 ***************************************/
 
+
+
 // Animation de la balle et du paddle
 function playGame() {
 
@@ -393,7 +396,6 @@ function playGame() {
     paddleDisplay();
     bricksDisplay();
     paddleControl();
-    initPositions();
     detectCollisions();
     bricksCollision();
 
