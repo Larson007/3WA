@@ -2,35 +2,30 @@ const app = Vue.createApp({
     data() {
         return {
             title: 'TodoListe',
-            taskText:'',
-            dataKey:Date.now(),
-            checked: false,
+            taskText: '',
+            isChecked: false,
             allTasks: [],
-            
-        }
+
+        };
     },
     methods: {
         addTask(e) {
             e.preventDefault();
-            this.allTasks.push({id:this.dataKey, name:this.taskText});
+            this.allTasks.push({ id: Date.now(), name: this.taskText });
             this.taskText = "";
         },
-        // TODO check class
-        checkTask(e){
-            console.log(this.checked);
+        checkTask() {
+            this.isChecked = !this.isChecked;
         },
-        // deleteTask(e) {
+        removeTask(e) {
 
-        //     allTasks.forEach(task => {
+            this.allTasks.forEach(task => {
 
-        //         if (e.target.parentNode.getAttribute("data-key") === task.getAttribute("data-key")) {
-        //             task.remove();
-        //             allTasks = allTasks.filter(li => li.dataset.key !== task.dataset.key);
-        //         }
-        //     });
-        // }
+                console.log(task);
+            });
+        }
     },
-})
+});
 
 
 app.mount('#app');

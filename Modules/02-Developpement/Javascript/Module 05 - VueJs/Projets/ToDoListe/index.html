@@ -16,19 +16,16 @@
             <form autocomplete="off">
                 <label for="item">Nouvelle tâche</label>
                 <input v-model="taskText" type="text" id="item" placeholder="Indiquez votre tâche">
-                
                 <button @click="addTask" type="submit">Ajouté une tâche</button>
             </form>
             <ul class="liste-todo" v-for="task in allTasks">
                 <li :data-key="task.id">
-                    <input @click="checkTask" type="checkbox" v-model="checked">
-                    <span>{{task.name}}</span>
-                    <button  @click="deleteTask"><i class="fa-solid fa-delete-left"></i></button>
+                    <input  type="checkbox" v-model="isChecked" @click="checkTask()">
+                    <span :class="[{ taskEnd: isChecked }]">{{task.name}}</span>
+                    <button @click="removeTask()"><i class="fa-solid fa-delete-left"></i></button>
                 </li>
             </ul>
         </div>
-
-
     </div>
     
     <script src="https://unpkg.com/vue@3"></script>

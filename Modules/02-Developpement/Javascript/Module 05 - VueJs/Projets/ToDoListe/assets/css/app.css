@@ -93,8 +93,8 @@ li span {
 }
 
 /** Anim Rayure **/
-li.taskEnd span {
-  text-decoration: line-through;
+.taskEnd {
+  text-decoration: line-through !important;
 }
 
 i {
