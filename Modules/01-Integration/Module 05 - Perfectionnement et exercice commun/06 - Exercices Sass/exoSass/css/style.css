@@ -123,44 +123,4 @@ h1, h2 {
   background-color: #00B74A;
   border-radius: 0 0 5px 0;
 }
-
-.style2 {
-  position: relative;
-  padding: 15px 30px;
-  border: 2px solid #41f321;
-  margin: 10px;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #41f321;
-  letter-spacing: 2px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: hidden;
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-.style2:hover {
-  color: #3f3f3f;
-}
-
-.style2 span {
-  position: absolute;
-  display: block;
-  width: 0px;
-  height: 0px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: #41f321;
-  -webkit-transition: width 0.5s, height 0.5s;
-  transition: width 0.5s, height 0.5s;
-  z-index: -1;
-}
-
-.style2:hover span {
-  width: 300px;
-  height: 300px;
-}
 /*# sourceMappingURL=style.css.map */
