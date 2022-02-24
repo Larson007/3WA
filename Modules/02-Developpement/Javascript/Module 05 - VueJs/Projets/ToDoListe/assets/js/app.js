@@ -15,17 +15,15 @@ const app = Vue.createApp({
             this.taskText = "";
         },
         checkTask() {
+            //TODO all checkbox are checked
             this.isChecked = !this.isChecked;
         },
         removeTask(e) {
-
-            this.allTasks.forEach(task => {
-
-                console.log(task);
-            });
+            this.allTasks = this.allTasks.filter(
+                x => Number(x.id) !== Number(e.target.dataset.key)
+            );
         }
     },
 });
-
 
 app.mount('#app');

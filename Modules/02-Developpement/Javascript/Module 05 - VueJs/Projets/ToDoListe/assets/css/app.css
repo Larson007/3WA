@@ -44,6 +44,7 @@ form button {
   color: #fff;
   border-radius: 10px;
   text-shadow: 1px 1px 2px black;
+  border-color: green;
 }
 
 .liste-todo {
