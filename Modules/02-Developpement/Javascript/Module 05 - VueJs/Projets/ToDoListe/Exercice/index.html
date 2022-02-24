@@ -26,8 +26,8 @@
             <transition-group>
                 <ul class="liste-todo" v-if="allTasks.length > 0">
                     <li v-for="task in allTasks" :data-key="task.id">
-                        <input type="checkbox" v-model="isChecked" @click="checkTask" :data-key="task.id">
-                        <span :class="{ taskEnd: isChecked }">{{task.name}}</span>
+                        <input type="checkbox" @click="checkTask" :data-key="task.id">
+                        <span :class="{ taskEnd: task.check }">{{task.name}}</span>
                         <button @click="removeTask" :data-key="task.id"><i class="fa-solid fa-delete-left"></i></button>
                     </li>
                 </ul>

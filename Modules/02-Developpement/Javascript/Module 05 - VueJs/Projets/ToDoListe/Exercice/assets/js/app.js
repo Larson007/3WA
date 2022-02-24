@@ -3,7 +3,6 @@ const app = Vue.createApp({
         return {
             title: 'TodoListe',
             taskText: '',
-            isChecked: false,
             allTasks: [],
 
         };
@@ -11,12 +10,14 @@ const app = Vue.createApp({
     methods: {
         addTask(e) {
             e.preventDefault();
-            this.allTasks.push({ id: Date.now(), name: this.taskText });
+            this.allTasks.push({ id: Date.now(), name: this.taskText, check: false });
             this.taskText = "";
         },
         checkTask(e) {
-
-            this.isChecked = !this.isChecked;
+            const task = this.allTasks.find((task) => {
+                return Number(task.id) === Number(e.target.dataset.key)
+            })
+            task.check = !task.check;
         },
         removeTask(e) {
             this.allTasks = this.allTasks.filter(
