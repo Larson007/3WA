@@ -17,6 +17,13 @@ h1 {
   margin: 50px 0;
 }
 
+h1 i {
+  font-size: 5vw;
+  color: #39C0ED;
+  margin-left: 1rem;
+  pointer-events: none;
+}
+
 form {
   display: block;
   margin: 0 auto;
@@ -106,5 +113,16 @@ i {
 
 li button:hover {
   background-color: #fff;
+}
+
+.v-enter-active,
+.v-leave-active {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 /*# sourceMappingURL=app.css.map */

@@ -14,8 +14,8 @@ const app = Vue.createApp({
             this.allTasks.push({ id: Date.now(), name: this.taskText });
             this.taskText = "";
         },
-        checkTask() {
-            //TODO all checkbox are checked
+        checkTask(e) {
+
             this.isChecked = !this.isChecked;
         },
         removeTask(e) {

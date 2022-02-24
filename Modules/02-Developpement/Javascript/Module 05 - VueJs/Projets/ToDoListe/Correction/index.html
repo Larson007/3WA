@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        span {
+            cursor: pointer;
+        }
+        .stroke {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <p v-if="currentTaskContent !== ''"><strong>Nouvelle tâche :</strong> {{ currentTaskContent }}</p>
+        <input v-model="currentTaskContent" type="text" placeholder="Nouvelle tâche"/>
+        <button @click="addTask">Ajouter la tâche</button>
+        <ul>
+            <li v-for="task in tasks">
+                <span :data-id="task.id" @click="toggleTask" :class="{stroke: task.stroke}">{{ task.content }}</span>
+                <button :data-id="task.id" @click="removeTask">XXX</button>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
