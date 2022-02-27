@@ -35,9 +35,9 @@ for ($i = 0, $max = count($values); $i < $max; ++$i) {
 }
 ````
 
-Notre tableau à index numériques est parcouru de la même manière qu'on parcourt un `Array` en javascript. On déclare un itérateur, et on l'incrémente à chaque tour de boucle en s'en servant comme clé numérique, jusqu'à atteindre la taille totale du tableau.
+Notre `tableau à index numériques` est parcouru de la même manière qu'on parcourt un `Array` en javascript. On déclare un itérateur, et on l'incrémente à chaque tour de boucle en s'en servant comme clé numérique, jusqu'à atteindre la taille totale du tableau.
 
-Conseil d'optimisation
+#### *Conseil d'optimisation*
 
 Notez la déclaration d'une variable `$max` au premier tour de boucle. L'appel de la fonction `count` est en effet coûteux en performances, aussi on ne le fait qu'une seule fois et on stocke le résultat dans une variable plutôt que demander au processeur de recalculer cette valeur à chaque tour de boucle.
 
@@ -47,7 +47,7 @@ Notez la déclaration d'une variable `$max` au premier tour de boucle. L'appel d
 
 La boucle `foreach` en PHP est plus ou moins l'équivalent de la boucle `for ... of` en javascript, pour dire les choses simplement, mais elle a tout de même beaucoup de particularités.
 
-Elle permet notamment de parcourir un tableau associatif. En effet, si une boucle `for` avec un itérateur est suffisante pour un tableau à index numériques, par nature elle ne peut pas boucler à travers des index associatifs.
+Elle permet notamment de parcourir un `tableau associatif`. En effet, si une boucle `for` avec un itérateur est suffisante pour un `tableau à index numériques`, par nature elle ne peut pas boucler à travers des index associatifs.
 
 ````php
 $values = [
@@ -78,11 +78,11 @@ foreach ($letters as $letter) {
 
 Nous n'avons pas besoin de la clé, nous pouvons omettre son assignation pour n'écrire que `$letters as $letter`.
 
-Hé ! Mais c'était pas un tableau associatif, ça.
+Hé ! Mais c'était pas un `tableau associatif`, ça.
 
-Bien sûr. Rien ne nous empêche d'utiliser la boucle `foreach` pour parcourir un tableau à index numériques. On l'a dit, en PHP un tableau est un `array`, qu'il soit associatif ou non ne change pas son type. Pour être plus précis, il relève même du pseudo-type `iterable`, et toute valeur du type `iterable` peut être traversée par une boucle `foreach`. En PHP, les tableaux sont iterable, mais c'est aussi le cas des objets implémentant l'interface `\Traversable`. Nous en avons déjà trop dit, tout cela devient un peu velu.
+Bien sûr. Rien ne nous empêche d'utiliser la boucle `foreach` pour parcourir un `tableau à index numériques`. On l'a dit, en PHP un tableau est un `array`, qu'il soit associatif ou non ne change pas son type. Pour être plus précis, il relève même du pseudo-type `iterable`, et toute valeur du type `iterable` peut être traversée par une boucle `foreach`. En PHP, les tableaux sont iterable, mais c'est aussi le cas des objets implémentant l'interface `\Traversable`. Nous en avons déjà trop dit, tout cela devient un peu velu.
 
-Pour l'heure, retenez simplement que `foreach` permet de parcourir tous les tableaux, qu'ils soient associatifs ou non.
+Pour l'heure, retenez simplement que `foreach` permet de parcourir tous les tableaux, qu'ils soient **associatifs ou non**.
 
 &nbsp;
 
@@ -102,14 +102,14 @@ Notez qu'en soi rien n'empêche d'utiliser `while` avec un itérateur, mais à c
 
 La boucle `for` s'utilise essentiellement avec un itérateur. On a vu que l'itérateur pouvait servir à parcourir un tableau, mais ce n'est pas son seul usage. Le nombre d'itérations peut être arbitrairement fixé par le développeur pour exécuter une certaine action un certain nombre de fois. Vous serez par exemple amenés à développer des fonctions dont le rôle pourrait être de créer 1000 faux comptes utilisateurs en base de données à des fins de tests.
 
-La boucle `foreach` est exclusivement utilisée pour parcourir un `iterable`, ce qui inclut les tableaux. À ce titre elle est aussi plus lisible et moins sujette à bugs, même pour parcourir des tableaux à index numériques. Et elle est très performante : pour des raisons très techniques qu'on ne détaillera pas ici, en lecture seule, tant qu'on ne modifie pas le tableau, le `foreach` peut même être plus rapide qu'un `for`.
+La boucle `foreach` est exclusivement utilisée pour parcourir un `iterable`, ce qui inclut les tableaux. À ce titre elle est aussi plus lisible et moins sujette à bugs, même pour parcourir des `tableaux à index numériques`. Et elle est très performante : pour des raisons très techniques qu'on ne détaillera pas ici, en lecture seule, tant qu'on ne modifie pas le tableau, le `foreach` peut même être plus rapide qu'un `for`.
 
 &nbsp;
 
-**En résumé :**
+### En résumé :
 
 - `while` pour exécuter un bloc d'instructions tant qu'une condition factuelle est remplie, sans itérateur ;
-- `for` pour exécuter un bloc d'instructions certain nombre de fois, ou pour parcourir un tableau à index numérique ;
+- `for` pour exécuter un bloc d'instructions certain nombre de fois, ou pour parcourir un `tableau à index numérique` ;
 - `foreach` pour parcourir tous les tableaux.
 
 Dans tous les cas, encore et toujours : suivez les préférences et conseils de vos formateurs.

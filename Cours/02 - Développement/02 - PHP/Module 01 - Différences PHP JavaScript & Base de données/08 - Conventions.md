@@ -8,7 +8,7 @@ Nous disions qu'en javascript les développeurs ont souvent leurs préférences 
 
 Nous disions aussi que le PHP était un monde beaucoup plus normé. On y trouve en effet une convention mondialement acceptée et appliquée qui est le `PSR-12` (anciennement `PSR-2`).
 
-Nous vous invitons à jeter un œil à la spécification [PSR-12](https://www.php-fig.org/psr/psr-12/). Il s'agit d'un ensemble de règles de style à essayer de respecter au maximum dans un code professionnel. Indentation à 4 espaces, espace entre le if et la parenthèse, variables et fonctions en camelCase, etc. Autant de règles provenant du [PSR-12](https://www.php-fig.org/psr/psr-12/) et appliquées par la très large majorité des développeurs PHP à travers le monde.
+Nous vous invitons à jeter un œil à la spécification [PSR-12](https://www.php-fig.org/psr/psr-12/). Il s'agit d'un ensemble de règles de style à essayer de respecter au maximum dans un code professionnel. Indentation à 4 espaces, espace entre le if et la parenthèse, variables et fonctions en camelCase, etc. Autant de règles provenant du `PSR-12` et appliquées par la très large majorité des développeurs PHP à travers le monde.
 
 &nbsp;
 

@@ -6,6 +6,8 @@
 
 On retrouve en PHP les types du javascript, à quelques différences près.
 
+&nbsp;
+
 ### Chaînes de caractères
 
 Il existe deux manières de déclarer une chaîne de caractères :
@@ -53,6 +55,8 @@ Si les guillemets doubles `""` sont si utiles, pourquoi ne pas les utiliser tout
 
 Parce que quand PHP voit des `""`, il analyse systématiquement la chaîne pour y trouver des variables, même s'il n'y en a pas. Utiliser des `""` sur une chaîne aussi simple que `Salut` conduit donc à une analyse de texte inutile et une légère surconsommation des ressources du processeur. En bref, les guillemets simples `''` sont plus performants et donc préférables quand on n'a pas besoin de concaténer des variables. Meilleures performances, moins d'électricité, moins de CO2.
 
+&nbsp;
+
 ### Nombres
 
 Contrairement au javascript qui emploie un type unique `Number`, le PHP distingue le type `integer` (ou `int`) du type `float`, autrement dit les nombres entiers des nombres décimaux.
@@ -68,6 +72,8 @@ $x = 12;
 $y = 45.263;
 ````
 
+&nbsp;
+
 ### Booléens
 
 Les booléens `true` et `false` existent toujours. C'est le type `bool`, ou `boolean`.
@@ -81,6 +87,8 @@ if (!$isUserAnonymous) {
 ````
 
 Vous les verrez parfois orthographiés en majuscules : `TRUE` et `FALSE`. C'est une ancienne habitude du C que le PHP autorise, mais on aura tendance à préférer les formes minuscules dans du code moderne.
+
+&nbsp;
 
 ### Null
 
@@ -96,6 +104,8 @@ if ($user === null) {
 
 Comme pour les booléens, une forme majuscule est possible : `NULL`. Et comme pour les booléens, c'est une forme un peu âgée qu'on évitera à moins de vraiment aimer la déco kitsch.
 
+&nbsp;
+
 ### Tableaux
 
 Un tableau PHP :
@@ -106,7 +116,10 @@ $numbers = [4, 6, 8];
 
 Vous verrez parfois l'ancienne syntaxe :
 
+`````php
 $numbers = array(4, 6, 8);
+`````
+
 Cette façon de déclarer un tableau fonctionne toujours et ne présente aucune différence en termes de performances. De nos jours on va toutefois avoir tendance à favoriser les crochets `[]`. Ils sont plus courts et sont utilisés dans beaucoup d'autres langages pour représenter les tableaux, y compris le javascript, et sont donc visuellement plus intuitifs. Dans tous les cas, comme toujours, privilégiez de suivre le style et les conseils de vos formateurs. (:
 
 ````php
@@ -114,7 +127,9 @@ $texts = ['Salut', 'Yo', 'Hey'];
 echo($texts[0]);
 ````
 
-Ce morceau de code affichera `Salut`. La variable `$texts` contient un tableau à index numériques. Comme ceux du javascript, les clés de chaque valeur sont donc numérotées dans l'ordre de 0 à l'infini.
+Ce morceau de code affichera `Salut`. La variable `$texts` contient un `tableau à index numériques`.
+
+Comme ceux du javascript, les clés de chaque valeur sont donc numérotées dans l'ordre de 0 à l'infini.
 
 Notez qu'en PHP, un tableau n'utilise pas forcément des index numériques.
 
@@ -126,9 +141,9 @@ $user = [
 ];
 ````
 
-Nous avons ici ce que l'on appellera un tableau associatif. Contrairement au tableau à index numériques, le tableau associatif n'utilise pas des clés numériques mais des strings arbitrairement fixées par le développeur.
+Nous avons ici ce que l'on appellera un `tableau associatif`. Contrairement au `tableau à index numériques`, le `tableau associatif` n'utilise pas des clés numériques mais des strings arbitrairement fixées par le développeur.
 
-Et comment accède-t-on à une valeur dans un tableau associatif ?
+Et comment accède-t-on à une valeur dans un `tableau associatif` ?
 
 ````php
 $values = [
@@ -143,17 +158,23 @@ echo($x);
 
 Ce code affichera `Échalote`.
 
-Bien que les clés soient différentes, les tableaux à index numériques et les tableaux associatifs relèvent du même type pour le PHP : c'est toujours un `array`.
+Bien que les clés soient différentes, les `tableaux à index numériques` et les `tableaux associatifs` relèvent du même type pour le PHP : c'est toujours un `array`.
+
+&nbsp;
 
 ### Objets
 
-Les objets (type `object`) existent évidemment en PHP. Bien qu'officiellement le PHP soit un langage multi-paradigmes, officieusement il s'est imposé à travers les années comme un langage orienté objet. Presque tout son écosystème est développé autour de la POO.
+Les objets ***(type `object`)*** existent évidemment en PHP. Bien qu'officiellement le PHP soit un langage multi-paradigmes, officieusement il s'est imposé à travers les années comme un langage orienté objet. Presque tout son écosystème est développé autour de la POO.
 
 L'objet en PHP est un sujet trop complexe pour être abordé rapidement dans une sous-section. Nous y reviendrons vite en détails. (:
+
+&nbsp;
 
 ### Autres
 
 Il existe quelques autres types en PHP, tels que `iterable` et `callable`. Vous n'avez pas forcément besoin de les connaître tout de suite, la curiosité et le code vous y mèneront bien assez vite.
+
+&nbsp;
 
 ### Conversions
 
@@ -168,7 +189,7 @@ $d = (bool) '1';  // true
 
 Très simple !
 
-Jetez donc un œil à la [documentation](https://www.php.net/manual/en/language.types.type-juggling.php) pour avoir un apperçu des différents casts possibles. On pensera notamment à `(string)`, `(array)`, etc.
+Jetez donc un œil à la [documentation](https://www.php.net/manual/en/language.types.type-juggling.php) pour avoir un apperçu des différents `casts` possibles. On pensera notamment à `(string)`, `(array)`, etc.
 
 On retrouve cette syntaxe de conversion dans de nombreux langages comme le C, le java ou encore le C#. Elle est donc visuellement intuitive pour la plupart des développeurs.
 

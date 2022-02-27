@@ -1,41 +1,86 @@
 # Module 01 - Différences PHP / JavaScript & Base de données
 
-## 08 - Conventions
+## 07 - Classes
+
+### Les objets en PHP
+
+Cette section de cours ne va pas traiter en détails la Programmation Orientée Objets en PHP. C'est un sujet très complet qui vous prendra des jours, des semaines, des mois, des années à appréhender. Vous serez introduits au paradigme de la POO bien assez vite au cours de cette formation.
+
+Ceci dit, sans aller jusqu'à la POO à proprement parler, vous avez déjà vu et utilisé des classes en javascript.
+
+Il est en effet possible d'utiliser ponctuellement des objets dans un code qui ne relève pas strictement de la POO. Là où la POO répond à des problématiques complexes et apporte une architecture très propre à des projets d'une certaine échelle, un simple cocktail de code procédural et d'objets peut parfois suffire à résoudre des problèmes simples.
+
+On va alors, par exemple, réserver l'utilisation d'objets au transport de données et de `state`, là où le reste du code sera fondé sur l'emploi de simples fonctions. À titre théorique, donc, même si vous ne créerez pas encore beaucoup d'objets lors de ces premiers jours de PHP, nous allons vous en montrer rapidement la syntaxe basique.
 
 &nbsp;
 
-### Les conventions c'est bien
+### Classes
 
-Nous disions qu'en javascript les développeurs ont souvent leurs préférences personnelles sur beaucoup de sujets. Point-virgule ou pas point-virgule, `let` ou `const`, etc.
+````php
+class User
+{
+    private string $firstName;
+    private string $lastName;
+    private int $age;
 
-Nous disions aussi que le PHP était un monde beaucoup plus normé. On y trouve en effet une convention mondialement acceptée et appliquée qui est le `PSR-12` (anciennement `PSR-2`).
+    public function __construct(string $firstName, string $lastName, int $age)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->age = $age;
+    }
 
-Nous vous invitons à jeter un œil à la spécification [PSR-12](https://www.php-fig.org/psr/psr-12/). Il s'agit d'un ensemble de règles de style à essayer de respecter au maximum dans un code professionnel. Indentation à 4 espaces, espace entre le if et la parenthèse, variables et fonctions en camelCase, etc. Autant de règles provenant du [PSR-12](https://www.php-fig.org/psr/psr-12/) et appliquées par la très large majorité des développeurs PHP à travers le monde.
+    public function getFirstName(): string
+    {
+        return $this->firstName;
+    }
+
+    public function getLastName(): string
+    {
+        return $this->lastName;
+    }
+
+    public function getAge(): int
+    {
+        return $this->age;
+    }
+
+    public function getFullName(): string
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
+
+    public function sayMessage(string $message): void
+    {
+        echo $message;
+    }
+}
+````
+
+Et pour créer une instance de cette classe `User` :
+
+````php
+$user = new User('Magali', 'Dupont', 22);
+
+$userFirstName = $user->getFullName();  // 'Magali Dupont'
+````
+
+En fait, cela ressemble aux classes que vous avez déjà vues en javascript. À deux ou trois poils de vache près ! Voyons ces quelques différences :
+
+- Souvenez-vous du `type hinting` sur les fonctions : cela s'applique également aux `méthodes` d'une classe.
+
+- Depuis `PHP 7.4 (2019)`, les `propriétés` d'une classes peuvent aussi être typées. Comme le `type hinting`, ce n'est pas techniquement obligatoire mais fortement recommandé.
+
+- On précise toujours la visibilité d'une `méthode` ou d'une `propriété` : `public`, `protected` ou `private`. **Visibilité ?** Ne vous inquiétez pas, vous reverrez cela en détails lors du cours sur la POO.
+
+- L'accès aux `propriétés` et `méthodes` ne se fait pas grâce à un point `.` mais avec une flèche `->`.
+
+- La syntaxe du `constructeur` est différente mais la logique est la même.
 
 &nbsp;
 
-### Mais pourquoi respecter des règles ?
+### C'est tout ?
 
-Le fait de respecter des conventions syntaxiques uniformes permet de rendre nos codes plus intuitifs. Quand vous lisez le code d'un développeur qui respecte les mêmes conventions que vous, vous comprenez très vite sa logique, c'est un style que vous avez l'habitude de voir. Vous pouvez ainsi facilement travailler avec des développeuses et développeurs de tous les pays et de toutes les entreprises sans aucun problème, et c'est d'ailleurs aussi pour cette raison que l'on code toujours en anglais.
+Pour l'instant, oui. Comme nous l'avons dit plus haut, la POO est un sujet énorme, il est encore trop tôt pour le grand plongeon en apnée. Des gros mots tels que ***« polymorphisme »*** ou ***« encapsulation »*** vous seront bien assez vite jetés au visage tels des seaux d'acide, ne vous en faites pas !
 
-Un code qui ne respecte aucune convention peut même être rédhibitoire pour un potentiel futur employeur qui regarderait votre travail. Si quelques libertés stylistiques seront toujours défendables, et vous en prendrez évidemment parfois, un code totalement freestyle n'aura pour effet que de refléter un certain amateurisme aux yeux d'un professionnel.
-
-&nbsp;
-
-### Moi je moi je
-
-Et moi si je veux avoir mon propre style ?
-
-Vous aurez votre propre style. Le `PSR-12` ne couvre pas absolument tous les cas de figure imaginables. Ce sont des conventions basiques, aussi simples que « fourchette à gauche et couteau à droite ».
-
-Vous ne saluez pas les gens de la main gauche parce que vous suivez les conventions de votre monde. Savoir si vous mettez l'accolade à la ligne ou non en déclarant une fonction est secondaire. Ce n'est pas important, ce n'est pas représentatif de votre personnalité. Sur des questions aussi triviales vous respecterez autant que possible le `PSR-12`. Votre style personnel ne se situera dans de sombres histoires d'accolades et de parenthèses, mais dans votre approche des problèmes, dans votre logique, dans votre algorithmie. Vos collègues et vous-mêmes reconnaîtrez votre code à son architecture globale, à l'élégance de vos solutions, à votre façon de résoudre les problématiques que vous rencontrerez. Pas à vos retours à la ligne ou votre indentation.
-
-Vous n'appliquerez probablement pas 100 % du `PSR-12`. De toute façon vous ne le connaîtrez pas par cœur, et personne ne vous demandera cela. On utilise même parfois des outils pour automatiquement formater notre code au `PSR-12`. Mais ayez l'humilité de vous dire que cette convention a été écrite par des personnes très compétentes qui avaient derrière chaque décision de très bons arguments.
-
-&nbsp;
-
-### Priorité au bon sens
-
-Tout ceci étant dit, sachez tout de même qu'il faut savoir faire preuve de bon sens et de flexibilité. Il vous arrivera peut-être de travailler dans des équipes qui ne respectent pas le PSR-12, et ont au contraire des conventions internes qui leur sont propres. À ce moment, bien entendu, vous respecterez en priorité les consignes de vos collègues et le style des projets dans lesquels vous travaillerez.
-
-Notez que, encore une fois, cela vaut aussi pour vos formateurs. Ils sont pour ainsi dire vos chefs de projet, vos dieux tout-puissants, et quoi qu'il arrive vous accorderez la priorité à leurs conseils et préférences ; même s'ils contredisent entièrement cette section du cours. (:
+Savoir déclarer une classe simple, et créer des instances de cette classe, est déjà une belle base. (:

@@ -21,9 +21,11 @@ Le PHP a aussi deux opérateurs supplémentaires :
 
 - Le *spaceship operator* `<=>`, qui sert aussi à comparer des nombres. Contrairement aux autres opérateurs, `<=>` ne renvoie pas un booléen mais un nombre qui peut être `-1, 0 ou 1 : -1` si le nombre de gauche est inférieur, `1` si le nombre de gauche est supérieur, `0` si les deux nombres sont égaux. En cela, ce n'est pas vraiment une expression booléenne, on ne l'utilise pas dans les conditions. Son usage est assez anecdotique, on l'emploie par exemple dans la fonction `usort` pour trier un tableau, n'allez donc pas le mettre partout... mais... c'est un vaisseau spatial. Et les vaisseaux spatiaux, c'est cool !
 
+&nbsp;
+
 ### Switch
 
-Un switch en PHP :
+Un `switch` en PHP :
 
 ````php
 $x = 0;

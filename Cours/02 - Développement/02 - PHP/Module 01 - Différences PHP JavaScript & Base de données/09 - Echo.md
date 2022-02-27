@@ -18,12 +18,12 @@ Avant les exercices, il va falloir au préalable comprendre comment fonctionne u
     <title>Hey</title>
   </head>
   <body>
-    <h1>Nous sommes le 30 07 2020</h1>
+    <h1>Nous sommes le 30/07/2020</h1>
   </body>
 </html>
 ````
 
-Cette page affiche en titre principal la date. Mais à moins que les lois de la physique aient beaucoup changé depuis la première rédaction de ce cours, il y a de fortes probabilités pour que l'on ne soit plus le 30 07 2020.
+Cette page affiche en titre principal la date. Mais à moins que les lois de la physique aient beaucoup changé depuis la première rédaction de ce cours, il y a de fortes probabilités pour que l'on ne soit plus le 30/07/2020.
 
 ````php
 <?php
@@ -52,13 +52,15 @@ Voilà, nous avons commencé à parsemer notre HTML de bouts de PHP.
 
 En premier lieu nous déclarons notre fonction `getCurrentDate()`, qui ne fait pas grand-chose d'autre qu'utiliser la fonction PHP `date`.
 
-Puis, dans notre fameux titre principal, nous utilisons cette fois la fonction echo pour afficher le retour de l'appel de `getCurrentDate`.
+Puis, dans notre fameux titre principal, nous utilisons cette fois la fonction `echo` pour afficher le retour de l'appel de `getCurrentDate`.
 
 La fonction `echo` est donc primordiale en PHP, son rôle est d'afficher une chaîne de caractères dans du HTML. Même dans un programme qui contiendrait des dizaines de milliers de lignes de code, `echo` des résultats dans le HTML est le but final du PHP.
 
 Afficher une chaîne de caractères dans du HTML, c'est tout ? C'est toute la base du web. Qu'est-ce qu'une page HTML sinon un grand fichier de texte ? Il s'agit dans tous les cas de construire du texte. Le PHP nous permet de dynamiser ce texte, de ne pas nous contenter d'un HTML statiquement fixé.
 
 `echo` est l'une des rares fonctions où les parenthèses ne sont pas obligatoires. `echo('Salut')` fonctionne aussi bien que `echo 'Salut'`. Et on a d'ailleurs tendance à privilégier cette seconde syntaxe.
+
+&nbsp;
 
 ### `<?php ?>` et syntaxe courte
 

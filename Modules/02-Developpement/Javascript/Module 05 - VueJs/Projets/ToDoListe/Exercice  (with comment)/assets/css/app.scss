@@ -1,0 +1,123 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin: 50px 0;
+}
+
+h1 i {
+    font-size: 5vw;
+    color: #39C0ED;
+    margin-left: 1rem;
+    pointer-events: none;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+}
+
+form label {
+    display: block;
+    font-size: 25px;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+form button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #00B74A;
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px black;
+    border-color: green;
+}
+
+.liste-todo {
+    list-style-type: none;
+    margin: 20px auto 0;
+    width: 70%;
+    max-width: 1200px;
+    min-width: 400px;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    width: 100%;
+    background: #39C0ED;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #333;
+    margin: 5px 0;
+}
+
+li input {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+li button {
+    margin-left: auto;
+    padding: 5px;
+}
+
+/** permet d'ignorer l'image lors du click sur le boutton **/
+button img {
+    width: 40px;
+    pointer-events: none; 
+}
+
+li span {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/** Anim Rayure **/
+.taskEnd {
+    text-decoration: line-through !important;
+}
+
+i{
+    font-size: 2.5rem;
+    color: red;
+    pointer-events: none;
+}
+
+li button:hover {
+    background-color: #fff;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
