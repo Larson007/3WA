@@ -76,25 +76,4 @@ $coffeeDeath = coffeeOrDeath();
 // }
 
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-
-<body>
-<p><?= 'Salut, humain. Je suis ' . $robotName ?></p>
-<p><?= 'Nous sommes le ' . $date .', il est '. $hour ?></p>
-<p><?= $evenOdd ?></p>
-<p><?= "Mon nom à l'envers s'écrit ". $reverseName.". Ah. Ah. Ah." ?></p>
-<p><?= $coffeeDeath ?></p>
-
-</body>
-
-</html>
+require 'homepage.phtml';

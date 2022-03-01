@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div id="robotImg">
+<?= $robotImg ?>
+</div>
+
+    <div class="formulaire">
+        <form method="get" autocomplete="off">
+            <div class="form-content">
+                <label for="name">Nom du Robot</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-content">
+                <input type="range" id="kill" name="kill" min="0" max="100" value="<?= $range ?>" step="10">
+                <label for="kill" id="killLabel">Attention: seuil de folie 30%</label>
+                <a href="index.php">Reset</a>
+            </div>
+            <button type="submit">Lancer le protocole</button>
+        </form>
+    </div>
+
+    <div id="speech">
+        <p><?= 'Salut, humain. Je suis ' . $robotName ?></p>
+        <p><?= $robotMoralDecision ?></p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: "fira Code";
+}
+
+#robotImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formulaire {
+    background-color: lightgray;
+    border: 2px solid blue;
+    color: black;
+    font-size: 1rem;
+    margin: 3rem;
+    display: block;
+    width: 500px;
+    height: auto;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-content {
+    padding: 0.5rem;
+}
+button {
+    color: #fff;
+    background-color: red;
+    padding: 0.6rem;
+}
+
+#speech {
+    background-image: url('../images/bulle.png');
+    background-position-x: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    color: #333;
+    font-size: 1.2rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    padding: 4rem;
+}
+
+a  {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
