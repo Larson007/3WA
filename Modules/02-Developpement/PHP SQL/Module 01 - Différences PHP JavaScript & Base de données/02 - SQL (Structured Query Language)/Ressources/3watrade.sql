@@ -21,7 +21,7 @@
 
 /*!40000 DROP DATABASE IF EXISTS `3WA_cours_3watrade`*/;
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `3WA_cours_3watrade` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `3WA_cours_3watrade` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
 USE `3WA_cours_3watrade`;
 
