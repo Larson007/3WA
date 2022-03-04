@@ -1,9 +1,5 @@
 <h1 align="center">Formation 3WA Développeur Web</h1>
 
-<p align="center">
-  <img src="logo-3wa.png" alt="Sublime's custom image" style="width: 15%"/>
-</p>
-
 ---
 
 <h2>INTEGRATION</h2>
