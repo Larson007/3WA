@@ -1,0 +1,2 @@
+Lors de la création d'un champ Id dans une table, on indique unsigned pour indiquer que la clé générer sera positif donc
+ au lieu d'avoir un range de -1000 ----------0 -----------1000 on aura 0-----------------2000 

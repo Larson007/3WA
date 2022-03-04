@@ -1,0 +1,38 @@
+Mongo plus rapide en lecture que SQL mais moins rapide en ecriture
+Il stock dans chaque table tt les donnée lier aux relations
+
+
+On va utiliser mariadb (version open source de mySQL) meme fonctionnement
+
+postgrSQL a des diff de mySQl avec des fonctinnalité en plus mais moins adopter
+
+sqlLite utioiser dans le logicile lours. il fonctionne avec un fichier (ressemble a mySQL/mariaDB utiliser pour le ptototypage
+Pas adatpter pour le Web
+
+
+MySQL est le plus utiliser
+
+
+
+On parle de Bd relationnel 	-> Elle contient des entitée (objet physique representer en BD)
+				-> Contient des tables avec liste Entity avec des relations entr elles
+				-> Create, Read, Update, Delete.(CRUD) sont les 4 actions realisable sur une BD
+				-> Le READ est le plus complexe (SELECT id, title FROM movies) ou (SELECT * FROM personnages WHERE energie = "S";)
+				-> l'ID d'un champ est appeler clé primaire
+				-> utf8mb4_general_ci
+
+
+
+SELECT users.first_name, users.last_name, users.email,users.registration_date, products.name
+    FROM users
+    JOIN orders
+    ON users.id = orders.user_id
+    JOIN products_orders
+    ON orders.id = products_orders.order_id
+    JOIN products
+    ON products.id = products_orders.product_id
+        WHERE users.registration_date IN (
+        SELECT users.registration_date
+        FROM users
+        ORDER BY users.registration_date
+        ASC LIMIT 1);
