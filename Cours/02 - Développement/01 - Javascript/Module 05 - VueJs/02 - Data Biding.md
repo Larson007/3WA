@@ -1,114 +1,100 @@
 # Module 05 - VueJs
 
-## 02 - List Rendering
+## 02 - Data Binding
 
-### Rendu de tableaux et objets avec Vue.js
+### Basic Data Binding
 
-#### Comment gérer les boucles avec Vue.js ?
+### Comment fonctionne Vue.js ?
 
-Rendu d'un tableau dans une liste :
-Ajoutons un tableau à notre data object
-
-````js
-data() { 
-    return { 
-        arr: ['item', 'item 1', 'item2'],
-    }; 
-}
-````
-
-Et on tourne autour avec la directive v-for of
+Vue.js recherche un élément par son `ID`, qu'on lui spécifie quand on l'instancie.
 
 ````js
-<ul>
-    <!-- On extrait chaque element 'item' du tableau 'arr   -->
-    <li v-for="item of arr">{{ item }}</li>
-</ul>
+<div id="app"></div>
+new Vue({
+    el: '#app'
+});
 ````
 
-### Rendu d'un objet dans une table :
+L'id `app` sert d'ancre à Vue.js, on lui donne le nom qu'on veut, app ou root sont bien adaptés.
 
-On ajoute un objet :
+A partir de cet élémént '`racine`', Vue.js sélectionne tous les éléments récursivement et recherche des propriétés, qu'on appelle des `directives`, qui rendront un élement `réactif`.
+
+Examinons un exemple avec la directive `v-model` :
 
 ````js
-data() { 
-    return { 
-        obj: { name: 'John Doe', phone: '06-06-06-06-06' }, 
-    }; 
-}
+<div id="app">
+    <form>
+        <label for="message">On teste la directive v-model</label>
+        <input type="text" id="message" v-model="message">
+    </form>
+</div>
 ````
 
-Et on utilise la directive v-for in :
-
-````html
-<table>
-    <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Phone</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <!-- On extrait chaque propriétés 'item' de l'objet 'obj'   -->
-            <td v-for="item in obj">{{ item }}</td>
-        </tr>
-    </tbody>
-</table>
-````
-
-Encore une fois très simple.
-
-#### Rendu d'un tableau composé d'objets dans une table :
-
-On ajoute les données :
+Avec le data object, on lie maintenant nos directives avec javascript pour les rendre réactives
 
 ````js
-data() { 
-    return { 
-         arrOfObj: [ 
-            { name: 'John Doe', phone: '06-06-06-06-06' }, 
-            { name: 'Jane Doe', phone: '07-07-07-07-07' }, 
-            { name: 'Jack Doe', phone: '08-08-08-08-08' }, 
-        ], 
-    }; 
-}
-````
-
-On met une directive v-or of pour extraire les objets du tableau, suivi d'une directive v-for in pour les objets :
-
-````html
-<table>
-    <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Phone</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr v-for="items of arrayOfObj">
-            <td v-for="item in items">{{ item }}</td>
-        </tr>
-    </tbody>
-</table>
-````
-
-Le script complet :
-
-````js
- new Vue({ 
+new Vue({
     el: '#app',
-    
-    data() { 
-        return { 
-            arr: ['item', 'item 1', 'item2'], 
-            obj: { name: 'John Doe', phone: '06-06-06-06-06' }, 
-            arrOfObj: [ 
-                { name: 'John Doe', phone: '06-06-06-06-06' }, 
-                { name: 'Jane Doe', phone: '07-07-07-07-07' }, 
-                { name: 'Jack Doe', phone: '08-08-08-08-08' }, 
-            ], 
-        }; 
-    }, 
- });
+    data: {
+        message: ''
+    }
+});
 ````
+
+Avec ces courtes ligne de code, on a maintenant une propriété `message` réactive. Si on tape du texte dans l'input, la propriété `message` prendra automatiquement la valeur de ce qu'on tape. ON appelle ça une liaison de données bidirectionnelle ou `two-way data binding`.
+
+Pour vérifier ça, on a plusieurs solutions, la directive `v-text` ou les `'moustaches'`:
+
+````html
+    <!--  la syntaxe moustache permet d'accéder aux propriétés de l'objet data -->
+     <p>{{ message }}</p>
+     <!--  la directive v-text permet d'accéder aux propriétés de l'objet data -->
+     <p v-text="message"></p>
+````
+Voyons maintenant comment rendre du HTML sur une page :
+
+````js
+new Vue({
+    el: '#app',
+    data: {
+        message: '',
+        // On rajoute une propriété avec en valeur un tag html
+        html: '<p>Testing awesomeness</p>'
+    }
+});
+````
+
+Et dans le HTML, la directive v-html :
+
+````html
+<div id="app">
+    <form>
+        <label for="message">On teste la directive v-model</label>
+        <input type="text" id="message" v-model="message">
+    </form>
+    <!--  la syntaxe moustache permet d'accéder aux propriétés de l'objet data -->
+     <p>{{ message }}</p>
+     <!--  la directive v-text permet d'accéder aux propriétés de l'objet data -->
+     <p v-text="message"></p>
+
+    <!--   Pour le HTML, la directive v-html, sinon on affiche les tags en meme temps. -->
+    <p v-html="html"></p>
+</div>
+````
+
+A noter :
+Il existe deux façons de spécifier un élément root à Vue.js, voyons la deuxième :
+
+````js
+new Vue({
+    data: {
+        message: ''
+    }
+}).$mount('#app'); // on peut attacher le root element ici
+````
+
+Petit à petit, nous allons voir les directives et méthodes les plus utilisées de Vue.js
+
+La syntaxe décrite ici est valable dans le cas ou on utilise Vue.js sur une seule page. Ce n'est donc pas l'idéal, mais l'avantage est qu'il est très simple de démarrer pour s'entraîner.
+
+Nous verrons plus tard la syntaxe recommandée dans le cadre des composants et d'une application faite avec Vue.js

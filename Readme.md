@@ -2,9 +2,9 @@
 
 ---
 
-<h2>INTEGRATION</h2>
+## INTEGRATION
 
-<h3 style="display: inline-block; color:tomato">HTML</h3> / <h3 style="display: inline-block; color:#39C0ED">CSS</h3>
+### HTML / CSS
 
 - Module 1 - Généralités, typographie et texte
 
@@ -20,9 +20,9 @@
 
 ---
 
-<h2 style="text-transform: uppercase">Développement</h2>
+## Développement
 
-<h3 style="color:#FFA900">JavaScript</h3>
+### JavaScript
 
 
 - JavaScript - Module 1 - Introduction et bases de la programmation
@@ -37,7 +37,7 @@
 
 - JavaScript - Module 6 - Asynchrone
 
-<h3 style="display: inline-block; color:#1266F1">PHP</h3> / <h3 style="display: inline-block; color:#B23CFD">SQL</h3>
+### PHP / SQL
 
 - PHP - MODULE 1 - Différences PHP / JavaScript & Base de données
 
