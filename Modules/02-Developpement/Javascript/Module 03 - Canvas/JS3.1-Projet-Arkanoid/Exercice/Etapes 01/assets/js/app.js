@@ -7,6 +7,7 @@ let context = canvasDom.getContext('2d');
 canvasDom.style.border = "2px solid black";
 
 
+
 let game = {
     color: 0,
     width: 800,
