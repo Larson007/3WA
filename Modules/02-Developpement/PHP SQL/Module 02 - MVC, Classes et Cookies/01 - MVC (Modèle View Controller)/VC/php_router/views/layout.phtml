@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/hover.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>php_routing</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav col-md-8 offset-md-2 pt-2">
+        <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png" class="img-fluid pb-2" style="width: 200px" alt="">
+            <a class="hvr-underline-from-left" href="index.php?page=accueil">Accueil</a>
+            <a class="hvr-underline-from-left" href="index.php?page=product">Produits</a>
+            <a class="hvr-underline-from-left" href="index.php?page=contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <?= $content ?>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row m-0">
+            <nav class="col-md-8 offset-md-2 pt-5">
+                <div class="col-md-12 row">
+                    <section class="col-md-2">
+                        <img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png" class="img-fluid pb-2" alt="">
+                        <p class="p-2">We create possibilities for the connected world. Be Bold.</p>
+                    </section>
+                    <section class="col-md-2 mb-5 f-nav">
+                        <h4>Navigations</h4>
+                        <a class="" href="index.php?page=accueil">Accueil</a>
+                        <a class="" href="index.php?page=product">Produits</a>
+                        <a class="" href="index.php?page=contact">Contact</a>
+                    </section>
+                    <section class="col-md-4 mb-5 f-nav">
+                        <div class="mb-4">
+                            <h4>Adresse</h4>
+                            <p>27 rue Ferdinant de Lesspes 35000 Rennes</p>
+                        </div>
+                        <div>
+                            <h4>Contacts</h4>
+                            <a href="mailto : mohamed.benallal.pro@gmail.com" style="text-transform: none">mohamed.benallal.pro@gmail.com</a>
+                            <br>
+                            <a href="tel:0610580000">06.10.58.00.00</a>
+                        </div>
+                    </section>
+                    <section class="col-md-2 mb-5 f-nav">
+                        <h4>Suivez-nous</h4>
+                        <a href=""><i class="i-fb fa-brands fa-facebook-square"></i></i>
+                            Facebook</a>
+                        <a href=""><i class="i-tw fa-brands fa-twitter-square"></i></i>
+                            Twiter</a>
+                        <a href=""><i class="i-y fa-brands fa-youtube"></i></i>
+                            Youtube</a>
+                    </section>
+                    <section class="col-md-2 mb-5 f-nav">
+                        <h4>Informations légales</h4>
+                        <a href="">C.G.U.</a>
+                        <a href="">Politique de confidentialité</a>
+                    </section>
+                </div>
+                <p class="copyright my-2">© 2022 MBA. Tous droits réservés.</p>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
