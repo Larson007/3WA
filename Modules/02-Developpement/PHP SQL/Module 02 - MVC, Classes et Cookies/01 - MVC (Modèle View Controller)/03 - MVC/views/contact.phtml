@@ -1,1 +1,17 @@
-<h2>contact</h2>
+<div class="user col-md-12 d-flex row justify-content-between mt-5">
+    <div class="user_name col-md-7">
+        <h1 class="mb-5"><span class="badge bg-danger">ID: <?= $user->id ?></span> <?= $user->first_name . ' ' . $user->last_name ?></h2>
+            <div class="user_info mr-5">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, commodi eos magni eius dignissimos repellat officia in asperiores. Non placeat possimus veritatis officiis et harum. Beatae delectus sequi voluptas dolor architecto distinctio dolorem reprehenderit maiores facere saepe itaque officiis dolore, atque expedita quod iste, fugiat optio non temporibus. Placeat facere inventore non obcaecati consequatur! Nesciunt consequatur blanditiis, quae provident officiis illum ipsa soluta? Cupiditate ut ipsam vero veniam nihil magnam obcaecati qui quidem. Ratione omnis dignissimos ipsum numquam excepturi iure? Officiis quam repellat ab, maiores aspernatur optio sequi cumque eum, beatae omnis non inventore repudiandae dolor praesentium consectetur voluptates esse.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, commodi eos magni eius dignissimos repellat officia in asperiores. Non placeat possimus veritatis officiis et harum. Beatae delectus sequi voluptas dolor architecto distinctio dolorem reprehenderit maiores facere saepe itaque officiis dolore, atque expedita quod iste, fugiat optio non temporibus. Placeat facere inventore non obcaecati consequatur! Nesciunt consequatur blanditiis, quae provident officiis illum ipsa soluta? Cupiditate ut ipsam vero veniam nihil magnam obcaecati qui quidem. Ratione omnis dignissimos ipsum numquam excepturi iure? Officiis quam repellat ab, maiores aspernatur optio sequi cumque eum, beatae omnis non inventore repudiandae dolor praesentium consectetur voluptates esse.</p>
+            </div>
+    </div>
+    <div class="user_contact col-md-4 offset-1">
+        <img src="<?= $user->avatar ?>" alt="">
+        <div class="mt-5">
+            <a class="hvr-underline-from-center" href="mailto:<?= $user->email ?> "><i class="fa-solid fa-at i-email"></i> <?= $user->email ?></a>
+            <p><i class="fa-solid fa-location-dot i-street"></i> <?= $user->street ?></p>
+            <p><i class="fa-solid fa-city i-city"></i> <?= $user->city ?></p>
+        </div>
+    </div>
+</div>
