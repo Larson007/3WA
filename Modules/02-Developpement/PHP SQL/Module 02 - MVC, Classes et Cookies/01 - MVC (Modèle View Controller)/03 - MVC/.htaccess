@@ -1,0 +1,4 @@
+RewriteEngine off
+
+RewriteRule ^(.*)$ public/index.php?$1 [QSA,L]
+
