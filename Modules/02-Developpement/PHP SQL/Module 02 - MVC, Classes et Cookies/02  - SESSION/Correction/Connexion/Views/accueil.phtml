@@ -1,0 +1,4 @@
+<h1>ACCUEIL</h1>
+<p>Bonjour <?= htmlspecialchars($_SESSION['user']['name']) ?></p>
+<!-- tester faille XSS -->
+<p>Faille sécurisé <?= htmlspecialchars($_SESSION['user']['nameXSS']) ?></p>

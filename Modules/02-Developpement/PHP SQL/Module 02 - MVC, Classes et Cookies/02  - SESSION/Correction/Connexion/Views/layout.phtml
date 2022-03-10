@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.2/css/bootstrap.min.css" integrity="sha512-SCpMC7NhtrwHpzwKlE1l6ks0rS+GbMJJpoQw/A742VaxdGcQKqVD8F/y/m9WLOfIPppy7mWIs/kS0bKgSI0Bfw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.2/js/bootstrap.min.js" integrity="sha512-HSNvqjhsAxRPvbSBEdXWlkR9uYmJtUvXEyfAvUzlA0uS5SyFZMZdczgz8oPWTz2NUEBaXkIYL4kdrBJkP66jYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+       .spacer{
+           width:100%;
+           display: flex;
+           justify-content: space-between;
+       } 
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <div class="spacer">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.php?url=accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.php?url=product">Product</a>
+                    </li>
+                    <?php if(isset($_SESSION['role']) && $_SESSION['role'] !== 0): ?>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.php?url=admin-de-lespace">Admin</a>
+                    </li>
+                    <?php endif; ?>
+                </ul>
+                <div>
+                <?php if(isset($_SESSION['status']) && $_SESSION['status']): ?>
+                <form method="post">
+                    <input type="submit" name="deconnexion" value="toto" class="btn btn-danger"/>
+                </form>
+                <?php else: ?>
+                <a href="index.php?url=login" class='btn btn-primary'> connexion</a>
+                <?php endif; ?>
+                </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    
+    <main>
+        <?= $content ?>
+    </main>
+
+
+</body>
+</html>

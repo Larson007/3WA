@@ -1,16 +1,16 @@
 <div class="user col-md-12 d-flex row justify-content-between mt-5">
     <div class="user_name col-md-7">
-        <h1 class="mb-5"><span class="badge bg-danger">ID: <?= $user->id ?></span> <?= $user->first_name . ' ' . $user->last_name ?></h2>
+        <h1 class="mb-5"><span class="badge bg-danger">ID: <?=  htmlspecialchars($user->id) ?></span> <?=  htmlspecialchars($user->first_name . ' ' . $user->last_name) ?></h2>
             <div class="user_info mr-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eaque accusamus corrupti eligendi nihil, sequi pariatur quia quam explicabo? Facere, fugit iusto autem consequatur voluptatibus porro veritatis sed? Nemo aliquam deserunt consequuntur sapiente, eaque non fugit, obcaecati ad perspiciatis maiores molestias mollitia aperiam distinctio quam doloribus id consectetur alias debitis porro sequi neque, accusantium reiciendis. Voluptates possimus nobis, at illo repellendus, consequatur maxime laboriosam corrupti rem animi odio culpa sed ex! Ad voluptatibus exercitationem, aperiam quas dolorum est facere iusto unde, soluta possimus doloribus! Dicta at rerum quaerat assumenda, aliquam exercitationem ratione est quos fugiat facere culpa voluptate dolores aspernatur tempora optio animi temporibus cum officia possimus tempore voluptatum, suscipit iure. Minima iusto fuga facere error, modi doloribus, ex architecto tempore accusantium, consectetur doloremque molestias. Ipsa eligendi quas accusantium fugit labore ducimus fuga soluta, quasi cupiditate. Deserunt beatae quidem repudiandae dolorum commodi? Necessitatibus eaque fugit est eveniet quis pariatur voluptate.</p>
             </div>
     </div>
     <div class="user_contact col-md-4 offset-1">
-        <img src="<?= $user->avatar ?>" alt="">
+        <img src="<?=  htmlspecialchars($user->avatar) ?>" alt="">
         <div class="mt-5">
-            <a class="hvr-underline-from-center" href="mailto:<?= $user->email ?> "><i class="fa-solid fa-at i-email"></i> <?= $user->email ?></a>
-            <p><i class="fa-solid fa-location-dot i-street"></i> <?= $user->street ?></p>
-            <p><i class="fa-solid fa-city i-city"></i> <?= $user->city ?></p>
+            <a class="hvr-underline-from-center" href="mailto:<?=  htmlspecialchars($user->email) ?> "><i class="fa-solid fa-at i-email"></i> <?=  htmlspecialchars($user->email) ?></a>
+            <p><i class="fa-solid fa-location-dot i-street"></i> <?=  htmlspecialchars($user->street) ?></p>
+            <p><i class="fa-solid fa-city i-city"></i> <?=  htmlspecialchars($user->city) ?></p>
         </div>
     </div>
 </div>
