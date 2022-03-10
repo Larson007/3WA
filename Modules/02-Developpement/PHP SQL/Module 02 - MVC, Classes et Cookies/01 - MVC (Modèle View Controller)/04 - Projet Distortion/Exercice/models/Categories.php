@@ -15,12 +15,16 @@ function getAllCategories(): array
     return $request->fetchAll();
 }
 
-function addCategory()
+function addCategory($addCategory)
 {
     $connect =  getPDO();
     $request = $connect->prepare(
-        "INSERT INTO `categories` (`name`) VALUES ('Animaux');"
+        "INSERT INTO `categories` (`name`) VALUES (:addCategory);"
     );
 
-    $request->execute();
+    $request->execute(
+        [
+            ':addCategory' => $addCategory
+        ]
+    );
 }

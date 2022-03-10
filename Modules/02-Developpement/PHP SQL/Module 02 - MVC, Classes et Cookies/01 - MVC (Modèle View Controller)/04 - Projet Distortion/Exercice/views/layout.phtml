@@ -14,16 +14,19 @@
 <body>
     <main class="d-flex">
         <aside class="col-md-2 px-5 py-3">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categories
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <?php foreach ($allCategories as $category) : ?>
-                        <li><a class="dropdown-item" href="#"><?= htmlspecialchars($category->name) ?></a></li>
-                    <?php endforeach ?>
-                </ul>
+            <div>
+                <a class="btn btn-primary" href="index.php?url=categories">Ajouter une catégorie</a>
             </div>
+            <?php foreach ($allCategories as $category) : ?>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <?= htmlspecialchars($category->name) ?>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Room</a></li>
+                    </ul>
+                </div>
+            <?php endforeach ?>
 
         </aside>
         <div class="col-md-10 px-5 py-3">

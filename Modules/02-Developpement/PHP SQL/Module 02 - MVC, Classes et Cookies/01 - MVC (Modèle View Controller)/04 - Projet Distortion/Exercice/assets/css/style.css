@@ -1,3 +1,22 @@
+/*
+$red : #EE727A;
+$green : #C4E791;
+$yellow : #FECA72;
+$blue : #84ACFC;
+$purple : #C694E8;
+$light-blue : #8CDDFD;
+$bg : #3A3F54;
+$bg-light : #434961;
+$bg-dark : #2A2D3C;
+$bg-grey: #343a40;
+
+body {
+    background-color: #2A2D3C;
+    font-family: 'Nova Mono', monospace;
+    color: white;
+}
+*/
+
 .xdebug-var-dump {
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     font-size: 0.8rem;
@@ -15,7 +34,7 @@ body {
 }
 
 aside {
-    background-color: rgb(29, 29, 29);
+    background-color: #1d1d1d;
 }
 
 main {
