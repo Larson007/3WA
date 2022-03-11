@@ -12,10 +12,8 @@
 
 <div class="category-page-show">
     <ul>
-    <?php foreach ($rooms as $room) :  ?>
-        <li class="card-link-style"><a href="index.php?url=room&id=<?= htmlspecialchars($category->id) ?>&room=<?= htmlspecialchars($room->id) ?>"><?= htmlspecialchars($room->name) ?></a></li>
+        <?php foreach ($rooms as $room) :  ?>
+            <li class="card-link-style"><a href="index.php?url=room&id=<?= htmlspecialchars($category->id) ?>&room=<?= htmlspecialchars($room->id) ?>"><?= htmlspecialchars($room->name) ?></a></li>
         <?php endforeach  ?>
     </ul>
 </div>
-
-

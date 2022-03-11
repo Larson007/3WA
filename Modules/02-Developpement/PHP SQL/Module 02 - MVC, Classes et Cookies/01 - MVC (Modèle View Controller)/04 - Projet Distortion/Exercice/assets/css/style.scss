@@ -82,6 +82,7 @@ body {
         }
         .content-spacing {
             padding: 5rem;
+            position: relative;
             .content {
                 .home-title {
                     padding-bottom: 3rem;
@@ -158,8 +159,74 @@ body {
                     }
                 }
             }
+            .chat {
+                background-color: $bg-grey;
+                border: 3px solid #fff;
+                border-radius: 8px;
+                padding: 3rem 5rem;
+                margin: 3rem 0;
+                .chat-pinned {
+                    background-color: $bg-light;
+                    padding: 0.8rem;
+                    font-size: 1.5rem;
+                    p{
+                        margin: 0;
+                    }
+                    i {
+                        color: $red;
+                        margin : 0 1rem 0 2rem;
+                    }
+                }
+                .chat-messages {
+                    font-size: 1.2rem;
+                    margin: 1rem 0;
+                    span {
+                        margin-right: 1.5rem;
+                    }
+                    .i-clock {
+                        color: $purple;
+                        margin-right: 0.5rem;
+                    }
+                    .i-message {
+                        color: $light-blue;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+            .message-add-form {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                form {
+                    width: 100%;
+                    label {
+                        font-size: 1.5rem;
+                    }
+                    .message-add-form_input {
+                        height: 3rem;
+                        margin-top: 1rem;
+                        button {
+                            background-color: $bg;
+                            color: #fff;
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                            border: 3px solid $bg-grey;
+                            padding: 0.5rem 1.5rem;
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 .card-link-style {
@@ -186,4 +253,5 @@ body {
     border: 1px solid #fff;
     border-radius:  0 8px 8px 0;
 }
+
 

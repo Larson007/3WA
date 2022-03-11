@@ -91,6 +91,7 @@ body main nav .nav-logo h3 {
 
 body main .content-spacing {
   padding: 5rem;
+  position: relative;
 }
 
 body main .content-spacing .content .home-title {
@@ -215,6 +216,92 @@ body main .content-spacing .category-page-show ul {
 
 body main .content-spacing .category-page-show ul .card-link-style {
   border-color: #ee727a;
+}
+
+body main .content-spacing .chat {
+  background-color: #343a40;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 3rem 5rem;
+  margin: 3rem 0;
+}
+
+body main .content-spacing .chat .chat-pinned {
+  background-color: #434961;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+body main .content-spacing .chat .chat-pinned p {
+  margin: 0;
+}
+
+body main .content-spacing .chat .chat-pinned i {
+  color: #ee727a;
+  margin: 0 1rem 0 2rem;
+}
+
+body main .content-spacing .chat .chat-messages {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+body main .content-spacing .chat .chat-messages span {
+  margin-right: 1.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .i-clock {
+  color: #c694e8;
+  margin-right: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .i-message {
+  color: #8cddfd;
+  margin-right: 0.5rem;
+}
+
+body main .content-spacing .message-add-form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+body main .content-spacing .message-add-form form {
+  width: 100%;
+}
+
+body main .content-spacing .message-add-form form label {
+  font-size: 1.5rem;
+}
+
+body main .content-spacing .message-add-form form .message-add-form_input {
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+body main .content-spacing .message-add-form form .message-add-form_input button {
+  background-color: #3a3f54;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 3px solid #343a40;
+  padding: 0.5rem 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .card-link-style {

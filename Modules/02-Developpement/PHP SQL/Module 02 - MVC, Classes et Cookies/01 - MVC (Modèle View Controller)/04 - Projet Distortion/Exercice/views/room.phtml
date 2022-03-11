@@ -1,9 +1,23 @@
-<h1>Room</h1>
+<div class="category-title">
+    <h1><?= htmlspecialchars($category->name . ' - ' . $room->name) ?></h1>
+</div>
+<div class="chat">
+    <div class="chat-pinned">
+        <p><i class="fa-solid fa-thumbtack"></i> Message pinned</p>
+    </div>
+    <div class="chat-messages">
+    <?php foreach ($messages as $msg) :  ?>
+        <p><span><i class="fa-solid fa-clock i-clock"></i> <?= htmlspecialchars($msg->created_at) ?></span> <i class="fa-solid fa-message i-message"></i> <?= htmlspecialchars($msg->content) ?></p>
+        <?php endforeach ?>
+    </div>
+</div>
 
-<!--TODO  
-
-- Transmettre les fonctions et variables de models Rooms et Messages vers vers la RoomController.php
-
-- gerer l affichages des rooms en fonction de son ID recuoerer dans le $_GET['room']
-
--->
+<div class="message-add-form">
+    <form method="POST">
+        <label for="addMessage" class="form-label">Nouveau message</label>
+        <div class="message-add-form_input input-group mb-3">
+            <input type="text" class="form-control" placeholder="" name="addMessage" autocomplete="off">
+            <button class="btn" type="submit">Envoyer</button>
+        </div>
+    </form>
+</div>

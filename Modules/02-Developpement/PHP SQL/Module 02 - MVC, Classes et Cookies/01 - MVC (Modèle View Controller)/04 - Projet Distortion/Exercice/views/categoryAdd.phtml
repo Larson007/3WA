@@ -13,8 +13,10 @@
     </form>
 </div>
 
-<div class="show-last-category">
-    <div class="card-link-style category-add-link">
-        <a href=""><?= htmlspecialchars($showLastAddcatgory->name)  ?></a>
+<?php if (!empty($showLastAddcatgory->name)) : ?>
+    <div class="show-last-category">
+        <div class="card-link-style category-add-link">
+            <a href=""><?= htmlspecialchars($showLastAddcatgory->name)  ?></a>
+        </div>
     </div>
-</div>
+<?php endif?>
