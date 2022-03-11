@@ -12,3 +12,5 @@ $content = router($path);
 $allCategories = getAllCategories();
 
 require_once dirname(__DIR__) . '/views/layout.phtml';
+
+//TODO Gestion des erreurs, Verifier les liens, Faire le point sur message Pinned, Refaire la bar de navigation 
