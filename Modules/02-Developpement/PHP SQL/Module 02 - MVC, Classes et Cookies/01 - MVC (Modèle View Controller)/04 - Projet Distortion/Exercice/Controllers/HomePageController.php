@@ -4,7 +4,7 @@ require_once dirname(__DIR__) . '/models/Categories.php';
 
 $allCategories = getAllCategories();
 
-//var_dump($allCategories);
+$showCategories = showPageCategories();
 
 
 require_once dirname(__DIR__) . '/views/homepage.phtml';

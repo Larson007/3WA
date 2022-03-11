@@ -15,6 +15,18 @@ function getAllCategories(): array
     return $request->fetchAll();
 }
 
+// Requete pour afficher les 9 dernières catégorie ajouter
+function showPageCategories(): array
+{
+    $connect =  getPDO();
+    $request = $connect->prepare(
+        "SELECT * FROM categories ORDER BY id ASC LIMIT 10"
+    );
+
+    $request->execute();
+    return $request->fetchAll();
+}
+
 function addCategory($addCategory)
 {
     $connect =  getPDO();
@@ -27,4 +39,30 @@ function addCategory($addCategory)
             ':addCategory' => $addCategory
         ]
     );
+}
+
+function showLastAddcatgory()
+{
+    $connect =  getPDO();
+    $request = $connect->prepare(
+        "SELECT * FROM categories ORDER BY id DESC LIMIT 1"
+    );
+
+    $request->execute();
+    return $request->fetch();
+}
+
+function findCategoryById(int $id): object
+{
+    $connect = getPDO();
+    $request = $connect->prepare(
+        "SELECT * FROM categories WHERE id = :id"
+    );
+
+    $request->execute(
+        [
+            ':id' => $id
+        ]
+    );
+    return $request->fetch();
 }

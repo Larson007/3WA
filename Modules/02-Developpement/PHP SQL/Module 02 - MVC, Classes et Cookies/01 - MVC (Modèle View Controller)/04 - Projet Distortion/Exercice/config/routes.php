@@ -4,6 +4,9 @@
 const ALLOWED_ROUTES = [
     'homepage' => 'HomePageController',
     'categories' => 'CategoriesController',
+    'categoryAdd' => 'CategoryAddController',
+    'categoryShow' => 'CategoryShowController',
+    'room' => 'RoomController',
 ];
 
 // La route par défault

@@ -1,8 +1,15 @@
-<h2>Catégories</h2>
+<div class="category-title">
+    <h1>Catégories</h1>
+    <div class="card-link-style category-add-link">
+        <a href="index.php?url=categoryAdd">Ajouter une catégorie</a>
+    </div>
+</div>
 
-<form method="POST">
 
-    <input type="text" name="addCategory" autocomplete="off" placeholder="Veuillez Indiquer une catégorie à Ajouter">
-    <input type="submit" value="Ajouter">
-</form>
-
+<div class="category-page-show">
+    <ul>
+        <?php foreach ($showCategories as $show) :  ?>
+            <li class="card-link-style"><a href="index.php?url=categoryShow&id=<?= htmlspecialchars($show->id) ?>"><?= htmlspecialchars($show->name) ?></a></li>
+        <?php endforeach  ?>
+    </ul>
+</div>
