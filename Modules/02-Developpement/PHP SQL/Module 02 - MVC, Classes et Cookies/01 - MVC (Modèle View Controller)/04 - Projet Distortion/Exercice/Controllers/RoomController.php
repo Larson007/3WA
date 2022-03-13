@@ -12,7 +12,7 @@ if(isset($_POST['addMessage']) && !empty($_POST['addMessage'])) {
     $message = addMessage($_GET['room'], $_POST['addMessage']);
 }
 
-$messages = getAllMessages();
+$messages = showMessages($_GET['room']);
 
 
 require_once dirname(__DIR__) . '/views/room.phtml';

@@ -5,14 +5,18 @@ declare(strict_types=1);
 require_once 'database.php';
 
 
-function getAllMessages(): array
+function showMessages($roomId): array
 {
     $connect =  getPDO();
     $request = $connect->prepare(
-        "SELECT * FROM messages"
+        "SELECT * FROM messages WHERE room_id = :roomId" 
     );
 
-    $request->execute();
+    $request->execute(
+        [
+            ':roomId' => $roomId
+        ]
+    );
     return $request->fetchAll();
 }
 
