@@ -246,10 +246,6 @@ body main .content-spacing .chat .chat-messages {
   margin: 1rem 0;
 }
 
-body main .content-spacing .chat .chat-messages span {
-  margin-right: 1.5rem;
-}
-
 body main .content-spacing .chat .chat-messages .i-clock {
   color: #c694e8;
   margin-right: 0.5rem;
@@ -258,6 +254,51 @@ body main .content-spacing .chat .chat-messages .i-clock {
 body main .content-spacing .chat .chat-messages .i-message {
   color: #8cddfd;
   margin-right: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned i {
+  color: #ee727a;
+  margin-right: 1rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned input[type=checkbox] {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_date,
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_date p,
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_texte p {
+  margin: 0;
 }
 
 body main .content-spacing .message-add-form {
@@ -329,5 +370,15 @@ h1 {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 0 8px 8px 0;
+}
+
+.i-pin-remove {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.i-pin-add {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 /*# sourceMappingURL=style.css.map */

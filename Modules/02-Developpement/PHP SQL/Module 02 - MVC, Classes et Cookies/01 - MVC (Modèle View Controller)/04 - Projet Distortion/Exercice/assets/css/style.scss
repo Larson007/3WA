@@ -180,9 +180,6 @@ body {
                 .chat-messages {
                     font-size: 1.2rem;
                     margin: 1rem 0;
-                    span {
-                        margin-right: 1.5rem;
-                    }
                     .i-clock {
                         color: $purple;
                         margin-right: 0.5rem;
@@ -190,6 +187,32 @@ body {
                     .i-message {
                         color: $light-blue;
                         margin-right: 0.5rem;
+                    }
+                    .chat-messages-show {
+                        display: flex;
+                        margin-bottom: 0.5rem;
+                        .pinned {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            i {
+                                color: $red;
+                                margin-right: 1rem;
+                            }
+                            input[type=checkbox] {
+                                transform: scale(2);
+                            }
+                        }
+
+                        .chat-messages-show_date,
+                        .chat-messages-show_texte {
+                            display: flex;
+                            margin-right: 2rem;
+                            align-items: center;
+                            p {
+                                margin: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -254,4 +277,12 @@ h1 {
     border-radius:  0 8px 8px 0;
 }
 
+.i-pin-remove {
+    transform: rotate(-90deg);
+
+}
+
+.i-pin-add {
+    transform: rotate(0deg);
+}
 
