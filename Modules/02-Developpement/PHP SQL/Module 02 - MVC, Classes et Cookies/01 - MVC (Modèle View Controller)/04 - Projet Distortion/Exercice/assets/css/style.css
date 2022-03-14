@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+.xdebug-var-dump {
+  color: #2a2d3c;
+}
+
 body {
   font-family: "Fredoka", sans-serif !important;
   color: #fff !important;
@@ -29,14 +33,14 @@ body main nav ul {
   padding: 0;
 }
 
-body main nav ul li {
+body main nav ul .liste-link {
   height: 141px;
   text-align: center;
   text-transform: uppercase;
   position: relative;
 }
 
-body main nav ul li a {
+body main nav ul .liste-link a {
   position: absolute;
   top: 50%;
   left: 50%;

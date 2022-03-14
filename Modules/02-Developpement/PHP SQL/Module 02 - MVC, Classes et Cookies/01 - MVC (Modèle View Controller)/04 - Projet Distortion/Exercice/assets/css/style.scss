@@ -11,6 +11,10 @@ $bg-light: #434961;
 $bg-dark: #2a2d3c;
 $bg-grey: #343a40;
 
+.xdebug-var-dump {
+    color: #2a2d3c;
+}
+
 body {
     font-family: "Fredoka", sans-serif !important;
     color: #fff !important;
@@ -28,7 +32,7 @@ body {
                 list-style: none;
                 margin: 3.5rem 0 0;
                 padding: 0;
-                li {
+                .liste-link {
                     height: 141px;
                     text-align: center;
                     text-transform: uppercase;
