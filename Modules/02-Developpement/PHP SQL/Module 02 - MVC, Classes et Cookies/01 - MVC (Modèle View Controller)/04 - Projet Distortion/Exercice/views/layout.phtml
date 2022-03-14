@@ -18,17 +18,15 @@
             <ul>
                 <li class="nav-home liste-link"><a href="index.php?url=homepage">Accueil</a></li>
                 <li class="nav-category liste-link"><a href="index.php?url=categories">Catégories</a></li>
-                <?php foreach($Links as $link) : ?>
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    </a>
-
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
+                <?php foreach ($navRooms as $navRoom) : ?>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?= $navRoom->c_name ?>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><?= $navRoom->r_name ?></a></li>
+                        </ul>
+                    </div>
                 <?php endforeach ?>
 
             </ul>

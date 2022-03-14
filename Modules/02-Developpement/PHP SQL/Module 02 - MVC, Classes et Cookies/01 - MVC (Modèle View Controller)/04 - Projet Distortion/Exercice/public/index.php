@@ -11,16 +11,12 @@ $path = $_GET['url'] ?? DEFAULT_PATH;
 $content = router($path);
 
 // Requetes
-$allCategories = getAllCategories();
+$navCategories = getAllCategories();
 
-$Links = navLinks();
+$navRooms = navRooms();
 
-var_dump($Links);
 
-foreach($Links as $link) {
 
-    //var_dump($link);
-}
 
 require_once dirname(__DIR__) . '/views/layout.phtml';
 
