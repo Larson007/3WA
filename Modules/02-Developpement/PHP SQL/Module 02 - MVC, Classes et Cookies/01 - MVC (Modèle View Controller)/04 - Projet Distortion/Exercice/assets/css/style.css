@@ -29,7 +29,7 @@ body main nav {
 
 body main nav ul {
   list-style: none;
-  margin: 3.5rem 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -284,7 +284,7 @@ body main .content-spacing .chat .chat-messages .chat-messages-show .pinned i {
   margin-right: 1rem;
 }
 
-body main .content-spacing .chat .chat-messages .chat-messages-show .pinned input[type=checkbox] {
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned input[type="checkbox"] {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
@@ -384,5 +384,37 @@ h1 {
 .i-pin-add {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.nav-category-rooms {
+  border-bottom: 2px solid #2a2d3c;
+}
+
+.nav-category-rooms .dropdown-toggle::after {
+  color: #feca72 !important;
+}
+
+.nav-category-rooms a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem 4rem;
+  font-size: 1.2rem;
+  color: #8cddfd;
+  text-decoration: none;
+}
+
+.nav-category-rooms a:hover {
+  color: #feca72;
+}
+
+.nav-category-rooms ul {
+  width: 16.5%;
+  background-color: #343a40;
+  padding: 0;
+}
+
+.nav-category-rooms ul a:hover {
+  background-color: #434961 !important;
+  border: 1px solid #feca72;
 }
 /*# sourceMappingURL=style.css.map */

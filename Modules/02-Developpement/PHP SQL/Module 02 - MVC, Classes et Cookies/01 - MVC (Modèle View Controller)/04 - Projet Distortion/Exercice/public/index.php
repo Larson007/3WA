@@ -11,13 +11,10 @@ $path = $_GET['url'] ?? DEFAULT_PATH;
 $content = router($path);
 
 // Requetes
+
 $navCategories = getAllCategories();
-
 $navRooms = navRooms();
-
-
 
 
 require_once dirname(__DIR__) . '/views/layout.phtml';
 
-//TODO Gestion des erreurs, Verifier les liens, Faire le point sur message Pinned, Refaire la bar de navigation 

@@ -2,7 +2,7 @@
 
 require_once dirname(__DIR__) . '/models/Categories.php';
 
-;
+
 $showCategories = showPageCategories();
 
 

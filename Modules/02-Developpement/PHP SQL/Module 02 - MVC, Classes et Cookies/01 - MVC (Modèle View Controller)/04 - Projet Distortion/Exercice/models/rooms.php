@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once 'database.php';
 
 
-function getCategoryRooms($catId): array
+function getCategoryRooms(int $catId): array
 {
     $connect =  getPDO();
     $request = $connect->prepare(
@@ -22,7 +22,7 @@ function getCategoryRooms($catId): array
 
 
 
-function addRoom($catId, $roomName)
+function addRoom(int $catId, string $roomName)
 {
     $connect =  getPDO();
     $request = $connect->prepare(

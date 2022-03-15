@@ -27,7 +27,7 @@ function showPageCategories(): array
     return $request->fetchAll();
 }
 
-function addCategory($addCategory)
+function addCategory(string $addCategory)
 {
     $connect =  getPDO();
     $request = $connect->prepare(
@@ -41,7 +41,7 @@ function addCategory($addCategory)
     );
 }
 
-function showLastAddcatgory()
+function showLastAddcatgory(): object
 {
     $connect =  getPDO();
     $request = $connect->prepare(

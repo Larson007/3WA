@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once 'database.php';
 
 
-function showMessages($roomId): array
+function showMessages(int $roomId): array
 {
     $connect =  getPDO();
     $request = $connect->prepare(
@@ -20,7 +20,7 @@ function showMessages($roomId): array
     return $request->fetchAll();
 }
 
-function addMessage($roomId, $msg)
+function addMessage(int $roomId,string $msg)
 {
     date_default_timezone_set('Europe/Paris');
     $connect =  getPDO();
@@ -36,7 +36,7 @@ function addMessage($roomId, $msg)
     );
 }
 
-function removePinnedMessage($messageId)
+function removePinnedMessage(int $messageId)
 {
     $connect =  getPDO();
     $request = $connect->prepare(
@@ -51,7 +51,7 @@ function removePinnedMessage($messageId)
     );
 }
 
-function addPinnedMessage($messageId)
+function addPinnedMessage(int $messageId)
 {
     $connect =  getPDO();
     $request = $connect->prepare(
@@ -66,7 +66,7 @@ function addPinnedMessage($messageId)
     );
 }
 
-function showPinnedMessage($roomId)
+function showPinnedMessage(int $roomId): array
 {
     $connect =  getPDO();
     $request = $connect->prepare(

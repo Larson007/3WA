@@ -18,13 +18,17 @@
             <ul>
                 <li class="nav-home liste-link"><a href="index.php?url=homepage">Accueil</a></li>
                 <li class="nav-category liste-link"><a href="index.php?url=categories">Catégories</a></li>
-                <?php foreach ($navRooms as $navRoom) : ?>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?= $navRoom->c_name ?>
+                <?php foreach ($navCategories as $navCategory) : ?>
+                    <div class="nav-category-rooms">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <?= $navCategory->name ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#"><?= $navRoom->r_name ?></a></li>
+                            <?php foreach ($navRooms as $navRoom) : ?>
+                                <?php if ($navCategory->id === $navRoom->category_id ) : ?>
+                                    <li><a class="dropdown-item" href="index.php?url=room&id=<?= $navCategory->id?>&room=<?= $navRoom->id ?>"><?= $navRoom->name ?></a></li>
+                                <?php endif ?>
+                            <?php endforeach ?>
                         </ul>
                     </div>
                 <?php endforeach ?>
@@ -42,10 +46,6 @@
             </div>
         </div>
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
