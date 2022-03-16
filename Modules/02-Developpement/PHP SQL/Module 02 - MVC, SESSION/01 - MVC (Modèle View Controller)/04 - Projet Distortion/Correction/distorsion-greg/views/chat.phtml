@@ -1,0 +1,65 @@
+
+    <nav>
+        <ul>
+            <li class='title'><a href="index.php?url=category">Category <span class='plus'>+</span></a></li>
+        </ul>
+        <?php foreach($roomByCat as $rooms): ?>
+        <ul>
+            <li class='category'><a href="index.php?url=room&catid=<?=htmlentities($rooms['category']['cat_id'])?>"><?= htmlentities($rooms['category']['cat_name'])?></a></li>
+        <?php if(isset($rooms['room']) && !empty($rooms['room'])): ?>
+        <?php foreach($rooms['room'] as $room): ?>
+            <li class="room"><a href="index.php?url=chat&roomid=<?= htmlentities($room['room_id']) ?>"><?= htmlentities($room['room_name'])?></a></li>
+        <?php endforeach;?>
+        <?php endif; ?>
+        </ul>
+        <?php endforeach;?>
+    </nav>
+    <div class='chat'>
+        <?php if(isset($roomName) && !empty($roomName)): ?>
+        <h2 style='text-align: center'> Bienvenue dans le salon : <?= htmlentities($roomName->name) ?></h2>
+        <?php endif ?>
+        <div class="display">
+        <?php if(isset($pinned) && !empty($pinned)): ?>
+            <table class='pinned'>
+            <?php foreach($pinned as $pin):?>
+                <tr>
+                    <td class='first'>
+                        <em style='font-size: 0.7rem'><?= htmlentities(date('d:m:Y',strtotime($pin->created_at))) ?>: </em>
+                    </td>
+                    <td>
+                        <p><?= htmlentities($pin->content) ?> </p>
+                    </td>
+                </tr>
+            <?php endforeach;?>
+            </table>
+        <?php endif; ?>
+        <?php if(isset($messages) && !empty($messages)): ?>
+            <table>
+            <?php foreach($messages as $message):?>
+                <tr id="message_<?= htmlentities($message->id) ?>">
+                    <td class='first'>
+                        <em style='font-size: 0.7rem'><?= htmlentities(date('d:m:Y',strtotime($message->created_at))) ?>: </em>
+                    </td>
+                    <td>
+                        <p><?= htmlentities($message->content) ?> </p>
+                    </td>
+                    <td>
+                        <form method="POST">
+                            <input type="hidden" name="pinned" value="<?= htmlentities($message->id) ?>">
+                            <input type="submit"  value="+"/>
+                        </form>
+                    </td>
+                </tr>
+            <?php endforeach;?>
+            </table>
+        <?php endif; ?>
+        </div>
+        <?php if(isset($roomID) && !empty($roomID)): ?>
+        <form class="form_msg" method="POST">
+            <input type="text" name="message" autofocus autocomplete='off'/>
+            <input type="hidden" value="Submit"/>
+        </form>
+        <?php else: ?>
+        <p style='text-align: center'>Veuillez choisir une room</p>
+        <?php endif; ?>
+    </div>

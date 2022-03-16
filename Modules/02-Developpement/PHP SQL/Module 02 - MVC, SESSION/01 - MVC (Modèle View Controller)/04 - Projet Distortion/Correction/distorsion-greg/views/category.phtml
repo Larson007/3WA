@@ -1,0 +1,10 @@
+<h2>Ajouter une catégorie</h2>
+
+<form method="POST">
+    <div>
+        <p class="error"><?= $error ?? null ?></p>
+    </div>
+    <label for="category">Nom de votre catégorie</label>
+    <input type="text" name="category"/>
+    <input type="submit" value="Valider"/>
+</form>
