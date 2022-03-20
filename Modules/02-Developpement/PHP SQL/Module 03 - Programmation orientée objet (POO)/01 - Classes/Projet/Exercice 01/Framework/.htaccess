@@ -1,6 +1,2 @@
-RewriteEngine off
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-RewriteRule ^(.*)$ index.php?page=$1
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ public/index.php?p=$1

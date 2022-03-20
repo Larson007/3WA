@@ -1,2 +1,2 @@
-RewriteEngine On
+RewriteEngine off
 RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ public/index.php?p=$1

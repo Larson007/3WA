@@ -1,0 +1,56 @@
+<div class="category-title">
+    <h1><?= htmlspecialchars($category->name . ' - ' . $room->name) ?></h1>
+</div>
+<div class="chat">
+    <div class="chat-pinned">
+        <?php if ($pinnedMessages) : ?>
+            <?php foreach ($pinnedMessages as $pinMsg) : ?>
+                <p><i class="fa-solid fa-thumbtack"></i> <?= htmlspecialchars($pinMsg->content) ?></p>
+            <?php endforeach ?>
+        <?php else : ?>
+            <p><i class="fa-solid fa-thumbtack"></i> Message pinned</p>
+
+        <?php endif ?>
+
+    </div>
+    <div class="chat-messages">
+        <?php foreach ($messages as $msg) :  ?>
+
+            <div class="chat-messages-show d-flex col-md-12">
+                <div class="pinned col-md-2">
+                    <?php if ($msg->pinned === 0) : ?>
+                        <i class="fa-solid fa-thumbtack i-pin-add"></i>
+                        <form method="POST">
+                            <input type="text" name="addPin" value="<?= htmlspecialchars($msg->id) ?>" hidden>
+                            <input class="btn btn-outline-success" type="submit" value="Ajouter">
+                        </form>
+                    <?php elseif ($msg->pinned === 1) : ?>
+                        <i class="fa-solid fa-thumbtack i-pin-remove"></i>
+                        <form method="POST" class="d-flex">
+                            <input type="text" name="removePin" value="<?= htmlspecialchars($msg->id) ?>" hidden>
+                            <input class="btn btn-outline-danger" type="submit" value="Retirer">
+                        </form>
+                    <?php endif ?>
+                </div>
+                <div class="chat-messages-show_date col-md-2">
+                    <i class="fa-solid fa-clock i-clock"></i>
+                    <p><?= htmlspecialchars($msg->created_at) ?></p>
+                </div>
+                <div class="chat-messages-show_texte col-md-8">
+                    <i class="fa-solid fa-message i-message"></i>
+                    <p><?= htmlspecialchars($msg->content) ?>
+                </div>
+            </div>
+        <?php endforeach ?></p>
+    </div>
+</div>
+
+<div class="message-add-form">
+    <form method="POST">
+        <label for="addMessage" class="form-label">Nouveau message</label>
+        <div class="message-add-form_input input-group mb-3">
+            <input type="text" class="form-control" placeholder="" name="addMessage" autocomplete="off" autofocus>
+            <button class="btn" type="submit">Envoyer</button>
+        </div>
+    </form>
+</div>

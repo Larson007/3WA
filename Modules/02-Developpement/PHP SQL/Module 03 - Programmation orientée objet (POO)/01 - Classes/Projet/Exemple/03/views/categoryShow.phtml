@@ -1,0 +1,19 @@
+<div class="category-title">
+    <h1><?= $category->name ?></h1>
+    <form method="POST" action="index.php?url=categoryShow&id=<?= htmlspecialchars($category->id) ?>">
+        <label for="addRoom" class="form-label">Ajouter une nouvelle Room</label>
+        <div class="category-add-form_input input-group mb-3">
+            <input type="text" class="form-control" placeholder="" name="addRoom" autocomplete="off">
+            <button class="btn-link-style" type="submit">Ajouter</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="category-page-show">
+    <ul>
+        <?php foreach ($rooms as $room) :  ?>
+            <li class="card-link-style"><a href="index.php?url=room&id=<?= htmlspecialchars($category->id) ?>&room=<?= htmlspecialchars($room->id) ?>"><?= htmlspecialchars($room->name) ?></a></li>
+        <?php endforeach  ?>
+    </ul>
+</div>

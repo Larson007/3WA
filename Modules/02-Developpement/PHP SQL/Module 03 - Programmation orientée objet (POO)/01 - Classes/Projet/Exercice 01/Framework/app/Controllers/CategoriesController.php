@@ -1,10 +1,8 @@
 <?php
 
-namespace Controllers;
+namespace App;
 
-use Models\Models;
-
-$categoriesModel = new Model();
+$categoriesModel = new Models\CategoriesModel();
 
 $category = $categoriesModel->findAll();
 

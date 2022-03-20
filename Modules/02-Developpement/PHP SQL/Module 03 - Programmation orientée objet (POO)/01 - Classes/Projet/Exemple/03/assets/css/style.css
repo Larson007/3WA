@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+.xdebug-var-dump {
+  color: #2a2d3c;
+}
+
+body {
+  font-family: "Fredoka", sans-serif !important;
+  color: #fff !important;
+}
+
+body main {
+  background-color: #434961;
+  min-height: 100vh;
+}
+
+body main nav {
+  background-color: #3a3f54;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main nav ul .liste-link {
+  height: 141px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+body main nav ul .liste-link a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-decoration: none;
+  padding: 3rem;
+  width: 100%;
+}
+
+body main nav ul .nav-home {
+  border-top: 2px solid #2a2d3c;
+  border-bottom: 1px solid #2a2d3c;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+body main nav ul .nav-home a {
+  color: #c4e791;
+}
+
+body main nav ul .nav-home:hover {
+  background-color: #2a2d3c;
+  cursor: pointer;
+}
+
+body main nav ul .nav-category {
+  border-top: 1px solid #2a2d3c;
+  border-bottom: 2px solid #2a2d3c;
+}
+
+body main nav ul .nav-category a {
+  color: #ee727a;
+}
+
+body main nav ul .nav-category:hover {
+  background-color: #2a2d3c;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+}
+
+body main nav .nav-logo {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+body main nav .nav-logo h3 {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+body main .content-spacing {
+  padding: 5rem;
+  position: relative;
+}
+
+body main .content-spacing .content .home-title {
+  padding-bottom: 3rem;
+  border-bottom: 3px solid #c694e8;
+}
+
+body main .content-spacing .content .home-content {
+  padding-top: 3rem;
+}
+
+body main .content-spacing .content .home-content ul {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .category-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 3rem;
+  border-bottom: 3px solid #ee727a;
+}
+
+body main .content-spacing .category-title .category-add-link {
+  border-color: #ee727a;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+body main .content-spacing .category-title .category-add-link a:hover {
+  color: #c4e791;
+}
+
+body main .content-spacing .category-add {
+  padding-bottom: 3rem;
+  border-bottom: 3px solid #c4e791;
+}
+
+body main .content-spacing .category-add-form {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .category-add-form form {
+  width: 60%;
+}
+
+body main .content-spacing .category-add-form form label {
+  font-size: 1.5rem;
+}
+
+body main .content-spacing .category-add-form form .category-add-form_input {
+  height: 3rem;
+  margin-top: 2rem;
+}
+
+body main .content-spacing .category-add-form form .category-add-form_input button {
+  background-color: #2a2d3c;
+  color: #fff;
+}
+
+body main .content-spacing .show-last-category {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .category-page-show {
+  padding-top: 3rem;
+}
+
+body main .content-spacing .category-page-show ul {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .category-page-show ul .card-link-style {
+  border-color: #ee727a;
+}
+
+body main .content-spacing .chat {
+  background-color: #343a40;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 3rem 5rem;
+  margin: 3rem 0;
+}
+
+body main .content-spacing .chat .chat-pinned {
+  background-color: #434961;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+body main .content-spacing .chat .chat-pinned p {
+  margin: 0;
+}
+
+body main .content-spacing .chat .chat-pinned i {
+  color: #ee727a;
+  margin: 0 1rem 0 2rem;
+}
+
+body main .content-spacing .chat .chat-messages {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+body main .content-spacing .chat .chat-messages .i-clock {
+  color: #c694e8;
+  margin-right: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .i-message {
+  color: #8cddfd;
+  margin-right: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned i {
+  color: #ee727a;
+  margin-right: 1rem;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .pinned input[type="checkbox"] {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_date,
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_date p,
+body main .content-spacing .chat .chat-messages .chat-messages-show .chat-messages-show_texte p {
+  margin: 0;
+}
+
+body main .content-spacing .message-add-form {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+body main .content-spacing .message-add-form form {
+  width: 100%;
+}
+
+body main .content-spacing .message-add-form form label {
+  font-size: 1.5rem;
+}
+
+body main .content-spacing .message-add-form form .message-add-form_input {
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+body main .content-spacing .message-add-form form .message-add-form_input button {
+  background-color: #3a3f54;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 3px solid #343a40;
+  padding: 0.5rem 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.card-link-style {
+  background-color: #2a2d3c;
+  border: 2px solid #8cddfd;
+  border-radius: 8px;
+  list-style: none;
+  display: inline-block;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.card-link-style a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-link-style a:hover {
+  color: #feca72;
+}
+
+.btn-link-style {
+  background-color: #2a2d3c;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0 8px 8px 0;
+}
+
+.i-pin-remove {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.i-pin-add {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.nav-category-rooms {
+  border-bottom: 2px solid #2a2d3c;
+}
+
+.nav-category-rooms .dropdown-toggle::after {
+  color: #feca72 !important;
+}
+
+.nav-category-rooms a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.2rem 4rem;
+  font-size: 1.2rem;
+  color: #8cddfd;
+  text-decoration: none;
+}
+
+.nav-category-rooms a:hover {
+  color: #feca72;
+}
+
+.nav-category-rooms ul {
+  width: 16.5%;
+  background-color: #343a40;
+  padding: 0;
+}
+
+.nav-category-rooms ul a:hover {
+  background-color: #434961 !important;
+  border: 1px solid #feca72;
+}
+/*# sourceMappingURL=style.css.map */
