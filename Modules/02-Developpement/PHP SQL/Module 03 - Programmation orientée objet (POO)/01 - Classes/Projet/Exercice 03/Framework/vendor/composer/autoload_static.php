@@ -48,11 +48,11 @@ class ComposerStaticInit258bc3d35b1604355c32351f435f154d
         ),
         'Library\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/library',
+            0 => __DIR__ . '/../..' . '/services/libraries',
         ),
         'Config\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/config',
+            0 => __DIR__ . '/../..' . '/services/config',
         ),
         'App\\' => 
         array (

@@ -1,0 +1,8 @@
+.xdebug-error, .xe-warning {
+    color: black;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}

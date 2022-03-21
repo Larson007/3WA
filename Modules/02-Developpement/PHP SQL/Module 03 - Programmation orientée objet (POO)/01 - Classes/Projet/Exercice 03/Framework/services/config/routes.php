@@ -7,7 +7,7 @@ $routes = [];
 $routes2 = [];
 $test2 = [];
 
-$test = scandir(dirname(__DIR__) . '/app/controllers', 1);
+$test = scandir(dirname(__DIR__) . '/../app/controllers', 1);
 
 foreach ($test as $t) {
     $t = lcfirst($t);
