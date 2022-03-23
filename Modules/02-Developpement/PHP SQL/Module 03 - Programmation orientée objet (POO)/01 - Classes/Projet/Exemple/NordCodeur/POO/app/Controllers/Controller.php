@@ -4,7 +4,7 @@ namespace App\Controllers;
 use Database\DBConnection;
 
 /* It loads a view file and passes the parameters to it */
-class Controller {
+abstract class Controller {
 
     protected $db;
 
@@ -24,7 +24,7 @@ class Controller {
  * @param string path The path to the view file.
  * @param array params An array of parameters that will be extracted and put into the local scope.
  */
-    public function view(string $path, array $params = null)
+    protected function view(string $path, array $params = null)
     {
         /* Starting the output buffer. */
         ob_start();
@@ -35,5 +35,10 @@ class Controller {
         $content = ob_get_clean();
         /* Loading the layout file. */
         require VIEWS . 'layout.php';
+    }
+
+    protected function getDB()
+    {
+        return $this->db;
     }
 }
