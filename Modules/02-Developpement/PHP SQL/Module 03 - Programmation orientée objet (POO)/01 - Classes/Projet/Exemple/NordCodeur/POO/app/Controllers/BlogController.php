@@ -9,29 +9,43 @@ class BlogController extends Controller
 {
 
 /**
- * This function returns the view for the blog index page
+ * This function returns the view for the welcome page
  * 
- * @return The view.
+ * @return view welcome.
+ */
+    public function welcome()
+    {
+        return $this->view('blog.welcome');
+    }
+
+
+/**
+ * Get all the posts from the database and pass them to the view
+ * 
+ * @return view method is returning the view file index.
  */
     public function index()
     {
-        return $this->view('blog.index');
+        $stmt = $this->db->getPDO()->query('SELECT * FROM posts ORDER BY created_at DESC');
+        $posts = $stmt->fetchAll();
+        
+        return $this->view('blog.index', compact('posts'));
     }
 
+
 /**
- * This function will return the view for the show page for the blog post with the given id
+ * Get the post with the given id from the database and pass it to the view
  * 
- * @param int id The id of the blog post.
- * @return The view.
+ * @param int id The id of the post to show.
+ * 
+ * @return view method is returning the view file show.
  */
     public function show(int $id)
     {   
-        /* db is set in 'controllers/Controller' */
-        $req = $this->db->getPDO()->query('SELECT * FROM posts');
-        $posts = $req->fetchAll();
-        foreach ($posts as $post) {
-            echo $post->title;
-        }
-        return $this->view('blog.show', compact('id'));
+        $stmt = $this->db->getPDO()->prepare('SELECT * FROM posts WHERE id = :id');
+        $stmt->execute([':id' => $id]);
+        $post = $stmt->fetch();
+
+        return $this->view('blog.show', compact('post'));
     }
 }

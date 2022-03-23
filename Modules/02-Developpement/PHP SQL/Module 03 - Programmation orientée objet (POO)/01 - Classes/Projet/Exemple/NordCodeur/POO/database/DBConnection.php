@@ -38,17 +38,5 @@ class DBConnection
             /* This is telling PDO to use the UTF-8 character set. */
             PDO::MYSQL_ATTR_INIT_COMMAND => 'SET CHARACTER SET UTF8'
         ]);
-
-        /*// Sans opérateur ternaire :
-        if ($this->pdo === null) {
-            $this->pdo = new PDO("mysql:dbname={$this->dbname};host={$this->host}", $this->username, $this->password, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET CHARACTER SET UTF8'
-        ]);
-        }
-
-        return $this->pdo;
-        */
     }
 }

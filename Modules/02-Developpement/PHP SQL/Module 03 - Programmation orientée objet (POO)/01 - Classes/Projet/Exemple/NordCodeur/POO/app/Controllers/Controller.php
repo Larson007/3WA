@@ -31,11 +31,6 @@ class Controller {
         /* Replacing the dot (.) with the directory separator (/) in the path variable. */
         $path = str_replace('.', DIRECTORY_SEPARATOR, $path);
         require VIEWS . $path . '.php';
-        /* if $params != null */
-        if ($params) {
-            /* Extracting the parameters from the array and putting them into the local scope. */
-            $params = extract($params);
-        }
         /* Cleaning the output buffer and returning the $content. */
         $content = ob_get_clean();
         /* Loading the layout file. */

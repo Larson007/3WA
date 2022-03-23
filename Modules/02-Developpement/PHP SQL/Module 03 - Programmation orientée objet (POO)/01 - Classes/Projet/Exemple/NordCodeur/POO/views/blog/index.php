@@ -1,6 +1,13 @@
-<h1>homepage</h1>
+<h1>Les derniers articles</h1>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus autem voluptatem dolore. Obcaecati voluptate porro numquam consectetur blanditiis quas quos adipisci fugiat saepe labore qui ab beatae, assumenda non necessitatibus quam est, veniam vitae? Error incidunt, obcaecati rerum saepe expedita numquam aspernatur quis, animi tempora ad, quaerat neque nulla!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus autem voluptatem dolore. Obcaecati voluptate porro numquam consectetur blanditiis quas quos adipisci fugiat saepe labore qui ab beatae, assumenda non necessitatibus quam est, veniam vitae? Error incidunt, obcaecati rerum saepe expedita numquam aspernatur quis, animi tempora ad, quaerat neque nulla!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus autem voluptatem dolore. Obcaecati voluptate porro numquam consectetur blanditiis quas quos adipisci fugiat saepe labore qui ab beatae, assumenda non necessitatibus quam est, veniam vitae? Error incidunt, obcaecati rerum saepe expedita numquam aspernatur quis, animi tempora ad, quaerat neque nulla!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum minus autem voluptatem dolore. Obcaecati voluptate porro numquam consectetur blanditiis quas quos adipisci fugiat saepe labore qui ab beatae, assumenda non necessitatibus quam est, veniam vitae? Error incidunt, obcaecati rerum saepe expedita numquam aspernatur quis, animi tempora ad, quaerat neque nulla!</p>
+
+    <?php foreach ($params['posts'] as $post) : ?>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title"><?= $post->title ?></h5>
+                <small><?= $post->created_at ?></small>
+                <p class="card-text"><?= $post->content ?></p>
+                <a href="/posts/<?= $post->id ?>" class="btn btn-primary">Lire plus</a>
+            </div>
+        </div>
+    <?php endforeach ?>
