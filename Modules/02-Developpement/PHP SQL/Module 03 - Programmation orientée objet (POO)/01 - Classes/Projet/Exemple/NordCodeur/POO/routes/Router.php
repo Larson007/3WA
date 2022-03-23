@@ -5,11 +5,11 @@ namespace Router;
 
 /* It takes a URL and stores it in the url variable. It then loops through the routes array and checks
 if the route matches the current URL. If it does, it executes the route */
+
 class Router
 {
     public $url;
     public $routes = [];
-
 
     /**
      * The constructor takes a URL and stores it in the  variable
@@ -23,7 +23,6 @@ class Router
         $this->url = trim($url, '/');
     }
 
-
     /**
      * It adds a new route to the routes array.
      * 
@@ -36,19 +35,22 @@ class Router
         $this->routes['GET'][] = new Route($path, $action);
     }
 
-
     /**
-     * For each route in the routes array, if the route matches the current URL, execute the route
+     * If the route matches the current URL, it executes the route
      * 
-     * @return Nothing.
+     * @return $route that matches the current URL.
      */
     public function run()
     {
+        /* Looping through the routes array and checking if the route matches the current URL. If it does, it
+executes the route. */
         foreach ($this->routes[$_SERVER['REQUEST_METHOD']] as $route) {
+            /* Checking if the route matches the current URL. If it does, it executes the route. */
             if ($route->matches($this->url)) {
-                $route->execute();
+                return $route->execute();
             }
         }
+        /* This is returning a 404 error. */
         return header('HTTP/1.0 404 Not Found');
     }
 }
