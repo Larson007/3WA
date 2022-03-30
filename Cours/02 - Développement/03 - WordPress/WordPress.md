@@ -16,7 +16,7 @@ Les différentes étapes lors de l'instalation :
 
   * III.I - Si on rencontre un problème de router, allez dans :
 
-    > préférence > advanced > router mode > localHost
+    > préférence > advanced > router mode => localHost
 
 &nbsp;
 
@@ -25,7 +25,7 @@ Les différentes étapes lors de l'instalation :
 1. Formulaire de contact : WPForms Lite
 
 2. Sauvegarde :
-    * via Wordpress `UpdraftPlus WordPress Backup Plugin` 
+    * via Wordpress `UpdraftPlus WordPress Backup Plugin`
     * via flywheel `Cloud backup (addon)`
 
     Dans les 2 cas, choisir googleDrive pour le backup

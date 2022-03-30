@@ -2,7 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Models\Model;
+use APP\Models\Model;
+
+
 
 $categoriesModel = new Model();
 
