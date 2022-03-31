@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 namespace App\Models;
 
 use Services\Database;
@@ -45,7 +45,7 @@ abstract class ModelManager
      * @param array $param - associative array for binding
      * @return array - object or object table
      */
-    protected function findOne(string $sql, array $param = []): Object|array
+    protected function findOne(string $sql, array $param = [])
     {
         $co = $this->getPdo();
         $request = $co->prepare($sql);

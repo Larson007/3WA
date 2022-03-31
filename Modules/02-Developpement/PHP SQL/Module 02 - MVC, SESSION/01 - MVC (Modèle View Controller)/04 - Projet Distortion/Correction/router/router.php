@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once '../configuration/routes.php';
 
-function loadPage(int|string $path): string
+function loadPage($path)
 {
     if (array_key_exists($path, ALLOWED_ROUTES)) {
         ob_start();
