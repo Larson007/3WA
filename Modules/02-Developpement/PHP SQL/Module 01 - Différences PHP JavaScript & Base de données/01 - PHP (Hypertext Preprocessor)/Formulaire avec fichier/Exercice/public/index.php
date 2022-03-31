@@ -1,37 +1,8 @@
 <?php
 require '../vendor/autoload.php';
+require '../app/controllers/Controller.php';
 
-
-use App\Models\Images;
-use App\Services\FormValidator;
-
-
-$imagesModel = new Images();
-$images = $imagesModel->findAll();
-// var_dump($images);
-
-
-if (isset($_FILES['fichier']) && !empty($_FILES['fichier'])) {
-    $file = ($_FILES['fichier']);
-    $fileText = $_POST['name'];
-    $validator = new FormValidator;
-    $validator->imageValidation($file, $fileText);
-    // var_dump($yolo);
-    // var_dump($file);
-    
-    // var_dump($fileText);
-
-    $imagesModel = new Images();
-    $imagesModel->setName('test');
-    // $imagesModel->setName($file['name']);
-    // $imagesModel->setAltText($fileText);
-
-    var_dump($imagesModel);
-
-    
-}
-
-
+var_dump($images)
 
 ?>
 
@@ -41,6 +12,7 @@ if (isset($_FILES['fichier']) && !empty($_FILES['fichier'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
     <title>Form upload POO</title>
 </head>
 <body>
