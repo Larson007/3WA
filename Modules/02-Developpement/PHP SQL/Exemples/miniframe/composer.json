@@ -1,0 +1,17 @@
+{
+    "name": "res01/mini-frame",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Services\\": "Services/"
+        }
+    },
+    "authors": [
+        {
+            "name": "greg"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.0"
+    }
+}

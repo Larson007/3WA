@@ -1,0 +1,18 @@
+[ 
+	DATE => le 01:04:2022 à :13:22:24
+	FICHIER => /home/homes/res01/sites/Développement/PHP3/formulaireFichier/Services/FilesManager.php
+	LIGNE => 65
+	MESSAGE => fichier trop volumineux
+]
+[ 
+	DATE => le 01:04:2022 à :13:23:19
+	FICHIER => /home/homes/res01/sites/Développement/PHP3/formulaireFichier/Services/InputFormManager.php
+	LIGNE => 19
+	MESSAGE => la champ "Titre", doit avoir entre 10 et 255 caractères !
+]
+[ 
+	DATE => le 01:04:2022 à :13:27:52
+	FICHIER => /home/homes/res01/sites/Développement/PHP3/formulaireFichier/Services/FilesManager.php
+	LIGNE => 65
+	MESSAGE => fichier trop volumineux
+]

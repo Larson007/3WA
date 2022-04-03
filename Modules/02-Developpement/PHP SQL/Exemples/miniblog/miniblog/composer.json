@@ -1,0 +1,15 @@
+{
+    "name": "gregorybat/miniblog",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Services\\": "services/"
+        }
+    },
+    "authors": [
+        {
+            "name": "greg"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,20 @@
+<?php
+
+use Services\Session;
+?>
+<h1>Image d'illustration</h1>
+<form method='POST' enctype="multipart/form-data">
+<!--    <input type="hidden" name="MAX_FILE_SIZE" value="10000"> -->
+    <div class="group">
+        <label for="title">Titre :</label><em style="font-size:0.6rem">le titre choisit renforcera votre référencement</em>
+        <input type="text" name="title" id="title" value="<?= Session::get('titre') ?>">
+    </div>
+    <div class="group">
+        <label for="image">Image :</label>
+        <input type="file" name="image" id="image">
+    </div>
+    <?php if(isset($success) || isset($error)): ?>
+    <p style='color:red; font-size:0.6rem;'><?= $success ?? $error ?></p>
+    <?php endif; ?>
+    <input type="submit" value="send">
+</form>

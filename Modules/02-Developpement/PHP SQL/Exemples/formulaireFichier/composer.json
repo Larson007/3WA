@@ -1,0 +1,16 @@
+{
+    "name": "gbdev/files",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Services\\": "Services/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GregDevLab",
+            "email": "g.batte@outlook.fr"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+.group{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input[type='submit']{
+    width: 30%;
+    margin: 20px auto;
+}
