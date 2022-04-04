@@ -43,7 +43,7 @@ fetch(url)
     .then(response => response.json())
 ````
 
-#### Rappel sur les fonctions flèches sur une ligne: return est implicite.
+#### Rappel sur les fonctions flèches sur une ligne: return est implicite
 
 Ici on a récupérer une `string response`, et on la `parse` directement, il existe d'autres `méthodes` telle que `response.text()`, Vous avez la documentation pour les autres. Ensuite on doit faire quelque chose avec cet `objet`
 
