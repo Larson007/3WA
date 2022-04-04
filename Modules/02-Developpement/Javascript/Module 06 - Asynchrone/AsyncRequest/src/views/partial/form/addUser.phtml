@@ -1,0 +1,21 @@
+<?php var_dump($_POST); ?>
+<hr>
+<h2>Ajouter un contact</h2>
+<p id='formInfo'></p>
+<form method='POST' id='form'>
+    <div class="group">
+        <label for="lastname">Nom</label>
+        <input type="text" name="lastname" id="lastNameInput">
+    </div>
+    <div class="group">
+        <label for="firstname">prenom</label>
+        <input type="text" name="firstname" id="firstNameInput">
+    </div>
+    <div class="group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="emailInput">
+    </div>
+
+    <input type="submit" value="Ajouter">
+</form>
+<hr>
