@@ -1,15 +1,9 @@
 <h1>Accueil</h1>
+
 <!-- formulaire : voir le dossier partial/form/adduser.phtml -->
-<h2>envoi contact asynchrone</h2>
 <?= $params['form'] ?>
-<hr>
+
 <div>
-<h2>envoi fichier asynchrone</h2>
-<?= $params['addfile'] ?>
-</div>
-<hr>
-<div>
-    <h2>Recherche asyncrhone</h2>
     <form id="searchForm">
         <input type="search" name="contact" id="contact" placeholder="recherche par nom">
     </form>
@@ -20,4 +14,3 @@
 </div>
 <script src="./assets/httprequest.js"></script>
 <script src="./assets/fecthrequest.js"></script>
-<script src="./assets/fecthuploadfile.js"></script>

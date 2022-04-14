@@ -16,7 +16,6 @@ class AsynchronusRequest
         match(true){
             ($this->action === 'adduser') => $this->adduser(),
             ($this->action === 'searchuser') => $this->searchuser(),
-            ($this->action === 'addfile') => $this->addfile(),
             default => $this->defaultResp(),
         };
     }
@@ -55,26 +54,6 @@ class AsynchronusRequest
         $param = [':lastname' => '%'.$name.'%'];
         $contact = new Contact();
         $response = $contact->search($param);
-        echo json_encode($response);
-    }
-    public function addfile()
-    {
-        //attention definir l'entete car il y a un input type files
-        header('Content-Type: application/json; charset=utf-8');
-        
-        //ici je fais mon traitement
-        echo 'file : <br>';
-        print_r($_FILES);
-        echo 'post : <br>';
-        print_r($_POST);
-        
-        
-        //ici je retorune la reponse au format json
-        $response = 
-        [
-            'status' => 'echec ou reussi selon mes conditions',
-            'message' => 'info utile peut être a afficher par js'
-        ];
         echo json_encode($response);
     }
     

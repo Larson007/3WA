@@ -47,11 +47,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 
-//exemple en method post
-
 // fetch(url, {
 //     method: 'POST',
 //     body: formData
 // })
-// .then()
-// .catch()
+// .then

@@ -1,0 +1,17 @@
+{
+    "name": "gbdev/xmlhttprequest",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Services\\": "services/",
+            "Async\\": "public/async/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GregDevLab",
+            "email": "g.batte@outlook.fr"
+        }
+    ],
+    "require": {}
+}
